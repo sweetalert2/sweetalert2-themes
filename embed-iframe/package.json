@@ -1,0 +1,24 @@
+{
+  "name": "@sweetalert2/theme-embed-iframe",
+  "version": "0.1.0",
+  "repository": "sweetalert2/sweetalert2-themes",
+  "homepage": "https://sweetalert2.github.io/",
+  "description": "Embed Iframe theme for SweetAlert2",
+  "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
+  "contributors": [
+    "Morgan Touverey-Quilling <mtouverey@alembic-dev.com> (https://github.com/toverux)",
+    "Joseph Schultz (https://github.com/acupajoe)",
+    "Matthew Francis Brunetti <zenflow87@gmail.com> (https://github.com/zenflow)"
+  ],
+  "keywords": [
+    "sweetalert2",
+    "embed",
+    "iframe",
+    "theme",
+    "themes",
+    "theming",
+    "sass"
+  ],
+  "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
+  "license": "MIT"
+}
