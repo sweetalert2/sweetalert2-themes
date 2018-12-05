@@ -1,0 +1,30 @@
+@import '../node_modules/sweetalert2/src/variables';
+
+// BOX MODEL
+$swal2-padding: 0;
+$swal2-border-radius: 0;
+
+// BACKDROP
+$swal2-backdrop: rgba($swal2-black, .8);
+
+// TITLE
+$swal2-title-margin: 0;
+
+// CONTENT
+$swal2-content-font-size: 0;
+
+// CLOSE BUTTON
+$swal2-close-button-position: fixed;
+$swal2-close-button-outline: none;
+$swal2-close-button-gap: .2em;
+$swal2-close-button-border-radius: 100%;
+$swal2-close-button-border-radius: 100%;
+$swal2-close-button-background: rgba($swal2-white, .6);
+$swal2-close-button-color: rgba($swal2-black, .6);
+$swal2-close-button-font-size: 2em;
+$swal2-close-button-transition: transform .3s ease-out;
+
+// CLOSE BUTTON:HOVER
+$swal2-close-button-hover-transform: rotate(90deg);
+
+@import '../node_modules/sweetalert2/src/sweetalert2';

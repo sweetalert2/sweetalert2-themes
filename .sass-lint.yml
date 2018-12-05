@@ -1,0 +1,4 @@
+rules:
+  property-sort-order:
+    - 1
+    - order: smacss
