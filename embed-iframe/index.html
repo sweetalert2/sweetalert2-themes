@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <!-- IE11 compatibility -->
+  <script src="/node_modules/promise-polyfill/dist/polyfill.min.js"></script>
+
+  <script src="/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+  <link rel="stylesheet" href="./embed-iframe.css">
+</head>
+
+<body>
+  <script>
+    swal({
+      html: '<iframe width="100%" height="330" src="https://www.youtube.com/embed/YNpERzRABNY" frameborder="0"></iframe>',
+      showCloseButton: true,
+      showConfirmButton: false
+    })
+  </script>
+</body>
+</html>
