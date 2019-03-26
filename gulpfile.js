@@ -9,7 +9,7 @@ const sassLint = require('gulp-sass-lint')
 const browserSync = require('browser-sync').create()
 
 const themes = fs.readdirSync('.')
-  .filter(function(file) {
+  .filter(function (file) {
     if (file.match(/(.git|node_modules|dist)/)) {
       return false
     }
@@ -25,14 +25,14 @@ gulp.task('lint', () => {
     .pipe(sassLint.format())
 })
 
-gulp.task('sass', gulp.series('lint', () => {
+gulp.task('sass', gulp.series('lint', function compile () {
   return gulp.src(scssFiles, {base: '.'})
     .pipe(sass())
     .pipe(autoprefix())
     .pipe(gulp.dest('./'))
 }))
 
-gulp.task('css.min', gulp.series('sass', () => {
+gulp.task('css.min', gulp.series('sass', function minify () {
   return gulp.src(cssFiles)
     .pipe(cleanCSS())
     .pipe(rename({extname: '.min.css'}))
@@ -43,7 +43,7 @@ gulp.task('build', gulp.series('sass'))
 
 gulp.task('default', gulp.series('build'))
 
-gulp.task('watch', gulp.series('default', () => {
+gulp.task('watch', gulp.series('default', function launchServer () {
   browserSync.init({
     notify: false,
     reloadOnRestart: true,
