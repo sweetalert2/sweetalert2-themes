@@ -10,7 +10,29 @@
 
 <body>
   <script>
-    swal.fire('Dark Theme', 'Content')
+
+
+  (async function () {
+    let themeName = 'Dark Theme'
+    let swalMixin = swal.mixin({
+      title: themeName
+    })
+    // await swal.fire(themeName, 'Caption', '')
+    // await swal.fire(themeName, 'success!', 'success')
+    // await swal.fire(themeName, 'error!', 'error')
+    // await swal.fire(themeName, 'question!', 'question')
+    // await swal.fire(themeName, 'warning!', 'warning')
+    // await swal.fire(themeName, 'info!', 'info')
+    // await swal.fire(themeName, 'question!', 'question')
+    // await swalMixin.fire({showCancelButton: true})
+    // await swalMixin.fire({toast: true})
+    // await swalMixin.fire({footer: 'footer' })
+
+    await swalMixin.fire({input: 'text' })
+
+
+  })()
+
   </script>
 </body>
 </html>
