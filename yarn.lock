@@ -4307,10 +4307,10 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-sweetalert2@^7.0.0:
-  version "7.30.0"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-7.30.0.tgz#7d5c7019eb2548a271aad6a098f3e062a31727d5"
-  integrity sha512-xKLV4r0hSu8GfzXZT/6ctPRjWCB+DiXdfdIH4LVWIzSdh0Ws41Ljnd2V/qRSExT5BUvp7eU/UUnra3MATHn5Cw==
+sweetalert2@^8.0.0:
+  version "8.8.7"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-8.8.7.tgz#1c67e338a8610d4f9cc60563063ea9d2bebd031c"
+  integrity sha512-RYJ32Haqv7eqeMRl79IVfvWfsL0xgF6qcDvlYZVLoDhR3cAVQgsiMy40f13DkoRaz+V2smGbUNdzhO3otnJrIA==
 
 symbol-observable@1.0.1:
   version "1.0.1"

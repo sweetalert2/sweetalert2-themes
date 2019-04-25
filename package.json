@@ -5,7 +5,7 @@
   "homepage": "https://sweetalert2.github.io/",
   "description": "Themes for SweetAlert2",
   "dependencies": {
-    "sweetalert2": "^7.0.0"
+    "sweetalert2": "^8.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.23.3",
