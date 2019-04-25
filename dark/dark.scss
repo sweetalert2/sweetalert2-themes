@@ -3,10 +3,11 @@
 $swal2-dark-theme-black: #19191a;
 $swal2-dark-theme-white: #e1e1e1;
 
-
 $swal2-background: $swal2-dark-theme-black;
 $swal2-content-color: $swal2-dark-theme-white;
 $swal2-title-color: $swal2-dark-theme-white;
 $swal2-backdrop: lighten($swal2-dark-theme-black, 25%);
+
+$swal2-footer-color: darken($swal2-content-color, 15%);
 
 @import '../node_modules/sweetalert2/src/sweetalert2';
