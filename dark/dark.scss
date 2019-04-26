@@ -20,15 +20,14 @@ $swal2-validation-message-color: $swal2-dark-theme-white;
 .swal2-select,
 .swal2-textarea,
 .swal2-input {
-    color: white!important;
+  color: $swal2-dark-theme-white !important;
 }
 
 // Permanent workaround for the lack of specific SASS variable for checkbox / radio / range background
 .swal2-range,
 .swal2-radio,
-.swal2-checkbox
-{
-    background: $swal2-dark-theme-black!important;
+.swal2-checkbox {
+  background: $swal2-dark-theme-black !important;
 }
 
 @import '../node_modules/sweetalert2/src/sweetalert2';
