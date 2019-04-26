@@ -10,4 +10,25 @@ $swal2-backdrop: lighten($swal2-dark-theme-black, 25%);
 
 $swal2-footer-color: darken($swal2-content-color, 15%);
 
+$swal2-input-background: lighten($swal2-dark-theme-black, 25%);
+
+$swal2-validation-message-background: lighten($swal2-dark-theme-black, 10%);
+$swal2-validation-message-background: lighten($swal2-dark-theme-black, 10%);
+$swal2-validation-message-color: $swal2-dark-theme-white;
+
+// TODO: Temporary workaround. Add vriable for text tcolor in Sweetalert2 sass
+.swal2-select,
+.swal2-textarea,
+.swal2-input {
+    color: white!important;
+}
+
+// Permanent workaround for the lack of specific SASS variable for checkbox / radio / range background
+.swal2-range,
+.swal2-radio,
+.swal2-checkbox
+{
+    background: $swal2-dark-theme-black!important;
+}
+
 @import '../node_modules/sweetalert2/src/sweetalert2';
