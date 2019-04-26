@@ -14,17 +14,17 @@
 
   (async function () {
     let themeName = 'Dark Theme'
-    let swalMixin = swal.mixin({
+    let swalMixin = Swal.mixin({
       title: themeName
     })
     // Popup Type
-    await swal.fire(themeName, 'Caption', '')
-    await swal.fire(themeName, 'success!', 'success')
-    await swal.fire(themeName, 'error!', 'error')
-    await swal.fire(themeName, 'question!', 'question')
-    await swal.fire(themeName, 'warning!', 'warning')
-    await swal.fire(themeName, 'info!', 'info')
-    await swal.fire(themeName, 'question!', 'question')
+    await Swal.fire(themeName, 'Caption', '')
+    await Swal.fire(themeName, 'success!', 'success')
+    await Swal.fire(themeName, 'error!', 'error')
+    await Swal.fire(themeName, 'question!', 'question')
+    await Swal.fire(themeName, 'warning!', 'warning')
+    await Swal.fire(themeName, 'info!', 'info')
+    await Swal.fire(themeName, 'question!', 'question')
 
     // Buttons
     await swalMixin.fire({showCancelButton: true})
