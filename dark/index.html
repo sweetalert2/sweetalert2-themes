@@ -61,6 +61,16 @@
     await swalMixin.fire({input: 'file' })
     await swalMixin.fire({input: 'range' })
 
+    // Queue
+    Swal.mixin({
+      input: 'text',
+      progressSteps: ['1', '2', '3']
+    }).queue([
+      'Question 1',
+      'Question 2',
+      'Question 3'
+      ])
+
   })()
 
   </script>
