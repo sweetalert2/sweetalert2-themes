@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <!-- IE11 compatibility -->
+  <script src="/node_modules/promise-polyfill/dist/polyfill.min.js"></script>
+
+  <script src="/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+  <link rel="stylesheet" href="./dark.css">
+</head>
+
+<body>
+  <script>
+
+
+  (async function () {
+    let themeName = 'Dark Theme'
+    let swalMixin = Swal.mixin({
+      title: themeName
+    })
+    // Popup Type
+    await Swal.fire(themeName, 'Caption', '')
+    await Swal.fire(themeName, 'success!', 'success')
+    await Swal.fire(themeName, 'error!', 'error')
+    await Swal.fire(themeName, 'question!', 'question')
+    await Swal.fire(themeName, 'warning!', 'warning')
+    await Swal.fire(themeName, 'info!', 'info')
+    await Swal.fire(themeName, 'question!', 'question')
+
+    // Buttons
+    await swalMixin.fire({showCancelButton: true})
+    await swalMixin.fire({toast: true})
+    await swalMixin.fire({footer: 'footer' })
+    await swalMixin.fire({ text: 'Check close Button',  showCloseButton: true })
+
+    // Input types
+    await swalMixin.fire({input: 'text', })
+    await swalMixin.fire({input: 'email' })
+    await swalMixin.fire({input: 'url' })
+    await swalMixin.fire({input: 'password' })
+    await swalMixin.fire({input: 'textarea' })
+    await swalMixin.fire({
+      input: 'select',
+      inputOptions: {
+        'apples': 'Apples',
+        'bananas': 'Bananas',
+        'grapes': 'Grapes',
+        'oranges': 'Oranges'
+      },})
+    await swalMixin.fire({
+      input: 'radio',
+      inputOptions: {
+        '#ff0000': 'Red',
+        '#00ff00': 'Green',
+        '#0000ff': 'Blue'
+      },})
+    await swalMixin.fire({
+      input: 'checkbox',
+      inputValue: 1,
+      inputPlaceholder: 'I agree with the terms and conditions'
+    })
+    await swalMixin.fire({input: 'file' })
+    await swalMixin.fire({input: 'range' })
+
+    // Queue
+    Swal.mixin({
+      input: 'text',
+      progressSteps: ['1', '2', '3']
+    }).queue([
+      'Question 1',
+      'Question 2',
+      'Question 3'
+      ])
+
+  })()
+
+  </script>
+</body>
+</html>

@@ -1,23 +1,9 @@
 {
-  "name": "@sweetalert2/themes",
+  "name": "@sweetalert2/theme-dark",
   "version": "0.1.0",
   "repository": "sweetalert2/sweetalert2-themes",
   "homepage": "https://sweetalert2.github.io/",
-  "description": "Themes for SweetAlert2",
-  "peerDependencies": {
-    "sweetalert2": "^8.9.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.23.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-sass-lint": "^1.3.4",
-    "promise-polyfill": "^8.1.0",
-    "sweetalert2": "^8.9.0"
-  },
+  "description": "Embed Iframe theme for SweetAlert2",
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
     "Morgan Touverey-Quilling <mtouverey@alembic-dev.com> (https://github.com/toverux)",
@@ -26,16 +12,12 @@
   ],
   "keywords": [
     "sweetalert2",
+    "dark",
     "theme",
     "themes",
     "theming",
     "sass"
   ],
-  "scripts": {
-    "start": "gulp watch",
-    "build": "gulp build",
-    "lint": "gulp lint"
-  },
   "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
   "license": "MIT"
 }

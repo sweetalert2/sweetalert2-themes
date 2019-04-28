@@ -555,7 +555,7 @@ body.swal2-no-backdrop .swal2-shown {
   max-width: calc(100% - 0.625em * 2);
   background-color: transparent; }
   body.swal2-no-backdrop .swal2-shown > .swal2-modal {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
+    box-shadow: 0 0 10px #58585b; }
   body.swal2-no-backdrop .swal2-shown.swal2-top {
     top: 0;
     left: 50%;
@@ -671,7 +671,7 @@ body.swal2-no-backdrop .swal2-shown {
   .swal2-container.swal2-fade {
     transition: background-color .1s; }
   .swal2-container.swal2-shown {
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: #58585b; }
 
 .swal2-popup {
   display: none;
@@ -681,9 +681,9 @@ body.swal2-no-backdrop .swal2-shown {
   justify-content: center;
   width: 32em;
   max-width: 100%;
-  padding: 0;
-  border-radius: 0;
-  background: #fff;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+  background: #19191a;
   font-family: inherit;
   font-size: 1rem; }
   .swal2-popup:focus {
@@ -699,9 +699,9 @@ body.swal2-no-backdrop .swal2-shown {
 .swal2-title {
   position: relative;
   max-width: 100%;
-  margin: 0;
+  margin: 0 0 0.4em;
   padding: 0;
-  color: #595959;
+  color: #e1e1e1;
   font-size: 1.875em;
   font-weight: 600;
   text-align: center;
@@ -786,7 +786,7 @@ body.swal2-no-backdrop .swal2-shown {
   margin: 1.25em 0 0;
   padding: 1em 0 0;
   border-top: 1px solid #eee;
-  color: #545454;
+  color: #bbbbbb;
   font-size: 1em; }
 
 .swal2-image {
@@ -794,29 +794,27 @@ body.swal2-no-backdrop .swal2-shown {
   margin: 1.25em auto; }
 
 .swal2-close {
-  position: fixed;
-  top: 0.2em;
-  right: 0.2em;
+  position: absolute;
+  top: 0;
+  right: 0;
   justify-content: center;
   width: 1.2em;
   height: 1.2em;
   padding: 0;
   overflow: hidden;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.1s ease-out;
   border: none;
-  border-radius: 100%;
-  outline: none;
-  background: rgba(255, 255, 255, 0.6);
-  color: rgba(0, 0, 0, 0.6);
+  border-radius: 0;
+  outline: initial;
+  background: transparent;
+  color: #cccccc;
   font-family: serif;
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.2;
   cursor: pointer; }
   .swal2-close:hover {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: none;
+            transform: none;
     color: #f27474; }
 
 > .swal2-input,
@@ -832,8 +830,8 @@ body.swal2-no-backdrop .swal2-shown {
   justify-content: center;
   margin: 0;
   padding: 0;
-  color: #545454;
-  font-size: 0;
+  color: #e1e1e1;
+  font-size: 1.125em;
   font-weight: 300;
   line-height: normal;
   word-wrap: break-word; }
@@ -857,9 +855,9 @@ body.swal2-no-backdrop .swal2-shown {
   transition: border-color .3s, box-shadow .3s;
   border: 1px solid #d9d9d9;
   border-radius: 0.1875em;
-  background: inherit;
+  background: #323234;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
-  color: inherit;
+  color: #e1e1e1;
   font-size: 1.125em; }
   .swal2-input.swal2-inputerror,
   .swal2-file.swal2-inputerror,
@@ -895,12 +893,12 @@ body.swal2-no-backdrop .swal2-shown {
 
 .swal2-range {
   margin: 1em auto;
-  background: inherit; }
+  background: #323234; }
   .swal2-range input {
     width: 80%; }
   .swal2-range output {
     width: 20%;
-    color: inherit;
+    color: #e1e1e1;
     font-weight: 600;
     text-align: center; }
   .swal2-range input,
@@ -917,7 +915,7 @@ body.swal2-no-backdrop .swal2-shown {
     max-width: 10em; }
 
 .swal2-file {
-  background: inherit;
+  background: #323234;
   font-size: 1.125em; }
 
 .swal2-textarea {
@@ -928,16 +926,16 @@ body.swal2-no-backdrop .swal2-shown {
   min-width: 50%;
   max-width: 100%;
   padding: .375em .625em;
-  background: inherit;
-  color: inherit;
+  background: #323234;
+  color: #e1e1e1;
   font-size: 1.125em; }
 
 .swal2-radio,
 .swal2-checkbox {
   align-items: center;
   justify-content: center;
-  background: inherit;
-  color: inherit; }
+  background: #323234;
+  color: #e1e1e1; }
   .swal2-radio label,
   .swal2-checkbox label {
     margin: 0 .6em;
@@ -952,8 +950,8 @@ body.swal2-no-backdrop .swal2-shown {
   justify-content: center;
   padding: 0.625em;
   overflow: hidden;
-  background: #f0f0f0;
-  color: #666666;
+  background: #323234;
+  color: #e1e1e1;
   font-size: 1em;
   font-weight: 300; }
   .swal2-validation-message::before {
@@ -1131,10 +1129,10 @@ body.swal2-no-backdrop .swal2-shown {
     .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
       background: #3085d6; }
       .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
-        background: #add8e6;
+        background: #58585b;
         color: #fff; }
       .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {
-        background: #add8e6; }
+        background: #58585b; }
   .swal2-progress-steps .swal2-progress-step-line {
     z-index: 10;
     width: 2.5em;
@@ -1161,7 +1159,7 @@ body.swal2-no-backdrop .swal2-shown {
 
 .swal2-rtl .swal2-close {
   right: auto;
-  left: 0.2em; }
+  left: 0; }
 
 .swal2-animate-success-icon .swal2-success-line-tip {
   -webkit-animation: swal2-animate-success-line-tip 0.75s;
@@ -1205,3 +1203,8 @@ body.swal2-no-backdrop .swal2-shown {
       display: none; }
     body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
       position: initial !important; } }
+
+.swal2-range,
+.swal2-radio,
+.swal2-checkbox {
+  background: #19191a; }
