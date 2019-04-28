@@ -1140,10 +1140,10 @@ body.swal2-no-backdrop .swal2-shown {
     .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
       background: #3085d6; }
       .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
-        background: #add8e6;
+        background: #58585b;
         color: #fff; }
       .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {
-        background: #add8e6; }
+        background: #58585b; }
   .swal2-progress-steps .swal2-progress-step-line {
     z-index: 10;
     width: 2.5em;
