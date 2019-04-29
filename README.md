@@ -6,8 +6,16 @@
 Installation
 ------------
 
+You can install all themes at once:
+
 ```sh
 npm install --save sweetalert2 @sweetalert2/themes
+```
+
+Or just a single theme `@sweetalert2/theme-<theme_name>`, e.g.
+
+```sh
+npm install --save sweetalert2 @sweetalert2/theme-dark
 ```
 
 Usage
