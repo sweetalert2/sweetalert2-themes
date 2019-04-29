@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.2...v1.0.3) (2019-04-29)
+
+
+### Bug Fixes
+
+* use tilde instead of relative path in [@import](https://github.com/import) ([8fdedd5](https://github.com/sweetalert2/sweetalert2-themes/commit/8fdedd5))
+
 ## [1.0.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.1...v1.0.2) (2019-04-29)
 
 
