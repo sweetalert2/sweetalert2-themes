@@ -26,7 +26,7 @@ if (!process.env.VERSION) {
     if (changedFiles) {
       for (changedFile of changedFiles) {
         await execute(`git add ${changedFile.file}`)
-        await execute(`npm publish --access=public`)
+        await execute(`npm publish --access=public ${directory}`)
       }
     }
   }
