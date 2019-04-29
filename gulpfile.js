@@ -3,6 +3,7 @@ const path = require('path')
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')
 const sass = require('gulp-sass')
+const tildeImporter = require('node-sass-tilde-importer')
 const rename = require('gulp-rename')
 const autoprefix = require('gulp-autoprefixer')
 const sassLint = require('gulp-sass-lint')
@@ -27,7 +28,7 @@ gulp.task('lint', () => {
 
 gulp.task('sass', gulp.series('lint', function compile () {
   return gulp.src(scssFiles, {base: '.'})
-    .pipe(sass())
+    .pipe(sass({ importer: tildeImporter }))
     .pipe(autoprefix())
     .pipe(gulp.dest('./'))
 }))

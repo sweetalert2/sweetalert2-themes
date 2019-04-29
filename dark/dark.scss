@@ -1,4 +1,4 @@
-@import '../node_modules/sweetalert2/src/variables';
+@import '~sweetalert2/src/variables';
 
 $swal2-dark-theme-black: #19191a;
 $swal2-dark-theme-white: #e1e1e1;
@@ -23,7 +23,7 @@ $swal2-validation-message-color: $swal2-dark-theme-white;
 // QUEUE
 $swal2-progress-step-background: lighten($swal2-dark-theme-black, 25%);
 
-@import '../node_modules/sweetalert2/src/sweetalert2';
+@import '~sweetalert2/src/sweetalert2';
 
 // INPUT
 .swal2-range,

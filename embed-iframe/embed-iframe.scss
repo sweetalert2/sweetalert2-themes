@@ -1,4 +1,4 @@
-@import '../node_modules/sweetalert2/src/variables';
+@import '~sweetalert2/src/variables';
 
 // BOX MODEL
 $swal2-padding: 0;
@@ -27,4 +27,4 @@ $swal2-close-button-transition: transform .3s ease-out;
 // CLOSE BUTTON:HOVER
 $swal2-close-button-hover-transform: rotate(90deg);
 
-@import '../node_modules/sweetalert2/src/sweetalert2';
+@import '~sweetalert2/src/sweetalert2';
