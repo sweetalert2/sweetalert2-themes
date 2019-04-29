@@ -12,9 +12,19 @@ npm install --save sweetalert2 @sweetalert2/theme-dark
 Usage
 -----
 
+With CSS:
+
 ```html
 <!-- Include the Dark theme -->
 <link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css">
 
 <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+```
+
+With SASS:
+
+```js
+import Swal from 'sweetalert2/src/sweetalert2.js'
+
+@import '~@sweetalert2/theme-dark/dark.scss';
 ```

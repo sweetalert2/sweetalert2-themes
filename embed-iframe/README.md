@@ -12,9 +12,19 @@ npm install --save sweetalert2 @sweetalert2/theme-embed-iframe
 Usage
 -----
 
+With CSS:
+
 ```html
 <!-- Include the Embed Iframe theme -->
 <link rel="stylesheet" href="@sweetalert2/theme-embed-iframe/embed-iframe.css">
 
 <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+```
+
+With SASS:
+
+```js
+import Swal from 'sweetalert2/src/sweetalert2.js'
+
+@import '~@sweetalert2/theme-embed-iframe/embed-iframe.scss';
 ```
