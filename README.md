@@ -27,3 +27,17 @@ Usage
 
 <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 ```
+
+Donations
+---------
+
+Has SweetAlert2 helped you create an amazing application? You can show your support by making a donation:
+
+- PayPal: https://www.paypal.me/limonte
+- Bitcoin: `12BxefvPMtHePgfPRDL1SaZYSG4GwQmWoP`
+- Ether: `0x36e2b10666e2c0dc343901895ba3697b5d3214d1`
+- Bitcoin Cash: `qqxs402qszgwuue00gwxw996lzhpa8up2unqm0y46g`
+- Stellar: `GBRS5KGFJO4OBUGW3TRQBIVXTM5YDS53DOSHGA3LKVE2YXKVKNVDONBP`
+
+
+### [Hall of Donators :trophy:](https://github.com/sweetalert2/sweetalert2/blob/master/DONATIONS.md)
