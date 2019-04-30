@@ -555,7 +555,7 @@ body.swal2-no-backdrop .swal2-shown {
   max-width: calc(100% - 0.625em * 2);
   background-color: transparent; }
   body.swal2-no-backdrop .swal2-shown > .swal2-modal {
-    box-shadow: 0 0 10px #58585b; }
+    box-shadow: 0 0 10px rgba(25, 25, 26, 0.75); }
   body.swal2-no-backdrop .swal2-shown.swal2-top {
     top: 0;
     left: 50%;
@@ -671,7 +671,7 @@ body.swal2-no-backdrop .swal2-shown {
   .swal2-container.swal2-fade {
     transition: background-color .1s; }
   .swal2-container.swal2-shown {
-    background-color: #58585b; }
+    background-color: rgba(25, 25, 26, 0.75); }
 
 .swal2-popup {
   display: none;
