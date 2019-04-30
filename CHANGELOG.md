@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.3...v1.0.4) (2019-04-30)
+
+
+### Bug Fixes
+
+* **dark:** backdrop opacity ([#7](https://github.com/sweetalert2/sweetalert2-themes/issues/7)) ([89ac5e5](https://github.com/sweetalert2/sweetalert2-themes/commit/89ac5e5))
+
 ## [1.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.2...v1.0.3) (2019-04-29)
 
 
