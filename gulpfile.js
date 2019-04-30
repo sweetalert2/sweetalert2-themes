@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create()
 
 const themes = fs.readdirSync('.')
   .filter(function (file) {
-    if (file.match(/(.git|node_modules|dist)/)) {
+    if (file.match(/(.git|node_modules|dist|tools)/)) {
       return false
     }
     return fs.statSync(path.join('.', file)).isDirectory()
