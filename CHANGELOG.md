@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.4...v1.0.5) (2019-04-30)
+
+
+### Bug Fixes
+
+* remove CSS files from repo ([#8](https://github.com/sweetalert2/sweetalert2-themes/issues/8)) ([480ddaf](https://github.com/sweetalert2/sweetalert2-themes/commit/480ddaf))
+
 ## [1.0.4](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.3...v1.0.4) (2019-04-30)
 
 
