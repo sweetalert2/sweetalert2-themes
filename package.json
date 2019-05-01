@@ -38,7 +38,8 @@
   "scripts": {
     "start": "gulp watch",
     "build": "gulp build",
-    "lint": "gulp lint"
+    "lint": "gulp lint",
+    "create-new-theme": "node tools/create-new-theme.js"
   },
   "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
   "license": "MIT"
