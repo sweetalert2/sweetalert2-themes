@@ -49,7 +49,8 @@ gulp.task('watch', gulp.series('default', function launchServer () {
     notify: false,
     reloadOnRestart: true,
     https: false,
-    server: ['./']
+    server: ['./'],
+    startPath: process.argv[4]
   })
 
   gulp.watch(cssFiles.concat(['index.html'])).on('change', browserSync.reload)
