@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.5...v1.0.6) (2019-05-03)
+
+
+### Bug Fixes
+
+* **create-new-theme:** remove unnecessary './node_modules/bin/' ([1372e04](https://github.com/sweetalert2/sweetalert2-themes/commit/1372e04))
+
 ## [1.0.5](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.4...v1.0.5) (2019-04-30)
 
 
