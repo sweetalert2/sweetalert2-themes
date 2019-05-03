@@ -63,7 +63,7 @@ const sampleTheme = 'dark'
     `@import '~sweetalert2/src/sweetalert2';\n`
   )
 
-  await execute(`./node_modules/.bin/gulp watch --start-path ${themeName}`)
+  await execute(`gulp watch --start-path ${themeName}`)
 
   log('OK!')
 })().catch(console.error)
