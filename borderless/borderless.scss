@@ -1,5 +1,23 @@
 @import '~sweetalert2/src/variables';
 
-// override SASS variables here
+// Removing no needed types
+$swal2-border-radius: 0;
+$swal2-box-shadow: none;
+
+// Default style for borderless theme
+$swal2-background: transperent;
+$swal2-backdrop: rgba(54, 70, 93, .99);
+
+$swal2-title-color: $swal2-white;
+$swal2-content-color: $swal2-white;
+$swal2-footer-color: $swal2-white;
+$swal2-close-button-color: $swal2-white;
+$swal2-validation-message-color: $swal2-white;
+
+$swal2-progress-step-background: #BDBDBD;
+$swal2-footer-border-color: #EEEEEE;
+$swal2-close-button-font-size: 3em;
+
+$swal2-validation-message-background: transperent;
 
 @import '~sweetalert2/src/sweetalert2';
