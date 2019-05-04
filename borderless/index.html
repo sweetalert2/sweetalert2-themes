@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <!-- IE11 compatibility -->
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="./borderless.css">
+</head>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<body>
+  <script>
+
+
+  (async function () {
+    let themeName = 'Borderless Theme'
+    let swalMixin = Swal.mixin({
+      title: themeName
+    })
+    // Popup Type
+    await Swal.fire(themeName, 'Caption', '')
+    await Swal.fire(themeName, 'success!', 'success')
+    await Swal.fire(themeName, 'error!', 'error')
+    await Swal.fire(themeName, 'question!', 'question')
+    await Swal.fire(themeName, 'warning!', 'warning')
+    await Swal.fire(themeName, 'info!', 'info')
+    await Swal.fire(themeName, 'question!', 'question')
+
+    // Buttons
+    await swalMixin.fire({showCancelButton: true})
+    await swalMixin.fire({toast: true})
+    await swalMixin.fire({footer: 'footer' })
+    await swalMixin.fire({ text: 'Check close Button',  showCloseButton: true })
+
+    // Input types
+    await swalMixin.fire({input: 'text', })
+    await swalMixin.fire({input: 'email' })
+    await swalMixin.fire({input: 'url' })
+    await swalMixin.fire({input: 'password' })
+    await swalMixin.fire({input: 'textarea' })
+    await swalMixin.fire({
+      input: 'select',
+      inputOptions: {
+        'apples': 'Apples',
+        'bananas': 'Bananas',
+        'grapes': 'Grapes',
+        'oranges': 'Oranges'
+      },})
+    await swalMixin.fire({
+      input: 'radio',
+      inputOptions: {
+        '#ff0000': 'Red',
+        '#00ff00': 'Green',
+        '#0000ff': 'Blue'
+      },})
+    await swalMixin.fire({
+      input: 'checkbox',
+      inputValue: 1,
+      inputPlaceholder: 'I agree with the terms and conditions'
+    })
+    await swalMixin.fire({input: 'file' })
+    await swalMixin.fire({input: 'range' })
+
+    // Queue
+    Swal.mixin({
+      input: 'text',
+      progressSteps: ['1', '2', '3']
+    }).queue([
+      'Question 1',
+      'Question 2',
+      'Question 3'
+      ])
+
+  })()
+
+  </script>
+</body>
+</html>
