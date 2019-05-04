@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.6...v1.1.0) (2019-05-04)
+
+
+### Features
+
+* add theme-minimal ([#18](https://github.com/sweetalert2/sweetalert2-themes/issues/18)) ([bb734fe](https://github.com/sweetalert2/sweetalert2-themes/commit/bb734fe))
+
 ## [1.0.6](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.5...v1.0.6) (2019-05-03)
 
 
