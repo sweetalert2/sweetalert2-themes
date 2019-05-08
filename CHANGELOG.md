@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.0...v1.2.1) (2019-05-08)
+
+
+### Bug Fixes
+
+* CSS files minification ([c8e7e7a](https://github.com/sweetalert2/sweetalert2-themes/commit/c8e7e7a))
+
 # [1.2.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.1.0...v1.2.0) (2019-05-08)
 
 
