@@ -17,8 +17,8 @@ const themes = fs.readdirSync('.')
     return fs.statSync(path.join('.', file)).isDirectory()
   })
 
-const scssFiles = themes.map(i => i + '/*.scss')
-const cssFiles = themes.map(i => i + '/*.css')
+const scssFiles = themes.map(theme => `${theme}/${theme}.scss`)
+const cssFiles = themes.map(theme => `${theme}/${theme}.css`)
 
 gulp.task('lint', () => {
   return gulp.src(scssFiles)
@@ -27,20 +27,20 @@ gulp.task('lint', () => {
 })
 
 gulp.task('sass', gulp.series('lint', function compile () {
-  return gulp.src(scssFiles, {base: '.'})
+  return gulp.src(scssFiles, { base: '.' })
     .pipe(sass({ importer: tildeImporter }))
     .pipe(autoprefix())
     .pipe(gulp.dest('./'))
 }))
 
-gulp.task('css.min', gulp.series('sass', function minify () {
-  return gulp.src(cssFiles)
+gulp.task('css.min', function minify () {
+  return gulp.src(cssFiles, { base: '.' })
     .pipe(cleanCSS())
     .pipe(rename({extname: '.min.css'}))
-    .pipe(gulp.dest('dist'))
-}))
+    .pipe(gulp.dest('./'))
+})
 
-gulp.task('build', gulp.series('sass'))
+gulp.task('build', gulp.series('sass', 'css.min'))
 
 gulp.task('default', gulp.series('build'))
 
