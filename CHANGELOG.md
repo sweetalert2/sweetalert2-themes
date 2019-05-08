@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.1.0...v1.2.0) (2019-05-08)
+
+
+### Features
+
+* add Default theme ([9414c11](https://github.com/sweetalert2/sweetalert2-themes/commit/9414c11))
+
 # [1.1.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.0.6...v1.1.0) (2019-05-04)
 
 
