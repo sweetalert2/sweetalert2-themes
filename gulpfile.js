@@ -45,12 +45,13 @@ gulp.task('build', gulp.series('sass'))
 gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', gulp.series('default', function launchServer () {
+  const theme = process.argv[4] || 'dark'
   browserSync.init({
     notify: false,
     reloadOnRestart: true,
     https: false,
     server: ['./'],
-    startPath: process.argv[4]
+    startPath: `?theme=${theme}`
   })
 
   gulp.watch(cssFiles.concat(['index.html'])).on('change', browserSync.reload)

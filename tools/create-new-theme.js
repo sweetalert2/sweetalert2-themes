@@ -34,14 +34,12 @@ const sampleTheme = 'dark'
 
   copyFile('README.md')
   copyFile('package.json')
-  copyFile('index.html')
 
   // Replace old theme name with a new one
   await replaceInFile({
     files: [
       join(themeName, 'README.md'),
-      join(themeName, 'package.json'),
-      join(themeName, 'index.html')
+      join(themeName, 'package.json')
     ],
     from: [
       new RegExp(sampleTheme, 'g'),
