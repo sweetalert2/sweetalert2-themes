@@ -1,5 +1,5 @@
 (async function () {
-  const theme = location.search.replace('?theme=', '') || 'dark'
+  const theme = location.search.replace('?theme=', '') || 'default'
 
   const css = document.createElement('link')
   css.setAttribute('rel', 'stylesheet')

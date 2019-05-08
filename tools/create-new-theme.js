@@ -27,7 +27,7 @@ if (directories.includes(themeName)) {
   process.exit(1)
 }
 
-const sampleTheme = 'dark'
+const sampleTheme = 'default'
 
 ;(async () => {
   fs.mkdirSync(themeName)

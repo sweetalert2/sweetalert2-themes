@@ -45,7 +45,7 @@ gulp.task('build', gulp.series('sass'))
 gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', gulp.series('default', function launchServer () {
-  const theme = process.argv[4] || 'dark'
+  const theme = process.argv[4] || 'default'
   browserSync.init({
     notify: false,
     reloadOnRestart: true,
