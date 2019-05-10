@@ -2,12 +2,20 @@ const fs = require('fs')
 const path = require('path')
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')
+const header = require('gulp-header')
 const sass = require('gulp-sass')
 const tildeImporter = require('node-sass-tilde-importer')
 const rename = require('gulp-rename')
 const autoprefix = require('gulp-autoprefixer')
 const sassLint = require('gulp-sass-lint')
 const browserSync = require('browser-sync').create()
+const packageJson = require('./package.json')
+const version = process.env.VERSION || packageJson.version
+
+const banner = `/*
+* ${packageJson.name} v${version}
+* Released under the ${packageJson.license} License.
+*/\n\n`
 
 const themes = fs.readdirSync('.')
   .filter(function (file) {
@@ -30,6 +38,7 @@ gulp.task('sass', gulp.series('lint', function compile () {
   return gulp.src(scssFiles, { base: '.' })
     .pipe(sass({ importer: tildeImporter }))
     .pipe(autoprefix())
+    .pipe(header(banner))
     .pipe(gulp.dest('./'))
 }))
 
