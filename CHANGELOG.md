@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.2...v2.0.3) (2019-05-10)
+
+
+### Bug Fixes
+
+* **borderless:** use opacity animation instead of trasform ([1d9a7a4](https://github.com/sweetalert2/sweetalert2-themes/commit/1d9a7a4))
+
 ## [2.0.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.1...v2.0.2) (2019-05-10)
 
 
