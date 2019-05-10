@@ -4,7 +4,7 @@
   "repository": "sweetalert2/sweetalert2-themes",
   "homepage": "https://sweetalert2.github.io/",
   "description": "Borderless theme for SweetAlert2",
-  "author": "",
+  "author": "Kalvis Kolesnikovs",
   "files": [
     "*.css",
     "*.scss"
