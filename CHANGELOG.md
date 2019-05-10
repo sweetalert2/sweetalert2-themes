@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.2...v1.2.3) (2019-05-10)
+
+
+### Bug Fixes
+
+* add banners (headers) to CSS files ([f49b8af](https://github.com/sweetalert2/sweetalert2-themes/commit/f49b8af))
+
 ## [1.2.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.1...v1.2.2) (2019-05-10)
 
 
