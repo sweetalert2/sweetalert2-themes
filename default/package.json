@@ -9,6 +9,7 @@
     "*.css",
     "*.scss"
   ],
+  "main": "default.css",
   "keywords": [
     "sweetalert2",
     "default",
