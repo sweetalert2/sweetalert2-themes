@@ -21,3 +21,20 @@ $swal2-close-button-font-size: 3em;
 $swal2-validation-message-background: transperent;
 
 @import '~sweetalert2/src/sweetalert2';
+
+.swal2-styled {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.swal2-toast {
+  .swal2-title {
+    color: #595959;
+  }
+}
+
+.swal2-select {
+  background: $swal2-white;
+  color: #595959;
+}
