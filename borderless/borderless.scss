@@ -1,5 +1,7 @@
 @import '~sweetalert2/src/variables';
 
+$borderless-theme-color: rgba(54, 70, 93, .99);
+
 // BOX MODEL
 $swal2-box-shadow: none;
 
@@ -7,7 +9,7 @@ $swal2-box-shadow: none;
 $swal2-background: transparent;
 
 // BACKDROP
-$swal2-backdrop: rgba(54, 70, 93, .99);
+$swal2-backdrop: $borderless-theme-color;
 
 // TITLE
 $swal2-title-color: $swal2-white;
@@ -36,4 +38,8 @@ $swal2-close-button-color: $swal2-white;
 .swal2-select {
   background: $swal2-white;
   color: lighten($swal2-black, 25);
+}
+
+.swal2-toast {
+  background: $borderless-theme-color;
 }
