@@ -1,0 +1,22 @@
+{
+  "name": "@sweetalert2/theme-borderless",
+  "version": "1.1.0",
+  "repository": "sweetalert2/sweetalert2-themes",
+  "homepage": "https://sweetalert2.github.io/",
+  "description": "Borderless theme for SweetAlert2",
+  "author": "Kalvis Kolesnikovs",
+  "files": [
+    "*.css",
+    "*.scss"
+  ],
+  "keywords": [
+    "sweetalert2",
+    "borderless",
+    "theme",
+    "themes",
+    "theming",
+    "sass"
+  ],
+  "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
+  "license": "MIT"
+}
