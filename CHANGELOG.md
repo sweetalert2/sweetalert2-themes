@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.1...v1.2.2) (2019-05-10)
+
+
+### Bug Fixes
+
+* depend on sweetalert2@^8.10.5 ([71f703b](https://github.com/sweetalert2/sweetalert2-themes/commit/71f703b))
+
 ## [1.2.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.0...v1.2.1) (2019-05-08)
 
 
