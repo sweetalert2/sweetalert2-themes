@@ -9,6 +9,7 @@
     "*.css",
     "*.scss"
   ],
+  "main": "dark.css",
   "keywords": [
     "sweetalert2",
     "dark",

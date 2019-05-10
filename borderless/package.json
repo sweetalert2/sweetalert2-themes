@@ -9,6 +9,7 @@
     "*.css",
     "*.scss"
   ],
+  "main": "borderless.css",
   "keywords": [
     "sweetalert2",
     "borderless",
