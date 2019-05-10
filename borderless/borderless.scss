@@ -32,3 +32,8 @@ $swal2-close-button-font-size: 3em;
 $swal2-close-button-color: $swal2-white;
 
 @import '~sweetalert2/src/sweetalert2';
+
+.swal2-select {
+  background: $swal2-white;
+  color: lighten($swal2-black, 25);
+}
