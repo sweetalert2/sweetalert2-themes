@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.1...v2.0.2) (2019-05-10)
+
+
+### Bug Fixes
+
+* **borderless:** toasts background ([2c0be84](https://github.com/sweetalert2/sweetalert2-themes/commit/2c0be84))
+
 ## [2.0.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.0...v2.0.1) (2019-05-10)
 
 
