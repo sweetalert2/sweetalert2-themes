@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.3...v1.3.0) (2019-05-10)
+
+
+### Features
+
+* add Borderless theme ([#19](https://github.com/sweetalert2/sweetalert2-themes/issues/19)) ([88d878c](https://github.com/sweetalert2/sweetalert2-themes/commit/88d878c))
+
 ## [1.2.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.2...v1.2.3) (2019-05-10)
 
 
