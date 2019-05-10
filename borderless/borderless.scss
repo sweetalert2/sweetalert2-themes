@@ -1,40 +1,33 @@
 @import '~sweetalert2/src/variables';
 
-// Removing no needed types
-$swal2-border-radius: 0;
+// BOX MODEL
 $swal2-box-shadow: none;
 
-// Default style for borderless theme
-$swal2-background: transperent;
+// BACKGROUND
+$swal2-background: transparent;
+
+// BACKDROP
 $swal2-backdrop: rgba(54, 70, 93, .99);
 
+// TITLE
 $swal2-title-color: $swal2-white;
+
+// CONTENT
 $swal2-content-color: $swal2-white;
-$swal2-footer-color: $swal2-white;
-$swal2-close-button-color: $swal2-white;
+
+// PROGRESS STEPS
+$swal2-progress-step-background: rgba($swal2-black, .2);
+
+// VALIDATION MESSAGE
+$swal2-validation-message-background: transparent;
 $swal2-validation-message-color: $swal2-white;
 
-$swal2-progress-step-background: #BDBDBD;
-$swal2-footer-border-color: #EEEEEE;
-$swal2-close-button-font-size: 3em;
+// FOOTER
+$swal2-footer-color: $swal2-white;
+$swal2-footer-border-color: rgba($swal2-white, .2);
 
-$swal2-validation-message-background: transperent;
+// CLOSE BUTTON
+$swal2-close-button-font-size: 3em;
+$swal2-close-button-color: $swal2-white;
 
 @import '~sweetalert2/src/sweetalert2';
-
-.swal2-styled {
-  &:focus {
-    box-shadow: none;
-  }
-}
-
-.swal2-toast {
-  .swal2-title {
-    color: #595959;
-  }
-}
-
-.swal2-select {
-  background: $swal2-white;
-  color: #595959;
-}
