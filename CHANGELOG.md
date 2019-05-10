@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.0...v2.0.1) (2019-05-10)
+
+
+### Bug Fixes
+
+* **borderlesse:** select colors ([4faa389](https://github.com/sweetalert2/sweetalert2-themes/commit/4faa389))
+* **semantic-release:** set env.VERSION before building CSS files ([c4b31de](https://github.com/sweetalert2/sweetalert2-themes/commit/c4b31de))
+
 # [2.0.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.3.0...v2.0.0) (2019-05-10)
 
 
