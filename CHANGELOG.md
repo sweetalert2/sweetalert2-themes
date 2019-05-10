@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.3.0...v2.0.0) (2019-05-10)
+
+
+* BREAKING CHANGE: remove embed-iframe theme, use borderless instead ([6f0b0be](https://github.com/sweetalert2/sweetalert2-themes/commit/6f0b0be))
+
+
+### BREAKING CHANGES
+
+* remove embed-iframe theme, use borderless instead
+
 # [1.3.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v1.2.3...v1.3.0) (2019-05-10)
 
 
