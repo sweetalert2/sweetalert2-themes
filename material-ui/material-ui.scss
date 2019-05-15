@@ -10,12 +10,19 @@ $swal2-confirm-button-border-radius: 0;
 $swal2-confirm-button-background-color: none;
 $swal2-confirm-button-color: $material-ui-blue;
 
+// CANCEL BUTTON
+$swal2-cancel-button-border: 0;
+$swal2-cancel-button-border-radius: 0;
+$swal2-cancel-button-background-color: none;
+$swal2-cancel-button-color: $material-ui-blue;
+
+// BUTTONS
 $swal2-button-darken-hover: rgba($material-ui-blue, .1);
 $swal2-button-focus-outline: none;
 
 @import '~sweetalert2/src/sweetalert2';
 
 .swal2-actions {
-    justify-content:flex-end;
-    width:100%;
+  justify-content: flex-end;
+  width: 100%;
 }
