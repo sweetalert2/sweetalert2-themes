@@ -1,5 +1,21 @@
 @import '~sweetalert2/src/variables';
 
+// Theme variables
+$material-ui-blue: #2196f3;
+
 // override SASS variables here
+// CONFIRM BUTTON
+$swal2-confirm-button-border: 0;
+$swal2-confirm-button-border-radius: 0;
+$swal2-confirm-button-background-color: none;
+$swal2-confirm-button-color: $material-ui-blue;
+
+$swal2-button-darken-hover: rgba($material-ui-blue, .1);
+$swal2-button-focus-outline: none;
 
 @import '~sweetalert2/src/sweetalert2';
+
+.swal2-actions {
+    justify-content:flex-end;
+    width:100%;
+}
