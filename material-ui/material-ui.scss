@@ -24,6 +24,11 @@ $swal2-button-focus-outline: none;
 // ACTIONS
 $swal2-actions-justify-content: flex-end;
 
+// CLOSE BUTTON
+$swal2-close-button-border-radius: 50%;
+$swal2-close-button-hover-background: rgb(242, 242, 242);
+$swal2-close-button-hover-color: $swal2-close-button-color;
+
 @import '~sweetalert2/src/sweetalert2';
 
 .swal2-styled {
