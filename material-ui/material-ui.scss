@@ -20,6 +20,9 @@ $swal2-cancel-button-color: $material-ui-blue;
 $swal2-button-darken-hover: rgba($material-ui-blue, .1);
 $swal2-button-focus-outline: none;
 
+// ACTIONS
+$swal2-actions-justify-content: flex-end;
+
 @import '~sweetalert2/src/sweetalert2';
 
 .swal2-actions {
