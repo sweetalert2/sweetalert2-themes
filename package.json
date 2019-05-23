@@ -20,7 +20,7 @@
     "node-sass-tilde-importer": "^1.0.2",
     "promise-polyfill": "^8.1.0",
     "replace-in-file": "^4.0.0",
-    "sweetalert2": "^8.10.6"
+    "sweetalert2": "^8.11.1"
   },
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
