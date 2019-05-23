@@ -2,6 +2,7 @@
 
 // Theme variables
 $material-ui-blue: #2196f3;
+$material-ui-disabled: #808080;
 
 // override SASS variables here
 // CONFIRM BUTTON
@@ -25,7 +26,9 @@ $swal2-actions-justify-content: flex-end;
 
 @import '~sweetalert2/src/sweetalert2';
 
-.swal2-actions {
-  justify-content: flex-end;
-  width: 100%;
+.swal2-styled {
+  &[disabled] {
+    color: $material-ui-disabled;
+    opacity: 1;
+  }
 }
