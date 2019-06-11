@@ -30,6 +30,18 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 
 @import '~sweetalert2/src/sweetalert2';
 
+// Temporary / Permanent workarounds
+// Input validation error
+.swal2-input {
+  &.swal2-inputerror {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,' + '%3Csvg%20height%3D%2232%22%20style%3D%22overflow%3Avisible%3Benable-background%3Anew%200%200%2032%2032%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%3E%3Cg%20id%3D%22Error_1_%22%3E%3Cg%20id%3D%22Error%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20id%3D%22BG%22%20r%3D%2216%22%20style%3D%22fill%3A%23D72828%3B%22%2F%3E%3Cpath%20d%3D%22M14.5%2C25h3v-3h-3V25z%20M14.5%2C6v13h3V6H14.5z%22%20id%3D%22Exclamatory_x5F_Sign%22%20style%3D%22fill%3A%23E6E6E6%3B%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 3% top 50%;
+    background-size: 1em auto, 100%;
+  }
+}
+
+// Disabled (actions) buttons
 .swal2-styled {
   &[disabled] {
     color: $material-ui-disabled;
@@ -37,6 +49,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
   }
 }
 
+// Close button hover effect
 .swal2-close {
   &:hover {
     background-image: url('data:image/svg+xml;charset=US-ASCII,' + '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%20%3Ccircle%20fill%3D%22rgb%28242%2C242%2C242%29%22%20cx%3D%225%22%20cy%3D%225%22%20r%3D%225%22%2F%3E%3C%2Fsvg%3E');
@@ -46,6 +59,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
   }
 }
 
+// Select element arrow
 .swal2-select {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat, repeat;
