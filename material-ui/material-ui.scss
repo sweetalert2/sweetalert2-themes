@@ -67,3 +67,56 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
   background-size: .65em auto, 100%;
   appearance: none;
 }
+
+// Radio button
+.swal2-radio {
+  input {
+    &[type='radio'] {
+      opacity: 0; // hiding the radio input
+    }
+  }
+
+  label {
+    position: relative; // Create a new containing block
+  }
+}
+
+.swal2-label {
+  padding-left: .2em;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $material-ui-disabled;
+    border-radius: 100%;
+    content: '';
+  }
+}
+
+[type='radio'] {
+  &:hover + .swal2-label {
+    &::before {
+      border: 2px solid $material-ui-blue;
+    }
+  }
+
+  &:checked + .swal2-label {
+    &::before {
+      border: 2px solid $material-ui-blue;
+    }
+
+    &::after {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      background: $material-ui-blue;
+      content: '';
+    }
+  }
+}
