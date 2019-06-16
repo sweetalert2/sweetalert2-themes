@@ -11,6 +11,10 @@ $bootstrap-secondary: #6c757d !default;
 
 // override SASS variables here
 
+// BOX MODEL
+$swal2-padding: 1rem;
+$swal2-border-radius: .25rem;
+
 // ICONS
 $swal2-success: $bootstrap-success;
 $swal2-error: $bootstrap-danger;
@@ -18,4 +22,47 @@ $swal2-warning: $bootstrap-warning;
 $swal2-info: $bootstrap-info;
 $swal2-question: $bootstrap-secondary;
 
+// CONFIRM BUTTON
+$swal2-confirm-button-background-color: $bootstrap-primary;
+
+// CANCEL BUTTON
+$swal2-cancel-button-background-color: $bootstrap-secondary;
+
+// COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
+$swal2-button-focus-outline: none;
+
 @import '~sweetalert2/src/sweetalert2';
+
+.swal2-styled {
+  &.swal2-confirm {
+    padding: .375rem .75rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+
+    &:hover {
+      border-color: darken($bootstrap-primary, 10%);
+      background-color: darken($bootstrap-primary, 7.5%);
+    }
+
+    &:active {
+      border-color: darken($bootstrap-primary, 12.5%);
+      background-color: darken($bootstrap-primary, 10%);
+    }
+  }
+
+  &.swal2-cancel {
+    padding: .375rem .75rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+
+    &:hover {
+      border-color: darken($bootstrap-secondary, 10%);
+      background-color: darken($bootstrap-secondary, 7.5%);
+    }
+
+    &:active {
+      border-color: darken($bootstrap-secondary, 12.5%);
+      background-color: darken($bootstrap-secondary, 10%);
+    }
+  }
+}
