@@ -1,12 +1,20 @@
 @import '~sweetalert2/src/variables';
 
+// Theme Variables
+// Colors
+$bootstrap-success: #28a745 !default;
+$bootstrap-danger: #dc3545 !default;
+$bootstrap-warning: #ffc107 !default;
+$bootstrap-info: #17a2b8 !default;
+$bootstrap-secondary: #343a40 !default;
+
 // override SASS variables here
 
 // ICONS
-$swal2-success: #28a745;
-$swal2-error: #dc3545;
-$swal2-warning: #ffc107;
-$swal2-info: #17a2b8;
-$swal2-question: #343a40;
+$swal2-success: $bootstrap-success;
+$swal2-error: $bootstrap-danger;
+$swal2-warning: $bootstrap-warning;
+$swal2-info: $bootstrap-info;
+$swal2-question: $bootstrap-secondary;
 
 @import '~sweetalert2/src/sweetalert2';
