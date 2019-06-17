@@ -8,6 +8,7 @@ $bootstrap-danger: #dc3545 !default;
 $bootstrap-warning: #ffc107 !default;
 $bootstrap-info: #17a2b8 !default;
 $bootstrap-secondary: #6c757d !default;
+$bootstrap-gray-700: #495057 !default;
 
 $bootstrap-border-color: #dee2e6 !default;
 
@@ -27,6 +28,22 @@ $swal2-error: $bootstrap-danger;
 $swal2-warning: $bootstrap-warning;
 $swal2-info: $bootstrap-info;
 $swal2-question: $bootstrap-secondary;
+
+// INPUT
+$swal2-input-border: 1px solid $bootstrap-border-color;
+$swal2-input-border-radius: $swal2-border-radius;
+$swal2-input-border-focus: none;
+$swal2-input-box-shadow-focus: none;
+$swal2-input-font-size: 1rem;
+
+// CLOSE BUTTON
+$swal2-close-button-line-height: 1;
+$swal2-close-button-color: rgba($swal2-black, 0.5);
+$swal2-close-button-font-size: 1.5rem;
+
+// CLOSE BUTTON:HOVER
+$swal2-close-button-hover-color: $swal2-black;
+
 
 // CONFIRM BUTTON
 $swal2-confirm-button-background-color: $bootstrap-primary;
@@ -58,9 +75,42 @@ $swal2-button-focus-outline: none;
   padding: 1rem 1rem 0;
 }
 
+.swal2-actions {
+  padding: 0 0 1rem;
+  border-radius: .25rem;
+}
+
 .swal2-footer {
   padding: 1rem;
   border-top: 1px solid $bootstrap-border-color;
+}
+
+.swal2-close {
+  height: auto;
+  padding: 1rem 1.2rem 1rem 1rem;
+  font-weight: 700;
+}
+
+.swal2-input {
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  height: inherit;
+}
+
+.swal2-input,
+.swal2-file,
+.swal2-textarea {
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  &.swal2-inputerror {
+    box-shadow: 0 !important;
+  }
+
+  &:focus {
+    border: 1px solid lighten($bootstrap-primary, 25%);
+    color: $bootstrap-gray-700;
+    box-shadow: 0 0 0 .2rem rgba($bootstrap-primary, .25);
+  }
 }
 
 .swal2-styled {
