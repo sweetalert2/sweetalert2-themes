@@ -9,11 +9,17 @@ $bootstrap-warning: #ffc107 !default;
 $bootstrap-info: #17a2b8 !default;
 $bootstrap-secondary: #6c757d !default;
 
+$bootstrap-border-color: #dee2e6 !default;
+
 // override SASS variables here
 
 // BOX MODEL
 $swal2-padding: 1rem;
-$swal2-border-radius: .25rem;
+$swal2-border-radius: .3rem;
+
+// BACKDROP
+$swal2-backdrop: rgba($swal2-black, .5);
+$swal2-backdrop-transition: background-color .15s;
 
 // ICONS
 $swal2-success: $bootstrap-success;
@@ -32,6 +38,30 @@ $swal2-cancel-button-background-color: $bootstrap-secondary;
 $swal2-button-focus-outline: none;
 
 @import '~sweetalert2/src/sweetalert2';
+
+.swal2-popup {
+  padding: 0;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+.swal2-header {
+  padding: 1rem;
+  border-bottom: 1px solid $bootstrap-border-color;
+}
+
+.swal2-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.swal2-content {
+  padding: 1rem 1rem 0;
+}
+
+.swal2-footer {
+  padding: 1rem;
+  border-top: 1px solid $bootstrap-border-color;
+}
 
 .swal2-styled {
   &.swal2-confirm {
