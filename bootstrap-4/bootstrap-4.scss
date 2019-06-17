@@ -35,6 +35,7 @@ $swal2-input-border-radius: $swal2-border-radius;
 $swal2-input-border-focus: none;
 $swal2-input-box-shadow-focus: none;
 $swal2-input-font-size: 1rem;
+$swal2-input-padding: .375rem .75rem;
 
 // CLOSE BUTTON
 $swal2-close-button-line-height: 1;
@@ -91,9 +92,10 @@ $swal2-button-focus-outline: none;
   font-weight: 700;
 }
 
-.swal2-input {
+.swal2-input,
+.swal2-textarea {
   line-height: 1.5;
-  padding: .375rem .75rem;
+  padding: $swal2-input-padding;
   height: inherit;
 }
 
@@ -115,7 +117,7 @@ $swal2-button-focus-outline: none;
 
 .swal2-styled {
   &.swal2-confirm {
-    padding: .375rem .75rem;
+    padding: $swal2-input-padding;
     border: 1px solid transparent;
     font-size: 1rem;
 
@@ -131,7 +133,7 @@ $swal2-button-focus-outline: none;
   }
 
   &.swal2-cancel {
-    padding: .375rem .75rem;
+    padding: $swal2-input-padding;
     border: 1px solid transparent;
     font-size: 1rem;
 
