@@ -79,22 +79,24 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
   label {
     position: relative; // Create a new containing block
   }
-}
 
-.swal2-label {
-  padding-left: .2em;
+  .swal2-label {
+    padding-left: .2em;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    border: 2px solid $material-ui-disabled;
-    border-radius: 100%;
-    content: '';
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $material-ui-disabled;
+      border-radius: 100%;
+      content: '';
+    }
   }
 }
+
+
 
 [type='radio'] {
   &:hover + .swal2-label {
