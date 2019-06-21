@@ -34,7 +34,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 // Input validation error
 .swal2-input {
   &.swal2-inputerror {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,' + '%3Csvg%20height%3D%2232%22%20style%3D%22overflow%3Avisible%3Benable-background%3Anew%200%200%2032%2032%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%3E%3Cg%20id%3D%22Error_1_%22%3E%3Cg%20id%3D%22Error%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20id%3D%22BG%22%20r%3D%2216%22%20style%3D%22fill%3A%23D72828%3B%22%2F%3E%3Cpath%20d%3D%22M14.5%2C25h3v-3h-3V25z%20M14.5%2C6v13h3V6H14.5z%22%20id%3D%22Exclamatory_x5F_Sign%22%20style%3D%22fill%3A%23E6E6E6%3B%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-image: url('data:image/svg+xml;charset=US-ASCII,'+ '%3Csvg%20height%3D%2232%22%20style%3D%22overflow%3Avisible%3Benable-background%3Anew%200%200%2032%2032%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%3E%3Cg%20id%3D%22Error_1_%22%3E%3Cg%20id%3D%22Error%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20id%3D%22BG%22%20r%3D%2216%22%20style%3D%22fill%3A%23D72828%3B%22%2F%3E%3Cpath%20d%3D%22M14.5%2C25h3v-3h-3V25z%20M14.5%2C6v13h3V6H14.5z%22%20id%3D%22Exclamatory_x5F_Sign%22%20style%3D%22fill%3A%23E6E6E6%3B%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: right 3% top 50%;
     background-size: 1em auto, 100%;
@@ -52,7 +52,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 // Close button hover effect
 .swal2-close {
   &:hover {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,' + '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%20%3Ccircle%20fill%3D%22rgb%28242%2C242%2C242%29%22%20cx%3D%225%22%20cy%3D%225%22%20r%3D%225%22%2F%3E%3C%2Fsvg%3E');
+    background-image: url('data:image/svg+xml;charset=US-ASCII,'+ '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%20%3Ccircle%20fill%3D%22rgb%28242%2C242%2C242%29%22%20cx%3D%225%22%20cy%3D%225%22%20r%3D%225%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: left 50% top 115%;
     background-size: 1.1em auto, 100%;
@@ -97,13 +97,13 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 }
 
 [type='radio'] {
-  &:hover + .swal2-label {
+  &:hover+.swal2-label {
     &::before {
       border: 2px solid $material-ui-blue;
     }
   }
 
-  &:checked + .swal2-label {
+  &:checked+.swal2-label {
     &::before {
       border: 2px solid $material-ui-blue;
     }
@@ -117,6 +117,127 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
       border-radius: 100%;
       background: $material-ui-blue;
       content: '';
+    }
+  }
+}
+
+// Checkbox 
+.swal2-checkbox {
+  z-index: 0;
+  position: relative;
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+  > {
+    input {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      z-index: -1;
+      position: absolute;
+      left: -10px;
+      top: -8px;
+      display: block;
+      margin: 0;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+      box-shadow: none;
+      outline: none;
+      opacity: 0;
+      transform: scale(1);
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.2s;
+    }
+    span {
+      display: contents;
+      width: 100%;
+      cursor: pointer;
+      &::before {
+        content: "";
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 3px 11px 3px 1px;
+        border: solid 2px;
+        /* Safari */
+        border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+        border-radius: 2px;
+        width: 18px;
+        height: 18px;
+        vertical-align: top;
+        transition: border-color 0.2s, background-color 0.2s;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 1px;
+        width: 10px;
+        height: 5px;
+        border: solid 2px transparent;
+        border-right: none;
+        border-top: none;
+        transform: translate(3px, 4px) rotate(-45deg);
+      }
+    }
+    input {
+      &:checked, &:indeterminate {
+        background-color: $material-ui-blue;
+      }
+      &:checked + span::before, &:indeterminate + span::before {
+        border-color: $material-ui-blue;
+      }
+      &:checked + span::after {
+        border-color: $material-ui-blue;
+      }
+      &:indeterminate + span::after {
+        border-color: $material-ui-blue;
+        border-left: none;
+        transform: translate(4px, 3px);
+      }
+    }
+  }
+  &:hover {
+    > input {
+      opacity: 0.04;
+    }
+    > input:focus {
+      opacity: 0.16;
+    }
+  }
+  > input:focus {
+    opacity: 0.12;
+  }
+  > input {
+    &:active {
+      opacity: 1;
+      transform: scale(0);
+      transition: transform 0s, opacity 0s;
+      + span::before {
+        border-color: $material-ui-blue;
+      }
+    }
+    &:checked:active + span::before {
+      border-color: transparent;
+      background-color: $material-ui-blue;
+    }
+    &:disabled {
+      opacity: 0;
+      + span {
+        color: $material-ui-blue;
+        cursor: initial;
+        &::before {
+          border-color: currentColor;
+        }
+      }
+    }
+    &:checked:disabled + span::before, &:indeterminate:disabled + span::before {
+      border-color: transparent;
+      background-color: currentColor;
     }
   }
 }
