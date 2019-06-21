@@ -7,7 +7,7 @@ const sass = require('gulp-sass')
 const tildeImporter = require('node-sass-tilde-importer')
 const rename = require('gulp-rename')
 const autoprefix = require('gulp-autoprefixer')
-const sassLint = require('gulp-sass-lint')
+const stylelint = require('gulp-stylelint')
 const browserSync = require('browser-sync').create()
 const packageJson = require('./package.json')
 const version = process.env.VERSION || packageJson.version
@@ -30,8 +30,11 @@ const cssFiles = themes.map(theme => `${theme}/${theme}.css`)
 
 gulp.task('lint', () => {
   return gulp.src(scssFiles)
-    .pipe(sassLint())
-    .pipe(sassLint.format())
+    .pipe(stylelint({
+      reporters: [
+        { formatter: 'string', console: true }
+      ]
+    }))
 })
 
 gulp.task('sass', gulp.series('lint', function compile () {
