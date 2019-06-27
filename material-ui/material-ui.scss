@@ -151,20 +151,54 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
       background-color: $material-ui-blue;
     }
 
-    &:checked + span::before,
-    &:indeterminate + span::before {
-      border-color: $material-ui-blue;
-      background-color: $material-ui-blue;
+    &:checked + span {
+      &::before {
+        border-color: $material-ui-blue;
+        background-color: $material-ui-blue;
+      }
+
+      &::after {
+        border-color: $white;
+      }
     }
 
-    &:checked + span::after {
-      border-color: $white;
+    &:indeterminate + span {
+      &::before {
+        border-color: $material-ui-blue;
+        background-color: $material-ui-blue;
+      }
+
+      &::after {
+        transform: translate(4px, 3px);
+        border-left: 0;
+        border-color: $material-ui-blue;
+      }
     }
 
-    &:indeterminate + span::after {
-      transform: translate(4px, 3px);
-      border-left: 0;
-      border-color: $material-ui-blue;
+    &:active {
+      transform: scale(0);
+      transition: transform 0s, opacity 0s;
+      opacity: 1;
+
+      + span {
+        &::before {
+          border-color: $material-ui-blue;
+        }
+      }
+    }
+
+    &:checked {
+      &:active
+      + span {
+        &::before {
+          border-color: transparent;
+          background-color: $material-ui-blue;
+        }
+      }
+    }
+
+    &:focus {
+      opacity: .12;
     }
   }
 
@@ -205,31 +239,10 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
   &:hover {
     > input {
       opacity: .04;
-    }
 
-    > input:focus {
-      opacity: .16;
-    }
-  }
-
-  > input:focus {
-    opacity: .12;
-  }
-
-  > input {
-    &:active {
-      transform: scale(0);
-      transition: transform 0s, opacity 0s;
-      opacity: 1;
-
-      + span::before {
-        border-color: $material-ui-blue;
+      &:focus {
+        opacity: .16;
       }
-    }
-
-    &:checked:active + span::before {
-      border-color: transparent;
-      background-color: $material-ui-blue;
     }
   }
 }
