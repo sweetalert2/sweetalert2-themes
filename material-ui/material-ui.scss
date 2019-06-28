@@ -3,12 +3,14 @@
 // Theme variables
 $material-ui-blue: #2196f3;
 $material-ui-disabled: #808080;
+$material-ui-slider-track-height: 2px;
+$material-ui-slider-thumb-size: 16px;
 
 // override SASS variables here
 // CONFIRM BUTTON
 $swal2-confirm-button-border: 0;
 $swal2-confirm-button-border-radius: 0;
-$swal2-confirm-button-background-color: rgba(255, 255, 255, 0);
+$swal2-confirm-button-background-color: rgba(43, 21, 21, 0);
 $swal2-confirm-button-color: $material-ui-blue;
 
 // CANCEL BUTTON
@@ -27,6 +29,9 @@ $swal2-actions-justify-content: flex-end;
 // CLOSE BUTTON
 $swal2-close-button-border-radius: 50%;
 $swal2-close-button-hover-color: $swal2-close-button-color;
+
+// SLIDER
+
 
 @import '~sweetalert2/src/sweetalert2';
 
@@ -120,5 +125,60 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
       background: $material-ui-blue;
       content: '';
     }
+  }
+}
+
+// Mixin for range / slider styling
+@mixin slider-track {
+  height: $material-ui-slider-track-height;
+  background: lighten($material-ui-blue, 30%);
+}
+
+@mixin slider-thumb {
+  width: $material-ui-slider-thumb-size;
+  height: $material-ui-slider-thumb-size;
+  margin-top: - 1 * ($material-ui-slider-thumb-size / 2) + 1;
+  border: 0;
+  border-radius: 50%;
+  background: $material-ui-blue;
+  appearance: none;
+}
+
+[type='range'] {
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  // Chrome does not support browser's pseudo elements comma-separated
+  // We need to write all styles for each browser engine
+  &::-webkit-slider-runnable-track {
+    @include slider-track;
+  }
+
+  &::-moz-range-track {
+    @include slider-track;
+  }
+
+  &::-ms-track {
+    @include slider-track;
+  }
+
+  &::-webkit-slider-thumb {
+    @include slider-thumb;
+  }
+
+  &::-moz-range-thumb {
+    @include slider-thumb;
+  }
+
+  &::-ms-thumb {
+    @include slider-thumb;
+  }
+
+  // There's no equivalent pseudo element for webkit
+  &::-moz-range-progress {
+    background: $material-ui-blue;
   }
 }
