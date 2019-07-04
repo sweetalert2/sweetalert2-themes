@@ -140,12 +140,11 @@
     execa "^1.0.0"
 
 "@sweetalert2/stylelint-config@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sweetalert2/stylelint-config/-/stylelint-config-1.0.1.tgz#c6342523e101f7d61552bc47207254a59a29d096"
-  integrity sha512-o5FG9ChqTfGMO2tGH0RUYwOUJyJy1gmVkQ5D3GZPVjoiAVJzUY+G2Bpz/Pz5xA5P/2nCUalNMEPSpN6sw7oMyg==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@sweetalert2/stylelint-config/-/stylelint-config-1.0.3.tgz#922e99a475004ed07d3e5c2e3860a7cfddbb4050"
+  integrity sha512-MhM36GTQNdliRNr0XDdFd3TcvakBucDd9f81nlpuY/YQ8WJcesKRyzFsUJ4W91xFzq0wWpq81T5d3ZLLkyo7Jg==
   dependencies:
     stylelint-config-standard "^18.3.0"
-    stylelint-csstree-validator "^1.3.0"
     stylelint-order "^3.0.0"
     stylelint-scss "^3.9.0"
 
@@ -1128,14 +1127,6 @@ cross-spawn@^6.0.0:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
-
-css-tree@1.0.0-alpha.29:
-  version "1.0.0-alpha.29"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.29.tgz#3fa9d4ef3142cbd1c301e7664c1f352bd82f5a39"
-  integrity sha512-sRNb1XydwkW9IOci6iB2xmy8IGCj6r/fr+JWitvJ2JxQRPzN3T4AGGVWCMlVmVwM1gtgALJRmGIlWv5ppnGGkg==
-  dependencies:
-    mdn-data "~1.1.0"
-    source-map "^0.5.3"
 
 cssesc@^3.0.0:
   version "3.0.0"
@@ -3100,11 +3091,6 @@ mdast-util-compact@^1.0.0:
   dependencies:
     unist-util-visit "^1.1.0"
 
-mdn-data@~1.1.0:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
-  integrity sha512-FSYbp3lyKjyj3E7fMl6rYvUdX0FBXaluGqlFoYESWQlyUTq8R+wp0rkFxoYFqZlHCvsUXGjyJmLQSnXToYhOSA==
-
 mem@^4.0.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-4.3.0.tgz#461af497bc4ae09608cdb2e60eefb69bff744178"
@@ -4731,7 +4717,7 @@ source-map@^0.4.2:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6:
+source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -4997,13 +4983,6 @@ stylelint-config-standard@^18.3.0:
   integrity sha512-Tdc/TFeddjjy64LvjPau9SsfVRexmTFqUhnMBrzz07J4p2dVQtmpncRF/o8yZn8ugA3Ut43E6o1GtjX80TFytw==
   dependencies:
     stylelint-config-recommended "^2.2.0"
-
-stylelint-csstree-validator@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-csstree-validator/-/stylelint-csstree-validator-1.3.0.tgz#58293c688a50a02c122897202d60bcb37fae6ff1"
-  integrity sha512-NZ47iv3+8B7P5JFtrjmvKRztLm/LuVlFDIqZuF1bV4YWzixnUC2jqmSPIEQlI1ssWXx2CtStsQjZNRsg5Y9rmg==
-  dependencies:
-    css-tree "1.0.0-alpha.29"
 
 stylelint-order@^3.0.0:
   version "3.0.0"
