@@ -139,13 +139,14 @@
   dependencies:
     execa "^1.0.0"
 
-"@sweetalert2/stylelint-config@^1.0.1":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@sweetalert2/stylelint-config/-/stylelint-config-1.0.3.tgz#922e99a475004ed07d3e5c2e3860a7cfddbb4050"
-  integrity sha512-MhM36GTQNdliRNr0XDdFd3TcvakBucDd9f81nlpuY/YQ8WJcesKRyzFsUJ4W91xFzq0wWpq81T5d3ZLLkyo7Jg==
+"@sweetalert2/stylelint-config@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@sweetalert2/stylelint-config/-/stylelint-config-1.1.2.tgz#5633b7d07040899bcc6d2901bcfa123c9bdd99f1"
+  integrity sha512-/RUEp69sPg7Ty10TFwwTGVTgfbJrVlHZu8yVujembfMFk+P5vmTWKo5LBjvDvSoXzDKJbkG/6DWOBqzMj07SRQ==
   dependencies:
+    stylelint-config-property-sort-order-smacss "^5.0.0"
     stylelint-config-standard "^18.3.0"
-    stylelint-order "^3.0.0"
+    stylelint-csstree-validator "^1.4.1"
     stylelint-scss "^3.9.0"
 
 "@types/events@*":
@@ -1127,6 +1128,19 @@ cross-spawn@^6.0.0:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
+
+css-property-sort-order-smacss@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/css-property-sort-order-smacss/-/css-property-sort-order-smacss-2.1.3.tgz#b9cf1753b3612ee7d18fe99224f483353ea38e53"
+  integrity sha512-tMGlBxcfQq5VYmMFp4tGqxkNeXDBmlGbyuuz1FFGRvCUj9CvocShe23d4kFyfxW6JMlhlBVfnZRa8AO8kgceJA==
+
+css-tree@1.0.0-alpha.30:
+  version "1.0.0-alpha.30"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.30.tgz#84a4c687cc2536a60e470d41cc9b999bceebb6ed"
+  integrity sha512-/yR+59CTMG5yJ3yG/sLgwiz8kBqNZzkyp6T7qyg3DPTD2IJ7/bs8BRDOQfRTjvXpP2cPB8Z7AY/31597iMY4+Q==
+  dependencies:
+    mdn-data "~2.0.3"
+    source-map "^0.5.3"
 
 cssesc@^3.0.0:
   version "3.0.0"
@@ -3091,6 +3105,11 @@ mdast-util-compact@^1.0.0:
   dependencies:
     unist-util-visit "^1.1.0"
 
+mdn-data@~2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.3.tgz#a70100a453697827fa3ecc33cd23c8e63490a550"
+  integrity sha512-DCfx3pMW1vNlxApB8XrHAFvhUcvVAdmu3BU9r4tF6eWwv9Eg+gvQpdr2EGaEWsrPlk+jZSkEKxfdezo6d2pWYg==
+
 mem@^4.0.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-4.3.0.tgz#461af497bc4ae09608cdb2e60eefb69bff744178"
@@ -4717,7 +4736,7 @@ source-map@^0.4.2:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.6:
+source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -4972,6 +4991,14 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
+stylelint-config-property-sort-order-smacss@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-property-sort-order-smacss/-/stylelint-config-property-sort-order-smacss-5.0.0.tgz#322cea6273ea82560baa2c6e144fd11d42a0202e"
+  integrity sha512-m6j/RrBtskYJRb8tsRNpkXBl+Ytff2V9E/Vcffr0Bw861bDrITUbYXKeEMIbO1QM8Nw8c8wLO8wUI2BB++ityA==
+  dependencies:
+    css-property-sort-order-smacss "^2.1.3"
+    stylelint-order "^3.0.0"
+
 stylelint-config-recommended@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.2.0.tgz#46ab139db4a0e7151fd5f94af155512886c96d3f"
@@ -4983,6 +5010,13 @@ stylelint-config-standard@^18.3.0:
   integrity sha512-Tdc/TFeddjjy64LvjPau9SsfVRexmTFqUhnMBrzz07J4p2dVQtmpncRF/o8yZn8ugA3Ut43E6o1GtjX80TFytw==
   dependencies:
     stylelint-config-recommended "^2.2.0"
+
+stylelint-csstree-validator@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/stylelint-csstree-validator/-/stylelint-csstree-validator-1.4.1.tgz#263ce772039d621ce2a2a2dd4e1c28a7c3f42648"
+  integrity sha512-c6ChYcoxmBOub/jzv3bCAyEP3p8ymez7af3xn93fv5H2BP5uVZ3tcNS++dVn4nQEZOssRXwcu8iHFy31gEQXNw==
+  dependencies:
+    css-tree "1.0.0-alpha.30"
 
 stylelint-order@^3.0.0:
   version "3.0.0"
