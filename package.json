@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@sweetalert2/execute": "^1.0.0",
-    "@sweetalert2/stylelint-config": "^1.1.2",
+    "@sweetalert2/stylelint-config": "^1.1.5",
     "browser-sync": "^2.23.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
