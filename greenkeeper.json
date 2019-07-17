@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "borderless/package.json",
+        "dark/package.json",
+        "default/package.json",
+        "minimal/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
