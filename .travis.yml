@@ -7,6 +7,7 @@ sudo: true
 branches:
   only:
    - master
+   - /^greenkeeper/.*$/
 
 install:
   - yarn install
