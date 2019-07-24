@@ -50,6 +50,26 @@ $bootstrap-input-disabled-bg: $bootstrap-gray-200 !default;
 $bootstrap-input-focus-border: 1px solid lighten($bootstrap-primary, 25%);
 $bootstrap-input-focus-box-shadow: 0 0 0 .2rem rgba($bootstrap-primary, .25);
 
+// Custom Shared Variables
+$bootstrap-custom-control-gutter: .5rem !default;
+$bootstrap-custom-control-indicator-size: 1rem !default;
+$bootstrap-custom-control-indicator-bg: $swal2-white !default;
+$bootstrap-custom-control-indicator-bg-size: 50% 50% !default;
+$bootstrap-custom-control-indicator-border-color: $bootstrap-gray-500 !default;
+$bootstrap-custom-control-indicator-border-width: $bootstrap-input-border-width !default;
+$bootstrap-custom-control-indicator-checked-color: $swal2-white !default;
+$bootstrap-custom-control-indicator-checked-bg: $bootstrap-primary !default;
+$bootstrap-custom-control-indicator-checked-disabled-bg: rgba($bootstrap-primary, .5) !default;
+$bootstrap-custom-control-indicator-checked-border-color: $bootstrap-custom-control-indicator-checked-bg !default;
+
+$bootstrap-custom-control-indicator-active-color: $swal2-white !default;
+$bootstrap-custom-control-indicator-active-bg: lighten($bootstrap-primary, 35%) !default;
+$bootstrap-custom-control-indicator-active-box-shadow: none !default;
+$bootstrap-custom-control-indicator-active-border-color: $bootstrap-custom-control-indicator-active-bg !default;
+
+$bootstrap-custom-control-indicator-focus-box-shadow: $bootstrap-input-focus-box-shadow !default;
+$bootstrap-custom-control-indicator-focus-border-color: lighten($bootstrap-primary, 25%) !default;
+
 
 // Custom Select
 $bootstrap-custom-select-bg-size: 8px 10px !default;
@@ -57,6 +77,9 @@ $bootstrap-custom-select-indicator-color: $bootstrap-gray-800 !default;
 $bootstrap-custom-select-indicator: str-replace(url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3e%3cpath fill="#{$bootstrap-custom-select-indicator-color}" d="M2 0L0 2h4zm0 5L0 3h4z"/%3e%3c/svg%3e'), '#', '%23') !default;
 $bootstrap-custom-select-background: $bootstrap-custom-select-indicator no-repeat right $bootstrap-input-padding-x center / $bootstrap-custom-select-bg-size !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
+// Custom Radio
+$bootstrap-custom-radio-indicator-border-radius: 50% !default;
+$bootstrap-custom-radio-indicator-icon-checked: str-replace(url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 8 8"%3e%3ccircle r="3" fill="#{$bootstrap-custom-control-indicator-checked-color}"/%3e%3c/svg%3e'), '#', '%23') !default;
 
 // override SASS variables here
 
@@ -266,3 +289,80 @@ $swal2-button-focus-outline: none;
     display: none;
   }
 }
+
+.swal2-radio {
+  label {
+    position: relative;
+    margin-right: 1rem;
+    padding-left: 1.5rem;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+
+      &:checked ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-checked-border-color;
+        background: $bootstrap-custom-control-indicator-checked-bg;
+        color: $bootstrap-custom-control-indicator-checked-color;
+      }
+
+      &:focus ~ .swal2-label::before {
+        box-shadow: $bootstrap-custom-control-indicator-focus-box-shadow;
+      }
+
+      &:focus:not(:checked) ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-focus-border-color;
+      }
+
+      &:not(:disabled):active ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-active-border-color;
+        background-color: $bootstrap-custom-control-indicator-active-bg;
+        color: $bootstrap-custom-control-indicator-active-color;
+      }
+    }
+
+
+    input:checked ~ .swal2-label::after {
+      background-image: $bootstrap-custom-radio-indicator-icon-checked;
+    }
+
+    input:disabled:checked ~ .swal2-label::before {
+      background-color: $bootstrap-custom-control-indicator-checked-disabled-bg;
+    }
+  }
+
+  .swal2-label {
+    &::before {
+      display: block;
+      position: absolute;
+      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
+      // left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      left: 0;
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      margin-top: -.15rem;
+      border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
+      border-radius: $bootstrap-custom-radio-indicator-border-radius;
+      background-color: $bootstrap-custom-control-indicator-bg;
+      content: '';
+      pointer-events: none;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
+      // left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      left: 0;
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      margin-top: -.1rem;
+      margin-left: .05rem;
+      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
+      content: '';
+    }
+  }
+}
+
+//
