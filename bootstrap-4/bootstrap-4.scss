@@ -278,7 +278,7 @@ $swal2-button-focus-outline: none;
 
   &:disabled {
     background-color: $bootstrap-input-disabled-bg;
-    color: $bootstrap-input-disabled-color
+    color: $bootstrap-input-disabled-color;
   }
 
   &::-ms-expand {
@@ -329,6 +329,7 @@ $swal2-button-focus-outline: none;
 
   .swal2-label {
     &::before {
+      content: '';
       display: block;
       position: absolute;
       top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
@@ -339,12 +340,12 @@ $swal2-button-focus-outline: none;
       margin-top: -.15rem;
       border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
       border-radius: $bootstrap-custom-radio-indicator-border-radius;
-      content: '';
       background-color: $bootstrap-custom-control-indicator-bg;
       pointer-events: none;
     }
 
     &::after {
+      content: '';
       display: block;
       position: absolute;
       top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
@@ -354,7 +355,6 @@ $swal2-button-focus-outline: none;
       height: $bootstrap-custom-control-indicator-size;
       margin-top: -.1rem;
       margin-left: .05rem;
-      content: '';
       background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
     }
   }
