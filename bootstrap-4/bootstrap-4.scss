@@ -30,14 +30,12 @@ $bootstrap-gray-700: #495057 !default;
 $bootstrap-gray-800: #343a40 !default;
 $bootstrap-gray-900: #212529 !default;
 
-
 // Input
 $bootstrap-input-color: $bootstrap-gray-700 !default;
 $bootstrap-input-bg: $swal2-white !default;
 $bootstrap-input-border-color: $bootstrap-gray-300 !default;
 $bootstrap-input-border-radius: .25rem !default;
 $bootstrap-input-border-width: 1px !default;
-$bootstrap-input-border-color: 1px !default;
 $bootstrap-input-padding-y: .375rem !default;
 $bootstrap-input-padding-x: .75rem !default;
 $bootstrap-input-line-height: 1.5 !default;
@@ -69,7 +67,6 @@ $bootstrap-custom-control-indicator-active-border-color: $bootstrap-custom-contr
 
 $bootstrap-custom-control-indicator-focus-box-shadow: $bootstrap-input-focus-box-shadow !default;
 $bootstrap-custom-control-indicator-focus-border-color: lighten($bootstrap-primary, 25%) !default;
-
 
 // Custom Select
 $bootstrap-custom-select-bg-size: 8px 10px !default;
@@ -113,7 +110,6 @@ $swal2-close-button-font-size: 1.5rem;
 
 // CLOSE BUTTON:HOVER
 $swal2-close-button-hover-color: $swal2-black;
-
 
 // CONFIRM BUTTON
 $swal2-confirm-button-background-color: $bootstrap-primary;
@@ -203,14 +199,14 @@ $swal2-button-focus-outline: none;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   &.swal2-inputerror {
-    box-shadow: 0 !important;
+    box-shadow: none !important;
   }
 
   &:focus {
     border: $bootstrap-input-focus-border;
     outline: 0;
-    color: $bootstrap-input-color;
     box-shadow: $bootstrap-input-focus-box-shadow;
+    color: $bootstrap-input-color;
   }
 }
 
@@ -252,7 +248,7 @@ $swal2-button-focus-outline: none;
   display: inline-block;
   width: 100%;
   height: $bootstrap-input-height;
-  padding: .375rem (.75rem + 1rem) .375rem .75rem;
+  padding: .375rem 1.75rem .375rem .75rem;
   border: $bootstrap-input-border-width solid $bootstrap-input-border-color;
   border-radius: $bootstrap-input-border-radius;
   background: $bootstrap-custom-select-background;
@@ -298,8 +294,8 @@ $swal2-button-focus-outline: none;
 
     input {
       position: absolute;
-      opacity: 0;
       z-index: -1;
+      opacity: 0;
 
       &:checked ~ .swal2-label::before {
         border-color: $bootstrap-custom-control-indicator-checked-border-color;
@@ -322,7 +318,6 @@ $swal2-button-focus-outline: none;
       }
     }
 
-
     input:checked ~ .swal2-label::after {
       background-image: $bootstrap-custom-radio-indicator-icon-checked;
     }
@@ -344,8 +339,8 @@ $swal2-button-focus-outline: none;
       margin-top: -.15rem;
       border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
       border-radius: $bootstrap-custom-radio-indicator-border-radius;
-      background-color: $bootstrap-custom-control-indicator-bg;
       content: '';
+      background-color: $bootstrap-custom-control-indicator-bg;
       pointer-events: none;
     }
 
@@ -359,8 +354,8 @@ $swal2-button-focus-outline: none;
       height: $bootstrap-custom-control-indicator-size;
       margin-top: -.1rem;
       margin-left: .05rem;
-      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
       content: '';
+      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
     }
   }
 }
