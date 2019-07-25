@@ -3,13 +3,15 @@
 // Theme variables
 $material-ui-blue: #2196f3;
 $material-ui-disabled: #808080;
-$white: #fff;
+$material-ui-white: #fff;
+$material-ui-slider-track-height: 2px;
+$material-ui-slider-thumb-size: 16px;
 
 // override SASS variables here
 // CONFIRM BUTTON
 $swal2-confirm-button-border: 0;
 $swal2-confirm-button-border-radius: 0;
-$swal2-confirm-button-background-color: rgba(255, 255, 255, 0);
+$swal2-confirm-button-background-color: rgba(43, 21, 21, 0);
 $swal2-confirm-button-color: $material-ui-blue;
 
 // CANCEL BUTTON
@@ -32,6 +34,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 // CHECKBOX
 $checkbox-size-px: 18;
 $checkbox-left-px: -2;
+
 
 @import '~sweetalert2/src/sweetalert2';
 
@@ -84,22 +87,24 @@ $checkbox-left-px: -2;
   label {
     position: relative; // Create a new containing block
   }
-}
 
-.swal2-label {
-  padding-left: .2em;
+  .swal2-label {
+    padding-left: .2em;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    border: 2px solid $material-ui-disabled;
-    border-radius: 100%;
-    content: '';
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $material-ui-disabled;
+      border-radius: 100%;
+      content: '';
+    }
   }
 }
+
+
 
 [type='radio'] {
   &:hover + .swal2-label {
@@ -156,7 +161,7 @@ $checkbox-left-px: -2;
       }
 
       &::after {
-        border-color: $white;
+        border-color: $material-ui-white;
       }
     }
 
@@ -238,5 +243,58 @@ $checkbox-left-px: -2;
         opacity: .16;
       }
     }
+
+// Mixin for range / slider styling
+@mixin slider-track {
+  height: $material-ui-slider-track-height;
+  background: lighten($material-ui-blue, 30%);
+}
+
+@mixin slider-thumb {
+  width: $material-ui-slider-thumb-size;
+  height: $material-ui-slider-thumb-size;
+  margin-top: - 1 * ($material-ui-slider-thumb-size / 2) + 1;
+  border: 0;
+  border-radius: 50%;
+  background: $material-ui-blue;
+  appearance: none;
+}
+
+[type='range'] {
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  // Chrome does not support browser's pseudo elements comma-separated
+  // We need to write all styles for each browser engine
+  &::-webkit-slider-runnable-track {
+    @include slider-track;
+  }
+
+  &::-moz-range-track {
+    @include slider-track;
+  }
+
+  &::-ms-track {
+    @include slider-track;
+  }
+
+  &::-webkit-slider-thumb {
+    @include slider-thumb;
+  }
+
+  &::-moz-range-thumb {
+    @include slider-thumb;
+  }
+
+  &::-ms-thumb {
+    @include slider-thumb;
+  }
+
+  // There's no equivalent pseudo element for webkit
+  &::-moz-range-progress {
+    background: $material-ui-blue;
   }
 }
