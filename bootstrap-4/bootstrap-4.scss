@@ -195,13 +195,8 @@ $swal2-button-focus-outline: none;
 .swal2-textarea {
   height: inherit;
   padding: $swal2-input-padding;
+  transition: $bootstrap-custom-forms-transition;
   line-height: $bootstrap-input-line-height;
-}
-
-.swal2-input,
-.swal2-file,
-.swal2-textarea {
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   &.swal2-inputerror {
     box-shadow: none !important;
@@ -254,6 +249,7 @@ $swal2-button-focus-outline: none;
   width: 100%;
   height: $bootstrap-input-height;
   padding: .375rem 1.75rem .375rem .75rem;
+  transition: $bootstrap-custom-forms-transition;
   border: $bootstrap-input-border-width solid $bootstrap-input-border-color;
   border-radius: $bootstrap-input-border-radius;
   background: $bootstrap-custom-select-background;
