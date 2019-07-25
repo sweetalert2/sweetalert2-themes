@@ -104,8 +104,6 @@ $checkbox-left-px: -2;
   }
 }
 
-
-
 [type='radio'] {
   &:hover + .swal2-label {
     &::before {
@@ -243,6 +241,9 @@ $checkbox-left-px: -2;
         opacity: .16;
       }
     }
+  }
+}
+
 
 // Mixin for range / slider styling
 @mixin slider-track {
