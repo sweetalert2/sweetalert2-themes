@@ -35,7 +35,6 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 $checkbox-size-px: 18;
 $checkbox-left-px: -2;
 
-
 @import '~sweetalert2/src/sweetalert2';
 
 // Temporary / Permanent workarounds
@@ -136,8 +135,6 @@ $checkbox-left-px: -2;
     left: 30px;
     width: 40px;
     height: 40px;
-    margin: 0;
-    padding: 20px;
     transition: opacity .3s, transform .2s;
     border-radius: 50%;
     outline: none;
