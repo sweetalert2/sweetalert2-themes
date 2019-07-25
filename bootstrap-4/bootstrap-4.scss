@@ -45,6 +45,7 @@ $bootstrap-input-height: calc(#{$bootstrap-input-line-height * 1em} + #{$bootstr
 $bootstrap-input-disabled-color: $swal2-white !default;
 $bootstrap-input-disabled-bg: $bootstrap-gray-200 !default;
 
+$bootstrap-input-focus-width: .2rem !default;
 $bootstrap-input-focus-border: 1px solid lighten($bootstrap-primary, 25%) !default;
 $bootstrap-input-focus-box-shadow: 0 0 0 .2rem rgba($bootstrap-primary, .25) !default;
 
@@ -82,6 +83,25 @@ $bootstrap-custom-radio-indicator-icon-checked: str-replace(url('data:image/svg+
 
 // Custom Checkbox
 $bootstrap-custom-checkbox-indicator-icon-checked: str-replace(url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3e%3cpath fill="#{$bootstrap-custom-control-indicator-checked-color}" d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z"/%3e%3c/svg%3e'), '#', '%23') !default;
+
+// Custom Range
+$bootstrap-custom-range-track-width: 100% !default;
+$bootstrap-custom-range-track-height: .5rem !default;
+$bootstrap-custom-range-track-cursor: pointer !default;
+$bootstrap-custom-range-track-bg: $bootstrap-gray-300 !default;
+$bootstrap-custom-range-track-border-radius: 1rem !default;
+$bootstrap-custom-range-track-box-shadow: inset 0 .25rem .25rem rgba($swal2-black, .1) !default;
+
+$bootstrap-custom-range-thumb-width: 1rem !default;
+$bootstrap-custom-range-thumb-height: $bootstrap-custom-range-thumb-width !default;
+$bootstrap-custom-range-thumb-bg: $bootstrap-primary !default;
+$bootstrap-custom-range-thumb-border: 0 !default;
+$bootstrap-custom-range-thumb-border-radius: 1rem !default;
+$bootstrap-custom-range-thumb-box-shadow: 0 .1rem .25rem rgba($swal2-black, .1) !default;
+$bootstrap-custom-range-thumb-focus-box-shadow: 0 0 0 1px $swal2-white, $bootstrap-input-focus-box-shadow !default;
+$bootstrap-custom-range-thumb-focus-box-shadow-width: $bootstrap-input-focus-width !default; // For focus box shadow issue in IE/Edge
+$bootstrap-custom-range-thumb-active-bg: lighten($bootstrap-primary, 35%) !default;
+$bootstrap-custom-range-thumb-disabled-bg: $bootstrap-gray-500 !default;
 
 // override SASS variables here
 
@@ -424,6 +444,150 @@ $swal2-button-focus-outline: none;
       transition: $bootstrap-custom-forms-transition;
       border: transparent solid $bootstrap-custom-control-indicator-border-width;
       background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
+    }
+  }
+}
+
+.swal2-range input {
+  width: 100%;
+  height: calc(#{$bootstrap-custom-range-thumb-height} + #{$bootstrap-custom-range-thumb-focus-box-shadow-width * 3});
+  padding: 0;
+  background-color: transparent;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+    }
+
+    &::-moz-range-thumb {
+      box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+    }
+
+    &::-ms-thumb {
+      box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+    }
+  }
+
+  &::-moz-focus-outer {
+    border: 0;
+  }
+
+  &::-webkit-slider-thumb {
+    width: $bootstrap-custom-range-thumb-width;
+    height: $bootstrap-custom-range-thumb-height;
+    margin-top: ($bootstrap-custom-range-track-height - $bootstrap-custom-range-thumb-height) / 2;
+    transition: $bootstrap-custom-forms-transition;
+    border: $bootstrap-custom-range-thumb-border;
+    border-radius: $bootstrap-custom-range-thumb-border-radius;
+    background: $bootstrap-custom-range-thumb-bg;
+    box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+    appearance: none;
+
+    &:active {
+      background: $bootstrap-custom-range-thumb-active-bg;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: $bootstrap-custom-range-track-width;
+    height: $bootstrap-custom-range-track-height;
+    border-radius: $bootstrap-custom-range-track-border-radius;
+    border-color: transparent;
+    background-color: $bootstrap-custom-range-track-bg;
+    box-shadow: $bootstrap-custom-range-track-box-shadow;
+    color: transparent;
+    cursor: $bootstrap-custom-range-track-cursor;
+  }
+
+  &::-moz-range-thumb {
+    width: $bootstrap-custom-range-thumb-width;
+    height: $bootstrap-custom-range-thumb-height;
+    margin-top: 1rem;
+    transition: $bootstrap-custom-forms-transition;
+    border: $bootstrap-custom-range-thumb-border;
+    border-radius: $bootstrap-custom-range-thumb-border-radius;
+    background: $bootstrap-custom-range-thumb-bg;
+    box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+    appearance: none;
+
+    &:active {
+      background: $bootstrap-custom-range-thumb-active-bg;
+    }
+  }
+
+  &::-moz-range-track {
+    width: $bootstrap-custom-range-track-width;
+    height: $bootstrap-custom-range-track-height;
+    border-radius: $bootstrap-custom-range-track-border-radius;
+    border-color: transparent;
+    background-color: $bootstrap-custom-range-track-bg;
+    box-shadow: $bootstrap-custom-range-track-box-shadow;
+    color: transparent;
+    cursor: $bootstrap-custom-range-track-cursor;
+  }
+
+  &::-ms-thumb {
+    width: $bootstrap-custom-range-thumb-width;
+    height: $bootstrap-custom-range-thumb-height;
+    margin-top: 0;
+    margin-right: $bootstrap-custom-range-thumb-focus-box-shadow-width;
+    margin-left: $bootstrap-custom-range-thumb-focus-box-shadow-width;
+    transition: $bootstrap-custom-forms-transition;
+    border: $bootstrap-custom-range-thumb-border;
+    border-radius: $bootstrap-custom-range-thumb-border-radius;
+    background: $bootstrap-custom-range-thumb-bg;
+    box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+    appearance: none;
+
+    &:active {
+      background: $bootstrap-custom-range-thumb-active-bg;
+    }
+  }
+
+  &::-ms-track {
+    width: $bootstrap-custom-range-track-width;
+    height: $bootstrap-custom-range-track-height;
+    border-width: $bootstrap-custom-range-thumb-height / 2;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: $bootstrap-custom-range-track-box-shadow;
+    color: transparent;
+    cursor: $bootstrap-custom-range-track-cursor;
+  }
+
+  &::-ms-fill-lower {
+    border-radius: $bootstrap-custom-range-track-border-radius;
+    background-color: $bootstrap-custom-range-track-bg;
+  }
+
+  &::-ms-fill-upper {
+    margin-right: 15px;
+    border-radius: $bootstrap-custom-range-track-border-radius;
+    background-color: $bootstrap-custom-range-track-bg;
+  }
+
+  &:disabled {
+    &::-webkit-slider-thumb {
+      background-color: $bootstrap-custom-range-thumb-disabled-bg;
+    }
+
+    &::-webkit-slider-runnable-track {
+      cursor: default;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $bootstrap-custom-range-thumb-disabled-bg;
+    }
+
+    &::-moz-range-track {
+      cursor: default;
+    }
+
+    &::-ms-thumb {
+      background-color: $bootstrap-custom-range-thumb-disabled-bg;
     }
   }
 }
