@@ -3,6 +3,7 @@
 // Theme variables
 $material-ui-blue: #2196f3;
 $material-ui-disabled: #808080;
+$material-ui-white: #fff;
 $material-ui-slider-track-height: 2px;
 $material-ui-slider-thumb-size: 16px;
 
@@ -30,7 +31,9 @@ $swal2-actions-justify-content: flex-end;
 $swal2-close-button-border-radius: 50%;
 $swal2-close-button-hover-color: $swal2-close-button-color;
 
-// SLIDER
+// CHECKBOX
+$checkbox-size-px: 18;
+$checkbox-left-px: -2;
 
 
 @import '~sweetalert2/src/sweetalert2';
@@ -39,7 +42,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 // Input validation error
 .swal2-input {
   &.swal2-inputerror {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,' + '%3Csvg%20height%3D%2232%22%20style%3D%22overflow%3Avisible%3Benable-background%3Anew%200%200%2032%2032%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%3E%3Cg%20id%3D%22Error_1_%22%3E%3Cg%20id%3D%22Error%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20id%3D%22BG%22%20r%3D%2216%22%20style%3D%22fill%3A%23D72828%3B%22%2F%3E%3Cpath%20d%3D%22M14.5%2C25h3v-3h-3V25z%20M14.5%2C6v13h3V6H14.5z%22%20id%3D%22Exclamatory_x5F_Sign%22%20style%3D%22fill%3A%23E6E6E6%3B%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-image: url('data:image/svg+xml;charset=US-ASCII,'+'%3Csvg%20height%3D%2232%22%20style%3D%22overflow%3Avisible%3Benable-background%3Anew%200%200%2032%2032%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%3E%3Cg%20id%3D%22Error_1_%22%3E%3Cg%20id%3D%22Error%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20id%3D%22BG%22%20r%3D%2216%22%20style%3D%22fill%3A%23D72828%3B%22%2F%3E%3Cpath%20d%3D%22M14.5%2C25h3v-3h-3V25z%20M14.5%2C6v13h3V6H14.5z%22%20id%3D%22Exclamatory_x5F_Sign%22%20style%3D%22fill%3A%23E6E6E6%3B%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: right 3% top 50%;
     background-size: 1em auto, 100%;
@@ -57,7 +60,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 // Close button hover effect
 .swal2-close {
   &:hover {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,' + '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%20%3Ccircle%20fill%3D%22rgb%28242%2C242%2C242%29%22%20cx%3D%225%22%20cy%3D%225%22%20r%3D%225%22%2F%3E%3C%2Fsvg%3E');
+    background-image: url('data:image/svg+xml;charset=US-ASCII,'+'%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%20%3Ccircle%20fill%3D%22rgb%28242%2C242%2C242%29%22%20cx%3D%225%22%20cy%3D%225%22%20r%3D%225%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: left 50% top 115%;
     background-size: 1.1em auto, 100%;
@@ -127,6 +130,119 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
     }
   }
 }
+
+// Checkbox
+.swal2-checkbox {
+  input {
+    position: relative;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 20px;
+    transition: opacity .3s, transform .2s;
+    border-radius: 50%;
+    outline: none;
+    background-color: $material-ui-blue;
+    box-shadow: none;
+    opacity: 0;
+    appearance: none;
+    pointer-events: none;
+
+    &:checked,
+    &:indeterminate {
+      background-color: $material-ui-blue;
+    }
+
+    &:checked + span {
+      &::before {
+        border-color: $material-ui-blue;
+        background-color: $material-ui-blue;
+      }
+
+      &::after {
+        border-color: $material-ui-white;
+      }
+    }
+
+    &:indeterminate + span {
+      &::before {
+        border-color: $material-ui-blue;
+        background-color: $material-ui-blue;
+      }
+
+      &::after {
+        transform: translate($checkbox-left-px *2px, ($checkbox-size-px/6) * 1px);
+        border-left: 0;
+        border-color: $material-ui-blue;
+      }
+    }
+
+    &:active {
+      transform: scale(0);
+      transition: transform 0s, opacity 0s;
+      opacity: 1;
+
+      + span {
+        &::before {
+          border-color: $material-ui-blue;
+        }
+      }
+    }
+
+    &:checked {
+      &:active + span {
+        &::before {
+          border-color: transparent;
+          background-color: $material-ui-blue;
+        }
+      }
+    }
+
+    &:focus {
+      opacity: .12;
+    }
+  }
+
+  span {
+    &::before {
+      position: relative;
+      top: 1px;
+      left: $checkbox-left-px * 1px;
+      width: $checkbox-size-px * 1px;
+      height: $checkbox-size-px * 1px;
+      float: left;
+      transition: border-color .2s, background-color .2s;
+      border: solid 2px;
+      border-radius: 2px;
+      border-color: $material-ui-disabled;
+      content: '';
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+
+    &::after {
+      position: relative;
+      left: (-$checkbox-size-px + $checkbox-left-px) * 1px;
+      width: 10px;
+      height: -$checkbox-left-px * 2px ;
+      float: left;
+      transform: translate(($checkbox-size-px/6) * 1px, -$checkbox-left-px *2px) rotate(-45deg);
+      border: solid 2px transparent;
+      border-top: 0;
+      border-right: 0;
+      content: '';
+    }
+  }
+
+  &:hover {
+    > input {
+      opacity: .04;
+
+      &:focus {
+        opacity: .16;
+      }
+    }
 
 // Mixin for range / slider styling
 @mixin slider-track {
