@@ -122,6 +122,17 @@ $bootstrap-custom-range-thumb-focus-box-shadow-width: $bootstrap-input-focus-wid
 $bootstrap-custom-range-thumb-active-bg: lighten($bootstrap-primary, 35%) !default;
 $bootstrap-custom-range-thumb-disabled-bg: $bootstrap-gray-500 !default;
 
+// Toast
+$bootstrap-toast-max-width:                   350px !default;
+$bootstrap-toast-padding-x:                   .75rem !default;
+$bootstrap-toast-padding-y:                   .25rem !default;
+$bootstrap-toast-font-size:                   .875rem !default;
+$bootstrap-toast-background-color:            rgba($swal2-white, .85) !default;
+$bootstrap-toast-border-width:                1px !default;
+$bootstrap-toast-border-color:                rgba(0, 0, 0, .1) !default;
+$bootstrap-toast-border-radius:               .25rem !default;
+$bootstrap-toast-box-shadow:                  0 .25rem .75rem rgba($swal2-black, .1) !default;
+
 // override SASS variables here
 
 // BOX MODEL
@@ -163,6 +174,16 @@ $swal2-cancel-button-background-color: $bootstrap-secondary;
 
 // COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
 $swal2-button-focus-outline: none;
+
+// TOASTS
+$swal2-toast-border: $bootstrap-toast-border-color solid $bootstrap-toast-border-width;
+$swal2-toast-box-shadow: $bootstrap-toast-box-shadow;
+$swal2-toast-padding: $bootstrap-toast-padding-x $bootstrap-toast-padding-y;
+$swal2-toast-title-font-size: $bootstrap-toast-font-size;
+$swal2-toast-content-font-size: $bootstrap-toast-font-size;
+$swal2-toast-input-font-size: $bootstrap-toast-font-size;
+$swal2-toast-validation-font-size: $bootstrap-toast-font-size;
+$swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
 
 @import '~sweetalert2/src/sweetalert2';
 
@@ -631,4 +652,11 @@ $swal2-button-focus-outline: none;
     background-color: lighten($bootstrap-danger, 10%);
   }
 }
+
+.swal2-toast {
+  max-width: $bootstrap-toast-max-width;
+  border-radius: $bootstrap-toast-border-radius;
+  background-color: $bootstrap-toast-background-color;
+}
+
 //
