@@ -30,6 +30,25 @@ $bootstrap-gray-700: #495057 !default;
 $bootstrap-gray-800: #343a40 !default;
 $bootstrap-gray-900: #212529 !default;
 
+$bootstrap-theme-color-interval: 8% !default;
+
+// Alert
+$bootstrap-alert-border-level: -9 !default;
+$bootstrap-alert-bg-level: -10 !default;
+$bootstrap-alert-color-level: 6 !default;
+$bootstrap-alert-border-color: mix($swal2-white, $bootstrap-secondary, abs($bootstrap-alert-border-level) * $bootstrap-theme-color-interval) !default;
+$bootstrap-alert-background: mix($swal2-white, $bootstrap-secondary, abs($bootstrap-alert-bg-level) * $bootstrap-theme-color-interval) !default;
+$bootstrap-alert-color: mix($swal2-black, $bootstrap-secondary, abs($bootstrap-alert-color-level) * $bootstrap-theme-color-interval) !default;
+$bootstrap-alert-padding-y: .75rem !default;
+$bootstrap-alert-padding-x: 1.25rem !default;
+$bootstrap-alert-margin-bottom: 1rem !default;
+$bootstrap-alert-border-radius: .25rem !default;
+$bootstrap-alert-border-width: 1px !default;
+$bootstrap-alert-font-size: 1rem !default;
+
+// Button
+$bootstrap-btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
 // Input
 $bootstrap-input-color: $bootstrap-gray-700 !default;
 $bootstrap-input-bg: $swal2-white !default;
@@ -146,6 +165,11 @@ $swal2-cancel-button-background-color: $bootstrap-secondary;
 $swal2-button-focus-outline: none;
 
 @import '~sweetalert2/src/sweetalert2';
+
+.swal2-confirm,
+.swal2-cancel {
+  transition: $bootstrap-btn-transition;
+}
 
 .swal2-popup {
   padding: 0;
@@ -592,4 +616,19 @@ $swal2-button-focus-outline: none;
   }
 }
 
+.swal2-validation-message {
+  position: relative;
+  margin-bottom: $bootstrap-alert-margin-bottom;
+  padding: $bootstrap-alert-padding-y $bootstrap-alert-padding-x;
+  border: $bootstrap-alert-border-width solid transparent;
+  border-radius: $bootstrap-alert-border-radius;
+  border-color: $bootstrap-alert-border-color;
+  background: $bootstrap-alert-background;
+  color: $bootstrap-alert-color;
+  font-size: $bootstrap-alert-font-size;
+
+  &::before {
+    background-color: lighten($bootstrap-danger, 10%);
+  }
+}
 //
