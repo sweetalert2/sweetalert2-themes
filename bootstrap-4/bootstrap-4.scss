@@ -264,15 +264,20 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
   transition: $bootstrap-custom-forms-transition;
   line-height: $bootstrap-input-line-height;
 
-  &.swal2-inputerror {
-    box-shadow: none !important;
-  }
-
   &:focus {
     border: $bootstrap-input-focus-border;
     outline: 0;
     box-shadow: $bootstrap-input-focus-box-shadow;
     color: $bootstrap-input-color;
+  }
+
+  &.swal2-inputerror {
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: $bootstrap-danger;
+      box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-danger, .25) !important;
+    }
   }
 }
 
