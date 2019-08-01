@@ -46,9 +46,6 @@ $bootstrap-alert-border-radius: .25rem !default;
 $bootstrap-alert-border-width: 1px !default;
 $bootstrap-alert-font-size: 1rem !default;
 
-// Button
-$bootstrap-btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
-
 // Input
 $bootstrap-input-color: $bootstrap-gray-700 !default;
 $bootstrap-input-bg: $swal2-white !default;
@@ -66,7 +63,11 @@ $bootstrap-input-disabled-bg: $bootstrap-gray-200 !default;
 
 $bootstrap-input-focus-width: .2rem !default;
 $bootstrap-input-focus-border: 1px solid lighten($bootstrap-primary, 25%) !default;
-$bootstrap-input-focus-box-shadow: 0 0 0 .2rem rgba($bootstrap-primary, .25) !default;
+$bootstrap-input-focus-box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-primary, .25) !default;
+
+// Button
+$bootstrap-btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+$bootstrap-btn-secondary-focus-box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-secondary, .25) !default;
 
 // Custom Shared Variables
 $bootstrap-custom-forms-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
@@ -278,7 +279,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
 .swal2-styled {
   &.swal2-confirm {
     padding: $swal2-input-padding;
-    border: 1px solid transparent;
+    border: 1px solid $bootstrap-primary;
     font-size: 1rem;
 
     &:hover {
@@ -286,15 +287,24 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
       background-color: darken($bootstrap-primary, 7.5%);
     }
 
+    &:focus {
+      outline: 0;
+      box-shadow: $bootstrap-input-focus-box-shadow;
+    }
+
     &:active {
       border-color: darken($bootstrap-primary, 12.5%);
       background-color: darken($bootstrap-primary, 10%);
+
+      &:focus {
+        box-shadow: $bootstrap-input-focus-box-shadow;
+      }
     }
   }
 
   &.swal2-cancel {
     padding: $swal2-input-padding;
-    border: 1px solid transparent;
+    border: 1px solid $bootstrap-secondary;
     font-size: 1rem;
 
     &:hover {
@@ -302,9 +312,18 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
       background-color: darken($bootstrap-secondary, 7.5%);
     }
 
+    &:focus {
+      outline: 0;
+      box-shadow: $bootstrap-btn-secondary-focus-box-shadow;
+    }
+
     &:active {
       border-color: darken($bootstrap-secondary, 12.5%);
       background-color: darken($bootstrap-secondary, 10%);
+
+      &:focus {
+        box-shadow: $bootstrap-btn-secondary-focus-box-shadow;
+      }
     }
   }
 }
