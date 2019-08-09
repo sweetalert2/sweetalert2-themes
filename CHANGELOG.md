@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.3...v2.1.0) (2019-08-09)
+
+
+### Features
+
+* Bootstrap 4 theme ([#23](https://github.com/sweetalert2/sweetalert2-themes/issues/23)) ([a802ed3](https://github.com/sweetalert2/sweetalert2-themes/commit/a802ed3))
+
 ## [2.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.2...v2.0.3) (2019-05-10)
 
 
