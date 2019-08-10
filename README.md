@@ -3,12 +3,19 @@
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/themes.svg)](https://www.npmjs.com/package/@sweetalert2/themes)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/sweetalert2/sweetalert2-themes/blob/master/CHANGELOG.md) [![Greenkeeper badge](https://badges.greenkeeper.io/sweetalert2/sweetalert2-themes.svg)](https://greenkeeper.io/)
 
-:raised_hands: :raised_hands: :raised_hands: Help wanted!
----------------------------------------------------------
+Available themes
+-----------------
 
-We just started this project, for now 3 themes are available: [`dark`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/dark), [`minimal`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/minimal), and [`borderless`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/borderless). Please help us with [other themes](https://github.com/sweetalert2/sweetalert2-themes/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22), I would be happy to donate some :moneybag: for all active contributors. The quick-start contributing guide is [here](#contributing).
+- [`Dark`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/dark)
+- [`Minimal`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/minimal)
+- [`Borderless`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/borderless)
+- [`Bootstrap 4`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/bootstrap-4)
+- [`Default`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/default)
 
-Thank you :heart:
+Upcoming themes
+----------
+
+- [`Material UI`](https://github.com/sweetalert2/sweetalert2-themes/pull/21)
 
 
 Installation
@@ -84,6 +91,6 @@ Has SweetAlert2 helped you create an amazing application? You can show your supp
 - Bitcoin Cash: `qqxs402qszgwuue00gwxw996lzhpa8up2unqm0y46g`
 - Stellar: `GBRS5KGFJO4OBUGW3TRQBIVXTM5YDS53DOSHGA3LKVE2YXKVKNVDONBP`
 
-Or give the new Brave Browser a try with our referral link: https://brave.com/swe698
+Or give a try **Revolut - the best digital bank 💰** - with our referral link: https://revolut.com/referral/vladimh4x!G10D21 (you'll get 10 € with this referral link 🤑). A free Revolut card has no monthly fees and provides awesome exchange rates abroad.
 
 ### [Hall of Donators :trophy:](https://github.com/sweetalert2/sweetalert2/blob/master/DONATIONS.md)
