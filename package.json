@@ -12,7 +12,7 @@
     "@sweetalert2/stylelint-config": "^1.1.5",
     "browser-sync": "^2.23.3",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp-autoprefixer": "^7.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-header": "^2.0.9",
     "gulp-rename": "^1.2.2",
