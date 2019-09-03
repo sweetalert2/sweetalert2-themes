@@ -91,6 +91,4 @@ Has SweetAlert2 helped you create an amazing application? You can show your supp
 - Bitcoin Cash: `qqxs402qszgwuue00gwxw996lzhpa8up2unqm0y46g`
 - Stellar: `GBRS5KGFJO4OBUGW3TRQBIVXTM5YDS53DOSHGA3LKVE2YXKVKNVDONBP`
 
-Or give a try **Revolut - the best digital bank 💰** - with our referral link: https://revolut.com/referral/vladimh4x!G10D21 (you'll get 10 € with this referral link 🤑). A free Revolut card has no monthly fees and provides awesome exchange rates abroad.
-
 ### [Hall of Donators :trophy:](https://github.com/sweetalert2/sweetalert2/blob/master/DONATIONS.md)
