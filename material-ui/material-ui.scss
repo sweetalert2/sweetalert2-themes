@@ -6,6 +6,8 @@ $material-ui-disabled: #808080;
 $material-ui-white: #fff;
 $material-ui-slider-track-height: 2px;
 $material-ui-slider-thumb-size: 16px;
+// Variables to be added to Sweetalert2
+$swal2-button-focus-background: rgba($material-ui-blue, .3);
 
 // override SASS variables here
 // CONFIRM BUTTON
@@ -22,7 +24,8 @@ $swal2-cancel-button-color: $material-ui-blue;
 
 // BUTTONS
 $swal2-button-darken-hover: rgba($material-ui-blue, .1);
-$swal2-button-focus-outline: none;
+$swal2-button-darken-active: rgba($material-ui-blue, .1);
+$swal2-button-focus-outline: #fff;
 
 // ACTIONS
 $swal2-actions-justify-content: flex-end;
@@ -53,6 +56,10 @@ $checkbox-left-px: -2;
   &[disabled] {
     color: $material-ui-disabled;
     opacity: 1;
+  }
+
+  &:focus {
+    background-color: $swal2-button-focus-background;
   }
 }
 
@@ -267,6 +274,7 @@ $checkbox-left-px: -2;
 
   // Chrome does not support browser's pseudo elements comma-separated
   // We need to write all styles for each browser engine
+  // sass-lint:disable no-vendor-prefixes
   &::-webkit-slider-runnable-track {
     @include slider-track;
   }
