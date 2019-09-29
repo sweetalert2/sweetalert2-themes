@@ -8,6 +8,7 @@ $material-ui-slider-track-height: 2px;
 $material-ui-slider-thumb-size: 16px;
 // Variables to be added to Sweetalert2
 $swal2-button-focus-background: rgba($material-ui-blue, .3);
+$swal2-close-button-font-family: arial;
 
 // override SASS variables here
 // CONFIRM BUTTON
@@ -32,6 +33,7 @@ $swal2-actions-justify-content: flex-end;
 
 // CLOSE BUTTON
 $swal2-close-button-border-radius: 50%;
+$swal2-close-button-hover-background: rgb(242, 242, 242);
 $swal2-close-button-hover-color: $swal2-close-button-color;
 
 // CHECKBOX
@@ -63,14 +65,9 @@ $checkbox-left-px: -2;
   }
 }
 
-// Close button hover effect
+// Close button additional style
 .swal2-close {
-  &:hover {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,'+'%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%20%3Ccircle%20fill%3D%22rgb%28242%2C242%2C242%29%22%20cx%3D%225%22%20cy%3D%225%22%20r%3D%225%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: left 50% top 115%;
-    background-size: 1.1em auto, 100%;
-  }
+  font-family: $swal2-close-button-font-family;
 }
 
 // Select element arrow
