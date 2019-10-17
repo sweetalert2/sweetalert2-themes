@@ -10,7 +10,7 @@ Available themes
 - [`Minimal`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/minimal)
 - [`Borderless`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/borderless)
 - [`Bootstrap 4`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/bootstrap-4)
-- [`Material UI`](https://github.com/sweetalert2/sweetalert2-themes/pull/21)
+- [`Material UI`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/material-ui)
 - [`Default`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/default)
 
 Installation
