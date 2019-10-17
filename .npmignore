@@ -1,4 +1,5 @@
 .editorconfig
+.github
 gulpfile.js
 index.html
 release.config.js
