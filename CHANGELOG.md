@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.2.0...v2.2.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* write NPM_TOKEN to ~/.npmrc ([bfe1609](https://github.com/sweetalert2/sweetalert2-themes/commit/bfe1609425c60c9123069db982b521af7aa27c38))
+
 # [2.2.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.1.0...v2.2.0) (2019-10-17)
 
 
