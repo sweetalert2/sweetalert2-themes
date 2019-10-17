@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.1.0...v2.2.0) (2019-10-17)
+
+
+### Features
+
+* Material UI theme ([#21](https://github.com/sweetalert2/sweetalert2-themes/issues/21)) ([77e5513](https://github.com/sweetalert2/sweetalert2-themes/commit/77e5513ecd96e637d09d0c0ba4054fb0c98bebee))
+
 # [2.1.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.0.3...v2.1.0) (2019-08-09)
 
 
