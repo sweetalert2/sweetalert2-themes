@@ -10,6 +10,8 @@ if (!process.env.VERSION) {
   process.exit(1)
 }
 
+execute("echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > ~/.npmrc")
+
 ;(async () => {
   const directories = readdirSync('.').map(name => join('.', name)).filter(source => lstatSync(source).isDirectory())
 
