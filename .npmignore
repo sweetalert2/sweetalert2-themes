@@ -1,8 +1,9 @@
 .editorconfig
-.sass-lint.yml
 gulpfile.js
 index.html
 release.config.js
 app.js
-yarn.lock
+.stylelintrc.json
 tools
+.travis.yml
+yarn.lock

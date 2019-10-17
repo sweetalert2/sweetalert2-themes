@@ -1,0 +1,23 @@
+{
+  "name": "@sweetalert2/theme-material-ui",
+  "version": "2.0.3",
+  "repository": "sweetalert2/sweetalert2-themes",
+  "homepage": "https://sweetalert2.github.io/",
+  "description": "Material Ui theme for SweetAlert2",
+  "author": "",
+  "files": [
+    "*.css",
+    "*.scss"
+  ],
+  "main": "material-ui.css",
+  "keywords": [
+    "sweetalert2",
+    "material-ui",
+    "theme",
+    "themes",
+    "theming",
+    "sass"
+  ],
+  "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
+  "license": "MIT"
+}
