@@ -7,6 +7,9 @@ $swal2-box-shadow: none;
 // BACKDROP
 $swal2-backdrop-transition: initial;
 
+// ICONS
+$swal2-icon-animations: false;
+
 // INPUT
 $swal2-input-border-radius: 0;
 $swal2-input-box-shadow: none;
@@ -20,11 +23,6 @@ $swal2-cancel-button-border-radius: 0;
 // ANIMATIONS
 $swal2-show-animation: none;
 $swal2-hide-animation: none;
-$swal2-success-line-tip-animation: none;
-$swal2-success-line-long-animation: none;
-$swal2-success-circular-line-animation: none;
-$swal2-error-icon-animation: none;
-$swal2-error-x-mark-animation: none;
 
 // CLOSE BUTTON
 $swal2-close-button-transition: initial;
