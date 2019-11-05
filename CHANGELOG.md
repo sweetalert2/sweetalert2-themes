@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.2.1...v3.0.0) (2019-11-05)
+
+
+* BREAKING CHANGE: sweetalert2 v9 ([2205826](https://github.com/sweetalert2/sweetalert2-themes/commit/22058264538493c1309d889908184400d57613c0))
+
+
+### BREAKING CHANGES
+
+* sweetalert2 v9
+
 ## [2.2.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.2.0...v2.2.1) (2019-10-17)
 
 
