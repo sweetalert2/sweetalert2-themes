@@ -140,9 +140,38 @@ $bootstrap-toast-box-shadow:                  0 .25rem .75rem rgba($swal2-black,
 $swal2-padding: 1rem;
 $swal2-border-radius: .3rem;
 
+// ANIMATIONS
+// animate.css/fading_entrances/fadeInDown.css
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+// animate.css/fading_exits/fadeOutUp.css
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+$swal2-show-animation: fadeInDown .5s;
+$swal2-hide-animation: fadeOutUp .5s;
+
 // BACKDROP
 $swal2-backdrop: rgba($swal2-black, .5);
-$swal2-backdrop-transition: background-color .15s;
+$swal2-backdrop-transition: background-color .5s;
 
 // ICONS
 $swal2-success: $bootstrap-success;
