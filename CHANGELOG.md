@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.0...v3.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* bump sweetalert2 to ^9.1.5 ([bf056e4](https://github.com/sweetalert2/sweetalert2-themes/commit/bf056e4752d649e519c09e0b36d7c9a67dc08e4e))
+
 # [3.0.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v2.2.1...v3.0.0) (2019-11-05)
 
 
