@@ -32,8 +32,8 @@ npm install --save sweetalert2 @sweetalert2/theme-dark
 Or grab them both from [jsdelivr CDN](https://cdn.jsdelivr.net/npm/@sweetalert2/themes), for example:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@1/dark.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
 ```
 
 Usage
