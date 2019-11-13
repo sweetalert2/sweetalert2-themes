@@ -8,9 +8,6 @@
     "sweetalert2": "^9.1.5"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "3",
-    "@semantic-release/exec": "3.4.0-beta.2",
-    "@semantic-release/git": "7.1.0-beta.3",
     "@sweetalert2/execute": "^1.0.0",
     "@sweetalert2/stylelint-config": "^1.1.5",
     "browser-sync": "^2.23.3",
@@ -24,7 +21,6 @@
     "node-sass-tilde-importer": "^1.0.2",
     "promise-polyfill": "^8.1.0",
     "replace-in-file": "^4.0.0",
-    "semantic-release": "16.0.0-beta.26",
     "stylelint": "^11.0.0",
     "sweetalert2": "^9.1.5"
   },
