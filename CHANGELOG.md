@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.1...v3.0.2) (2019-11-14)
+
+
+### Bug Fixes
+
+* **dark:** buttons outline ([631237c](https://github.com/sweetalert2/sweetalert2-themes/commit/631237c0057de9ed6da0dcbbf4632a4d9b361bfd))
+
 ## [3.0.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.0...v3.0.1) (2019-11-06)
 
 
