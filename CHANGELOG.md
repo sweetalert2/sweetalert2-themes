@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.2...v3.0.3) (2019-11-14)
+
+
+### Bug Fixes
+
+* **dark:** footer-border-color ([a4f590e](https://github.com/sweetalert2/sweetalert2-themes/commit/a4f590e0f97b4e411665a38a54b408c6351d5785))
+
 ## [3.0.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.1...v3.0.2) (2019-11-14)
 
 
