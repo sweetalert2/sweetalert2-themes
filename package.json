@@ -5,7 +5,7 @@
   "homepage": "https://sweetalert2.github.io/",
   "description": "Themes for SweetAlert2",
   "peerDependencies": {
-    "sweetalert2": "^9.1.5"
+    "sweetalert2": "^9.3.6"
   },
   "devDependencies": {
     "@sweetalert2/execute": "^1.0.0",
@@ -22,7 +22,7 @@
     "promise-polyfill": "^8.1.0",
     "replace-in-file": "^4.0.0",
     "stylelint": "^11.0.0",
-    "sweetalert2": "^9.1.5"
+    "sweetalert2": "^9.3.6"
   },
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
