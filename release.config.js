@@ -9,7 +9,7 @@ module.exports = {
   prepare: [
     {
       'path': '@semantic-release/exec',
-      'cmd': 'VERSION=${nextRelease.version} yarn build'
+      'cmd': 'VERSION=${nextRelease.version} npm run build'
     },
     {
       'path': '@semantic-release/exec',
