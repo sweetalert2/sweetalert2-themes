@@ -22,6 +22,12 @@ $swal2-validation-message-color: $swal2-dark-theme-white;
 // QUEUE
 $swal2-progress-step-background: lighten($swal2-dark-theme-black, 25%);
 
+// COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
+$swal2-button-focus-box-shadow: 0 0 0 2px $swal2-dark-theme-black, 0 0 0 4px lighten($swal2-outline-color, 10%);
+
+// TOAST
+$swal2-toast-button-focus-box-shadow: 0 0 0 2px $swal2-dark-theme-black, 0 0 0 4px lighten($swal2-outline-color, 10%);
+
 @import '~sweetalert2/src/sweetalert2';
 
 // INPUT
