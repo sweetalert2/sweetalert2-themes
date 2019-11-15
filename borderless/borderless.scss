@@ -5,6 +5,19 @@ $borderless-theme-color: rgba(54, 70, 93, .99);
 // BOX MODEL
 $swal2-box-shadow: none;
 
+// ANIMATIONS
+$swal2-show-animation: opacity-show .3s;
+$swal2-hide-animation: opacity-hide .1s;
+// Appearance animation
+@keyframes opacity-show {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+// Disppearance animation
+@keyframes opacity-hide {
+  100% { opacity: 0; }
+}
+
 // BACKGROUND
 $swal2-background: transparent;
 
@@ -33,34 +46,12 @@ $swal2-close-button-position: fixed;
 $swal2-close-button-font-size: 3em;
 $swal2-close-button-color: $swal2-white;
 
-$swal2-show-animation: opacity-show .3s;
-$swal2-hide-animation: opacity-hide .1s;
+// TOASTS
+$swal2-toast-background: $borderless-theme-color;
 
 @import '~sweetalert2/src/sweetalert2';
 
 .swal2-select {
   background: $swal2-white;
   color: lighten($swal2-black, 25);
-}
-
-.swal2-toast {
-  background: $borderless-theme-color;
-}
-
-// Appearance animation
-@keyframes opacity-show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-// Disppearance animation
-@keyframes opacity-hide {
-  100% {
-    opacity: 0;
-  }
 }
