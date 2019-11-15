@@ -30,10 +30,3 @@ $swal2-button-focus-box-shadow: 0 0 0 2px $swal2-dark-theme-black, 0 0 0 4px lig
 $swal2-toast-button-focus-box-shadow: 0 0 0 2px $swal2-dark-theme-black, 0 0 0 4px lighten($swal2-outline-color, 10%);
 
 @import '~sweetalert2/src/sweetalert2';
-
-// INPUT
-.swal2-range,
-.swal2-radio,
-.swal2-checkbox {
-  background: $swal2-dark-theme-black;
-}
