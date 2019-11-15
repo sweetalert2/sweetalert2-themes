@@ -2,6 +2,7 @@
 
 $swal2-dark-theme-black: #19191a;
 $swal2-dark-theme-white: #e1e1e1;
+$swal2-outline-color: lighten($swal2-outline-color, 10%);
 
 $swal2-background: $swal2-dark-theme-black;
 $swal2-content-color: $swal2-dark-theme-white;
@@ -24,9 +25,9 @@ $swal2-validation-message-color: $swal2-dark-theme-white;
 $swal2-progress-step-background: lighten($swal2-dark-theme-black, 25%);
 
 // COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
-$swal2-button-focus-box-shadow: 0 0 0 2px $swal2-dark-theme-black, 0 0 0 4px lighten($swal2-outline-color, 10%);
+$swal2-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color;
 
 // TOAST
-$swal2-toast-button-focus-box-shadow: 0 0 0 2px $swal2-dark-theme-black, 0 0 0 4px lighten($swal2-outline-color, 10%);
+$swal2-toast-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color;
 
 @import '~sweetalert2/src/sweetalert2';
