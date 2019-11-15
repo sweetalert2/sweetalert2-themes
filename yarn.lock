@@ -811,9 +811,9 @@ camelcase@^5.0.0:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001004, caniuse-lite@^1.0.30001006:
-  version "1.0.30001009"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001009.tgz#69b77997b882a7aee6af24c8d7d2fa27ee41f348"
-  integrity sha512-M3rEqHN6SaVjgo4bIik7HsGcWXsi+lI9WA0p51RPMFx5gXfduyOXWJrc0R4xBkSK1pgNf4CNgy5M+6H+WiEP8g==
+  version "1.0.30001010"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001010.tgz#397a14034d384260453cc81994f494626d34b938"
+  integrity sha512-RA5GH9YjFNea4ZQszdWgh2SC+dpLiRAg4VDQS2b5JRI45OxmbGrYocYHTa9x0bKMQUE7uvHkNPNffUr+pCxSGw==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -5131,10 +5131,10 @@ svg-tags@^1.0.0:
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=
 
-sweetalert2@^9.3.6:
-  version "9.3.6"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-9.3.6.tgz#116d4bf97358fed26a7515e46b753ba1b17f0d12"
-  integrity sha512-R0qDbzRWqywBno3GT9xReLRv5B088A+gCKeL23H8Y1BkdFFyLnQN3sk/r8pDvUJ6Xj1+ga5qeqHKUgtKR59Frw==
+sweetalert2@^9.3.8:
+  version "9.3.8"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-9.3.8.tgz#01ea6b2abb59b4caa4e254aa1a7040eb6ea8ffa1"
+  integrity sha512-HdpbP423tvrPg6uKTEkjDV8ITqp1Rc3QkFIeuWtP7PfkDV4kRLqWC9HipL6XunMzg727OisqBaPm/qSdqMvy4A==
 
 symbol-observable@1.0.1:
   version "1.0.1"
