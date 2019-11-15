@@ -29,6 +29,7 @@ execute("echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > ~/.npmrc")
       for (changedFile of changedFiles) {
         await execute(`git add ${changedFile.file}`)
         await execute(`npm publish --access=public ${directory}`)
+        await execute(`curl --silent https://purge.jsdelivr.net/npm/@sweetalert2/theme-${directory}/${directory}.css`, { skipLogging: true })
       }
     }
   }
