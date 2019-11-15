@@ -1,3 +1,12 @@
+## [3.0.4](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.3...v3.0.4) (2019-11-15)
+
+
+### Bug Fixes
+
+* **borderless:** use $swal2-toast-background variable ([996a605](https://github.com/sweetalert2/sweetalert2-themes/commit/996a605e920acd518c426585bf7696148622457f))
+* **dark:** remove unnecessary styles ([8ffac42](https://github.com/sweetalert2/sweetalert2-themes/commit/8ffac4251fbb9ed55162ba26c30259f7c7f680c0))
+* depend on sweetalert2@^9.3.8 ([a0fba6e](https://github.com/sweetalert2/sweetalert2-themes/commit/a0fba6e4cb43fdd87dda5bb05b430be31a121fd5))
+
 ## [3.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.2...v3.0.3) (2019-11-14)
 
 
