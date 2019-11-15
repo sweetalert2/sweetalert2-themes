@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.4...v3.0.5) (2019-11-15)
+
+
+### Bug Fixes
+
+* buttons box-shadow ([8d015be](https://github.com/sweetalert2/sweetalert2-themes/commit/8d015bed60ddb3a844ca9507157e9b6dc0c24773))
+
 ## [3.0.4](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.3...v3.0.4) (2019-11-15)
 
 
