@@ -1,3 +1,10 @@
+## [3.0.7](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.6...v3.0.7) (2019-12-01)
+
+
+### Bug Fixes
+
+* **dark:** apply dark backgorund to toast ([#44](https://github.com/sweetalert2/sweetalert2-themes/issues/44)) ([6324ba6](https://github.com/sweetalert2/sweetalert2-themes/commit/6324ba6b2af633f4ce296c0cb9e06e88ee6a141d))
+
 ## [3.0.6](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.5...v3.0.6) (2019-11-30)
 
 
