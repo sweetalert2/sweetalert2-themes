@@ -28,6 +28,7 @@ $swal2-progress-step-background: lighten($swal2-dark-theme-black, 25%);
 $swal2-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color;
 
 // TOAST
+$swal2-toast-background: $swal2-dark-theme-black;
 $swal2-toast-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color;
 
 @import '~sweetalert2/src/sweetalert2';
