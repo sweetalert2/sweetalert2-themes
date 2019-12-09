@@ -1,6 +1,9 @@
 (async function () {
-  const theme = location.search.replace('?theme=', '') || 'default'
+  const searchParams = new URLSearchParams(window.location.search)
+  const theme = searchParams.get('theme') || 'default'
+  const toastOnly = searchParams.get('toast') || 'false'
 
+  // Add theme CSS
   const css = document.createElement('link')
   css.setAttribute('rel', 'stylesheet')
   css.setAttribute('href', theme + '/' + theme + '.css')
@@ -18,13 +21,31 @@
   }
   themeSelector.querySelector('[value="' + theme + '"]').setAttribute('selected', true)
   themeSelector.addEventListener('change', () => {
-    location.assign('/?theme=' + themeSelector.value)
+    searchParams.set('theme', themeSelector.value);
+    window.location.search = searchParams.toString();
   })
 
-
-  let swalMixin = Swal.mixin({
-    title: theme
+  // Toast only viewer
+  document.getElementById('toast-only').addEventListener('change', function() {
+    searchParams.set('toast', this.checked);
+    window.location.search = searchParams.toString();
   })
+  
+  if (toastOnly == 'true') {
+    document.getElementById('toast-only').checked = true
+    const swalMixin = Swal.mixin({ title: theme, toast: true, timer: 3000 })
+    await swalMixin.fire()
+    await swalMixin.fire({ position: 'bottom-start', timer: 10000, timerProgressBar: true, icon: 'success' })
+    await swalMixin.fire({ position: 'bottom', showCancelButton: true })
+    await swalMixin.fire({ position: 'bottom-end', showConfirmButton: false, icon: 'success', title: 'Lorem ipsum dolor sit amet' })
+    await swalMixin.fire({ position: 'top-end', icon: 'info' })
+    await swalMixin.fire({ position: 'top', icon: 'warning' })
+    await swalMixin.fire({ position: 'bottom', icon: 'error', showConfirmButton: false })
+    await swalMixin.fire({ position: 'bottom', icon: 'question' })
+    return
+  }
+
+  const swalMixin = Swal.mixin({ title: theme })
   // Popup Type
   await Swal.fire(theme, 'Caption', '')
   await Swal.fire(theme, 'success!', 'success')
@@ -36,7 +57,6 @@
 
   // Buttons
   await swalMixin.fire({showCancelButton: true})
-  await swalMixin.fire({toast: true})
   await swalMixin.fire({footer: 'footer' })
   await swalMixin.fire({ text: 'Check close Button',  showCloseButton: true })
 
