@@ -26,7 +26,7 @@ $swal2-active-step-background: $wordpress-blue;
 
 // ICONS
 $swal2-icon-animations: false;
-$swal2-icon-margin: 0 auto 16px;
+$swal2-icon-margin: 0 auto 24px;
 $swal2-icon-zoom: 0.7;
 $swal2-success: $wordpress-green;
 $swal2-error: $wordpress-red;
@@ -45,12 +45,11 @@ $swal2-input-background: lighten($swal2-dark-theme-black, 10%);
 // COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
 $swal2-button-darken-hover: transparent;
 $swal2-button-darken-active: transparent;
-$swal2-button-focus-background-color: none;
-$swal2-button-focus-box-shadow: 0 !important;
+$swal2-button-focus-box-shadow: 0 0 1px 1px;
 
 // CONFIRM BUTTON
 $swal2-confirm-button-background-color: $wordpress-blue;
-$swal2-confirm-button-border: 1px solid;
+$swal2-confirm-button-border: 0;
 $swal2-confirm-button-border-radius: 3px;
 $swal2-confirm-button-color: $swal2-dark-theme-white;
 $swal2-confirm-button-font-size: 13px;
