@@ -43,7 +43,7 @@ var notify = Swal.mixin({
   toast: true,
   position: 'bottom-start',
   showConfirmButton: false,
-  timer: 60000,
+  timer: 6000,
   onBeforeOpen: (toast) => {
     
     // Offset the toast message based on the admin menu size
@@ -53,7 +53,7 @@ var notify = Swal.mixin({
 })
 ```
 
-Further, when using icons you may wish to use [WordPress Dashicons](https://developer.wordpress.org/resource/dashicons/#editor-ul)
+Further, when using icons you may wish to use [WordPress Dashicons](https://developer.wordpress.org/resource/dashicons/#editor-ul).
 
 ```js
 notify.fire({
