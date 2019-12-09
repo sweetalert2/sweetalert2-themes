@@ -56,10 +56,6 @@ $swal2-confirm-button-color: $swal2-dark-theme-white;
 $swal2-confirm-button-font-size: 13px;
 
 // CANCEL BUTTON
-$swal2-cancel-button-border: 0 !default;
-$swal2-cancel-button-border-radius: .25em !default;
-$swal2-cancel-button-background-color: #aaa !default;
-$swal2-cancel-button-color: $swal2-white !default;
 $swal2-cancel-button-font-size: 13px;
 
 // VALIDATION MESSAGE
@@ -70,22 +66,16 @@ $swal2-validation-message-color: $swal2-dark-theme-white;
 $swal2-toast-show-animation: fadeInUpBig .65s;
 $swal2-toast-hide-animation: fadeOut 0.5s;
 $swal2-toast-background: $swal2-dark-theme-black;
-$swal2-toast-border: none !default;
 $swal2-toast-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 $swal2-toast-close-button-width: auto;
 $swal2-toast-close-button-height: auto;
 $swal2-toast-close-button-line-height: 16px;
-$swal2-toast-width: auto !default;
 $swal2-toast-padding: 16px 24px;
-$swal2-toast-title-margin: 0 .6em !default;
 $swal2-toast-title-font-size: 13px;
 $swal2-toast-content-font-size: 13px;
 $swal2-toast-input-font-size: 13px;
 $swal2-toast-validation-font-size: 13px;
 $swal2-toast-buttons-font-size: 13px;
-$swal2-toast-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color !default;
-$swal2-toast-footer-margin: .5em 0 0 !default;
-$swal2-toast-footer-padding: .5em 0 0 !default;
 $swal2-toast-footer-font-size: 13px;
 
 // TIMER POGRESS BAR
