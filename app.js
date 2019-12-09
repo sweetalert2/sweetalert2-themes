@@ -48,7 +48,6 @@
   const swalMixin = Swal.mixin({ title: theme })
   // Popup Type
   await Swal.fire(theme, 'Caption', '')
-  
   await Swal.fire(theme, 'success!', 'success')
   await Swal.fire(theme, 'error!', 'error')
   await Swal.fire(theme, 'question!', 'question')
