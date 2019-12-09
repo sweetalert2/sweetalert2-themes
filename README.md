@@ -71,9 +71,9 @@ If you would like to contribute enhancements or fixes, please do the following:
 
 3. When in the `sweetalert2-themes` directory, run `npm install` or `yarn install` to install dependencies.
 
-4. To begin active development, run `npm start` or `yarn start`. If you want to start with a specific theme _preselected_, use: `npm|yarn start --start-path <theme-name>`
+4. To begin active development, run `npm start` or `yarn start`. If you want to start with a specific theme _preselected_, use: `npm run start -- --theme <theme-name>` or `yarn start --theme <theme-name>`
 
-5. Or, if you want to quickly start a new theme, run `npm run create-new-theme my-awesome-theme`. This will automatically start the server after creating the theme's default files. If you interrupt the server and want to restart it, use `npm|yarn start --start-path <theme-name>`
+5. Or, if you want to quickly start a new theme, run `npm run create-new-theme my-awesome-theme`. This will automatically start the server after creating the theme's default files. If you interrupt the server and want to restart it, use `npm run start -- --theme <theme-name>` or `yarn start --theme <theme-name>`
 
 
 Donations
