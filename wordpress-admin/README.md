@@ -47,7 +47,7 @@ var notify = Swal.mixin({
   onBeforeOpen: (toast) => {
     
     // Offset the toast message based on the admin menu size
-    let dir = 'rtl' === document.dir ? 'right' : 'left'
+    var dir = 'rtl' === document.dir ? 'right' : 'left'
     toast.parentElement.style[dir] = document.getElementById('adminmenu').offsetWidth + 'px'
   }
 })
