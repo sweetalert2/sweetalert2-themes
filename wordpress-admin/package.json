@@ -1,0 +1,23 @@
+{
+  "name": "@sweetalert2/theme-wordpress-admin",
+  "version": "3.0.7",
+  "repository": "sweetalert2/sweetalert2-themes",
+  "homepage": "https://sweetalert2.github.io/",
+  "description": "Wordpress theme for SweetAlert2",
+  "author": "",
+  "files": [
+    "*.css",
+    "*.scss"
+  ],
+  "main": "wordpress.css",
+  "keywords": [
+    "sweetalert2",
+    "wordpress",
+    "theme",
+    "themes",
+    "theming",
+    "sass"
+  ],
+  "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
+  "license": "MIT"
+}
