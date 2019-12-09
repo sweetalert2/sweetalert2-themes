@@ -33,20 +33,23 @@ import Swal from 'sweetalert2/src/sweetalert2.js'
 @import '~@sweetalert2/theme-wordpress-admin/wordpress-admin.scss';
 ```
 
+Integration
+------------
+
 To more closely match the WordPress style toast messages, use the following to get started:
 
 ```js
 var notify = Swal.mixin({
-	toast: true,
-	position: 'bottom-start',
-	showConfirmButton: false,
-	timer: 60000,
-	onBeforeOpen: (toast) => {
-		
-		// Offset the toast message based on the admin menu size
-		let dir = 'rtl' === document.dir ? 'right' : 'left'
-		toast.parentElement.style[dir] = document.getElementById('adminmenu').offsetWidth + 'px'
-	}
+  toast: true,
+  position: 'bottom-start',
+  showConfirmButton: false,
+  timer: 60000,
+  onBeforeOpen: (toast) => {
+    
+    // Offset the toast message based on the admin menu size
+    let dir = 'rtl' === document.dir ? 'right' : 'left'
+    toast.parentElement.style[dir] = document.getElementById('adminmenu').offsetWidth + 'px'
+  }
 })
 ```
 
@@ -54,8 +57,8 @@ Further, when using icons you may wish to use [WordPress Dashicons](https://deve
 
 ```js
 notify.fire({
-	icon: 'success',
-	iconHtml: '<div class="dashicons dashicons-yes" style="transform: scale(3);"></div>',
-	title: 'Settings updated.',
+  icon: 'success',
+  iconHtml: '<div class="dashicons dashicons-yes" style="transform: scale(3);"></div>',
+  title: 'Settings updated.',
 })
 ```
