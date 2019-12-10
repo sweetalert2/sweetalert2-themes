@@ -33,7 +33,7 @@
   
   if (toastOnly == 'true') {
     document.getElementById('toast-only').checked = true
-    const swalMixin = Swal.mixin({ title: theme, toast: true, timer: 3000 })
+    const swalMixin = Swal.mixin({ title: 'Settings updated.', toast: true, timer: 3000 })
     await swalMixin.fire()
     await swalMixin.fire({ position: 'bottom-start', timer: 10000, timerProgressBar: true, icon: 'success' })
     await swalMixin.fire({ position: 'bottom', showCancelButton: true })
@@ -45,15 +45,19 @@
     return
   }
 
-  const swalMixin = Swal.mixin({ title: theme })
+  // Add a title and caption to override the defaults
+  const title = '' || theme
+  const caption = ''
+
+  const swalMixin = Swal.mixin({ title: title })
   // Popup Type
-  await Swal.fire(theme, 'Caption', '')
-  await Swal.fire(theme, 'success!', 'success')
-  await Swal.fire(theme, 'error!', 'error')
-  await Swal.fire(theme, 'question!', 'question')
-  await Swal.fire(theme, 'warning!', 'warning')
-  await Swal.fire(theme, 'info!', 'info')
-  await Swal.fire(theme, 'question!', 'question')
+  await Swal.fire(title, caption ? caption : 'Caption!')
+  await Swal.fire(title, caption ? caption : 'success!', 'success')
+  await Swal.fire(title, caption ? caption : 'error!', 'error')
+  await Swal.fire(title, caption ? caption : 'question!', 'question')
+  await Swal.fire(title, caption ? caption : 'warning!', 'warning')
+  await Swal.fire(title, caption ? caption : 'info!', 'info')
+  await Swal.fire(title, caption ? caption : 'question!', 'question')
 
   // Buttons
   await swalMixin.fire({showCancelButton: true})
