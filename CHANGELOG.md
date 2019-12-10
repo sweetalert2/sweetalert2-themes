@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.7...v3.1.0) (2019-12-10)
+
+
+### Features
+
+* add WordPress admin theme ([#47](https://github.com/sweetalert2/sweetalert2-themes/issues/47)) ([84263a1](https://github.com/sweetalert2/sweetalert2-themes/commit/84263a117c697e45b52972dc72d5b70757a31b45))
+
 ## [3.0.7](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.0.6...v3.0.7) (2019-12-01)
 
 
