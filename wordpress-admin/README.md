@@ -39,7 +39,7 @@ Integration
 To more closely match the WordPress style toast messages, use the following to get started:
 
 ```js
-var notify = Swal.mixin({
+const notify = Swal.mixin({
   toast: true,
   position: 'bottom-start',
   showConfirmButton: false,
@@ -74,4 +74,11 @@ Swal.fire({
   iconHtml: '<div class="dashicons dashicons-megaphone" style="transform: scale(3.5);"></div>',
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
 })
+```
+
+If you would like to use this theme outside of the WordPress admin area, you might want to set the font-family to use the font WordPress uses:
+```css
+.swal2-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
 ```

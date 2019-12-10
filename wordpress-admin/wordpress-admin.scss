@@ -13,6 +13,9 @@ $swal2-outline-color: lighten($swal2-outline-color, 10%);
 $swal2-background: $swal2-dark-theme-black;
 $swal2-content-color: $swal2-dark-theme-white;
 
+$swal2-container-padding: 24px 16px;
+
+$swal2-title-margin: 0;
 $swal2-title-font-size: 30px;
 $swal2-title-color: $swal2-dark-theme-white;
 $swal2-backdrop: rgba(100, 100, 100, 0.5);
@@ -109,12 +112,6 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 
 @import '~sweetalert2/src/sweetalert2';
 
-// Overrides
-.swal2-container {
-  padding: 24px 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
 .swal2-header {
   flex-direction: row;
   flex-wrap: wrap;
@@ -123,7 +120,6 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 }
 
 .swal2-title {
-  margin: 0;
   font-weight: 300;
   line-height: 30px;
 }
@@ -163,7 +159,6 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 .swal2-icon {
   height: 32px;
   transform: scale(0.7) translateY(24px);
-  animation: none !important;
   border: 0;
 }
 
