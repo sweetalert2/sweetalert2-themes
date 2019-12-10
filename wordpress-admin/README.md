@@ -53,12 +53,25 @@ var notify = Swal.mixin({
 })
 ```
 
-Further, when using icons you may wish to use [WordPress Dashicons](https://developer.wordpress.org/resource/dashicons/#editor-ul).
+Further, when using icons you may wish to use [WordPress Dashicons](https://developer.wordpress.org/resource/dashicons/).
 
 ```js
 notify.fire({
   icon: 'success',
   iconHtml: '<div class="dashicons dashicons-yes" style="transform: scale(3);"></div>',
   title: 'Settings updated.',
+})
+```
+
+Using modals as another example, you can add the Dashicon's [megaphone icon](https://developer.wordpress.org/resource/dashicons/#megaphone).
+
+```js
+Swal.fire({
+	title: 'Hey, we have something to say!',
+	confirmButtonText: 'Let\'s do this',
+	showCancelButton: false,
+	icon: 'info',
+	iconHtml: '<div class="dashicons dashicons-megaphone" style="transform: scale(3.5);"></div>',
+	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
 })
 ```
