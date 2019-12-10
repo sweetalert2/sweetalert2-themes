@@ -137,6 +137,8 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 }
 
 .swal2-progress-steps {
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -149,6 +151,7 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 
 .swal2-toast .swal2-title {
   font-weight: 400 !important;
+  line-height: 13px;
 }
 
 .swal2-icon {
