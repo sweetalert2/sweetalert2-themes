@@ -12,12 +12,23 @@ $swal2-outline-color: lighten($swal2-outline-color, 10%);
 
 $swal2-background: $swal2-dark-theme-black;
 $swal2-content-color: $swal2-dark-theme-white;
+
+$swal2-title-font-size: 30px;
 $swal2-title-color: $swal2-dark-theme-white;
-$swal2-backdrop: rgba(100, 100, 100, 0.25);
+$swal2-backdrop: rgba(100, 100, 100, 0.5);
 
 // Animation
 $swal2-show-animation: fadeInUpTiny .5s;
 $swal2-hide-animation: fadeOut .25s;
+
+// CONTENT
+$swal2-content-justify-content: flex-start;
+$swal2-content-text-align: left;
+$swal2-content-font-weight: lighter;
+
+// ACTIONS
+$swal2-actions-justify-content: flex-end;
+$swal2-actions-margin: 8px auto 0;
 
 // PROGRESS STEPS
 $swal2-progress-step-background: white;
@@ -26,7 +37,7 @@ $swal2-active-step-background: $wordpress-blue;
 
 // ICONS
 $swal2-icon-animations: false;
-$swal2-icon-margin: 0 auto 24px;
+$swal2-icon-margin: 0 0 0 -24px;
 $swal2-icon-zoom: 0.7;
 $swal2-success: $wordpress-green;
 $swal2-error: $wordpress-red;
@@ -39,8 +50,27 @@ $swal2-footer-border-color: #555;
 $swal2-footer-color: darken($swal2-content-color, 15%);
 
 // INPUT
+$swal2-input-height: 30px;
+$swal2-input-padding: 0 8px;
+$swal2-input-border: 1px solid #7e8993;
+$swal2-input-border-radius: 4px;
+$swal2-input-box-shadow: 0 0 0 transparent;
+$swal2-input-focus-border: 1px solid $wordpress-blue;
+$swal2-input-focus-outline: 2px solid transparent;
+$swal2-input-focus-box-shadow: 0 0 0 1px $wordpress-blue;
+$swal2-input-font-size: 14px;
+$swal2-input-background: lighten($swal2-dark-theme-black, 5%);
 $swal2-input-color: $swal2-dark-theme-white;
-$swal2-input-background: lighten($swal2-dark-theme-black, 10%);
+$swal2-input-transition: none;
+
+// VALIDATION MESSAGE
+$swal2-validation-message-justify-content: flex-start;
+$swal2-validation-message-padding: 4px 13px;
+$swal2-validation-message-background: transparent;
+$swal2-validation-message-color: $swal2-dark-theme-white;
+$swal2-validation-message-icon-background: $wordpress-red;
+$swal2-validation-message-icon-color: $swal2-white !default;
+$swal2-validation-message-icon-zoom: 0.7;
 
 // COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
 $swal2-button-darken-hover: transparent;
@@ -56,10 +86,6 @@ $swal2-confirm-button-font-size: 13px;
 
 // CANCEL BUTTON
 $swal2-cancel-button-font-size: 13px;
-
-// VALIDATION MESSAGE
-$swal2-validation-message-background: lighten($swal2-dark-theme-black, 10%);
-$swal2-validation-message-color: $swal2-dark-theme-white;
 
 // TOAST
 $swal2-toast-show-animation: fadeInUpBig .65s;
@@ -89,9 +115,33 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+.swal2-header {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.swal2-title {
+  margin: 0;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.swal2-success-ring {
+  display: none;
+}
+
+.swal2-toast .swal2-header {
+  margin: 0 !important;
+}
+
+.swal2-progress-steps {
+  width: 100%;
+}
+
 .swal2-toast .swal2-confirm,
 .swal2-toast .swal2-cancel {
-  border: 0 !important;
   background: none;
   box-shadow: none !important;
   text-decoration: underline;
@@ -101,14 +151,10 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
   font-weight: 400 !important;
 }
 
-.swal2-popup.swal2-toast .swal2-icon {
+.swal2-icon {
   transform: scale(0.7);
   animation: none !important;
   border: 0;
-}
-
-.swal2-popup.swal2-toast .swal2-success-ring {
-  display: none;
 }
 
 .swal2-popup.swal2-toast .swal2-icon * {
