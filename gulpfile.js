@@ -11,6 +11,7 @@ const stylelint = require('gulp-stylelint')
 const browserSync = require('browser-sync').create()
 const packageJson = require('./package.json')
 const version = process.env.VERSION || packageJson.version
+const log = require('fancy-log')
 
 const banner = `/*
 * ${packageJson.name} v${version}
@@ -58,6 +59,14 @@ gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', gulp.series('default', function launchServer () {
   const theme = process.argv[4] || 'default'
+
+  if (!fs.existsSync(`./${theme}`)) {
+	  return new Promise((resolve, reject) => {
+		  log.error('\x1b[31m%s\x1b[0m', `Error    'Theme ${theme} not found.'`)
+		  resolve()
+	  })
+  }
+
   browserSync.init({
     notify: false,
     reloadOnRestart: true,
