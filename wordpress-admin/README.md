@@ -67,11 +67,11 @@ Using modals as another example, you can add the Dashicon's [megaphone icon](htt
 
 ```js
 Swal.fire({
-	title: 'Hey, we have something to say!',
-	confirmButtonText: 'Let\'s do this',
-	showCancelButton: false,
-	icon: 'info',
-	iconHtml: '<div class="dashicons dashicons-megaphone" style="transform: scale(3.5);"></div>',
-	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+  title: 'Hey, we have something to say!',
+  confirmButtonText: 'Let\'s do this',
+  showCancelButton: false,
+  icon: 'info',
+  iconHtml: '<div class="dashicons dashicons-megaphone" style="transform: scale(3.5);"></div>',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
 })
 ```
