@@ -142,6 +142,10 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
   width: 100%;
 }
 
+.swal2-toast .swal2-actions {
+  margin: 0 !important;
+}
+
 .swal2-toast .swal2-confirm,
 .swal2-toast .swal2-cancel {
   margin: 0 0 0 16px !important;
