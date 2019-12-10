@@ -37,7 +37,7 @@ $swal2-active-step-background: $wordpress-blue;
 
 // ICONS
 $swal2-icon-animations: false;
-$swal2-icon-margin: 0 0 0 -24px;
+$swal2-icon-margin: -36px -4px 0 -24px;
 $swal2-icon-zoom: 0.7;
 $swal2-success: $wordpress-green;
 $swal2-error: $wordpress-red;
@@ -161,11 +161,32 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 }
 
 .swal2-icon {
-  transform: scale(0.7);
+  height: 32px;
+  transform: scale(0.7) translateY(24px);
   animation: none !important;
   border: 0;
 }
 
+.swal2-icon.swal2-success {
+  transform: scale(0.7) translateY(4px);
+}
+
+.swal2-icon.swal2-error {
+  transform: scale(0.7) translateY(8px);
+}
+
+.swal2-success-circular-line-left {
+  display: none !important;
+}
+
 .swal2-popup.swal2-toast .swal2-icon * {
   animation: none !important;
+}
+
+.swal2-toast .swal2-icon {
+  transform: scale(0.7) translateY(-2px);
+}
+
+.swal2-toast .swal2-icon.swal2-success {
+  transform: scale(0.7) translateY(-5px);
 }
