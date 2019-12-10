@@ -144,6 +144,8 @@ $swal2-timer-progress-bar-background: $wordpress-blue;
 
 .swal2-toast .swal2-confirm,
 .swal2-toast .swal2-cancel {
+  margin: 0 0 0 16px !important;
+  padding: 0 !important;
   background: none;
   box-shadow: none !important;
   text-decoration: underline;
