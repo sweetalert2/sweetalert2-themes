@@ -21,7 +21,7 @@
     "gulp-stylelint": "^11.0.0",
     "node-sass-tilde-importer": "^1.0.2",
     "promise-polyfill": "^8.1.3",
-    "replace-in-file": "^4.2.0",
+    "replace-in-file": "^5.0.2",
     "stylelint": "^12.0.0",
     "sweetalert2": "^9.5.2"
   },
