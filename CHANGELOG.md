@@ -1,3 +1,11 @@
+## [3.1.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.1.1...v3.1.2) (2020-03-07)
+
+
+### Bug Fixes
+
+* **bootstrap-4:** remove padding and border-bottom from .swal2-header ([1afddc0](https://github.com/sweetalert2/sweetalert2-themes/commit/1afddc08682b9a2e4554cdfe62c5be20eac2876e)), closes [#52](https://github.com/sweetalert2/sweetalert2-themes/issues/52)
+* **wordpress-admin:** set $swal2-container-padding to single value ([06eeed4](https://github.com/sweetalert2/sweetalert2-themes/commit/06eeed4ae21c7c27bfc1b56d2629e5249ae3c74d)), closes [#51](https://github.com/sweetalert2/sweetalert2-themes/issues/51)
+
 ## [3.1.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.1.0...v3.1.1) (2020-02-22)
 
 
