@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.1.3...v3.1.4) (2020-03-16)
+
+
+### Bug Fixes
+
+* **dark:** timer-progress-bar color ([008182a](https://github.com/sweetalert2/sweetalert2-themes/commit/008182ac628e8085fd9ff85aa5dd654651135c17))
+
 ## [3.1.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.1.2...v3.1.3) (2020-03-16)
 
 
