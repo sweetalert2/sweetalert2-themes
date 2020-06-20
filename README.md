@@ -13,6 +13,7 @@ Available themes
 - [`Bootstrap 4`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/bootstrap-4)
 - [`Material UI`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/material-ui)
 - [`WordPress Admin`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/wordpress-admin)
+- [`Bulma`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/bulma)
 - [`Default`](https://github.com/sweetalert2/sweetalert2-themes/tree/master/default)
 
 Installation
