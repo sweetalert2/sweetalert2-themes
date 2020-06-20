@@ -30,7 +30,10 @@ $blue: hsl(217, 71%, 53%);
 $purple: hsl(271, 100%, 71%);
 $red: hsl(348, 86%, 61%);
 
-$text-strong: rgb(54, 54, 54);
+// Text colors
+$text: $grey-dark;
+$text-light: $grey;
+$text-strong: $grey-darker;
 
 $content-heading-color: $text-strong;
 
@@ -44,6 +47,15 @@ $danger: $red;
 $light: $white-ter;
 $dark: $grey-darker;
 
+$link: $blue;
+
+$border: $grey-lighter;
+$border-hover: $grey-light;
+$border-light: $grey-lightest;
+$border-light-hover: $grey-light;
+
+$background: $white-ter;
+
 // sizes
 $size-1: 3rem;
 $size-2: 2.5rem;
@@ -52,6 +64,7 @@ $size-4: 1.5rem;
 $size-5: 1.25rem;
 $size-6: 1rem;
 $size-7: 0.75rem;
+$control-height: 2.25em;
 
 //border
 $radius: 4px;
@@ -75,6 +88,23 @@ $modal-close-right: 20px;
 $modal-close-top: 20px;
 
 $weight-normal: 400;
+
+//input
+$input-color: $text-strong;
+$input-border-color: $border;
+$input-height: $control-height;
+$input-shadow: inset 0 0.0625em 0.125em rgba($dark, 0.05);
+$input-placeholder-color: rgba($input-color, 0.3);
+
+$input-hover-color: $text-strong;
+$input-hover-border-color: $border-hover;
+
+$input-focus-color: $text-strong;
+$input-focus-border-color: $link;
+$input-focus-box-shadow-size: 0 0 0 0.125em;
+$input-focus-box-shadow-color: rgba($link, 0.25);
+
+$input-radius: $radius;
 
 // -- BULMA COPY VARIABLES
 //
@@ -130,9 +160,9 @@ $swal2-info: $info;
 $swal2-question: $dark;
 
 // INPUT
-$swal2-input-border-radius: 0;
-$swal2-input-box-shadow: none;
-$swal2-input-box-shadow-focus: none;
+$swal2-input-border-radius: $radius;
+$swal2-input-box-shadow: inset 0 0.0625em 0.125em rgba($dark, 0.05);
+$swal2-input-box-shadow-focus: inset 0 0 0 0.125em rgba($link, 0.25);
 $swal2-input-transition: initial;
 
 // ANIMATIONS
@@ -146,6 +176,12 @@ $swal2-toast-success-line-tip-animation: none;
 $swal2-toast-success-line-long-animation: none;
 $swal2-toast-border: 1px solid lighten($swal2-black, 85);
 
+// PROGRESS STEPS
+$swal2-progress-step-background: $grey-lighter;
+$swal2-progress-step-color: $white;
+$swal2-active-step-background: $blue;
+$swal2-active-step-color: $white;
+
 @import "~sweetalert2/src/sweetalert2";
 
 .swal2-styled {
@@ -156,4 +192,11 @@ $swal2-toast-border: 1px solid lighten($swal2-black, 85);
 
 .swal2-validation-message::before {
   background-color: $danger;
+}
+
+.swal2-input:focus,
+.swal2-file:focus,
+.swal2-textarea:focus {
+  border: 1px solid $input-focus-border-color;
+  box-shadow: $input-focus-box-shadow-size $input-focus-box-shadow-color;
 }
