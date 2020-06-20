@@ -56,6 +56,9 @@ $border-light-hover: $grey-light;
 
 $background: $white-ter;
 
+$input-arrow: $grey-light;
+$input-disabled-border-color: $white-ter;
+
 // sizes
 $size-1: 3rem;
 $size-2: 2.5rem;
@@ -199,4 +202,17 @@ $swal2-active-step-color: $white;
 .swal2-textarea:focus {
   border: 1px solid $input-focus-border-color;
   box-shadow: $input-focus-box-shadow-size $input-focus-box-shadow-color;
+}
+
+.swal2-input[disabled] {
+  border-color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: none;
+  color: $grey-lighter;
+}
+
+.swal2-select {
+  border: 1px solid $grey-lighter;
+  border-radius: $radius;
+  color: $dark;
 }
