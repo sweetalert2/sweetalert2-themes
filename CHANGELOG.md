@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.1.4...v3.2.0) (2020-06-20)
+
+
+### Features
+
+* add Bulma theme ([#57](https://github.com/sweetalert2/sweetalert2-themes/issues/57)) ([9212725](https://github.com/sweetalert2/sweetalert2-themes/commit/92127258f7a267cc1ec6a6245a05c4bc1b3afda3)), closes [#13](https://github.com/sweetalert2/sweetalert2-themes/issues/13) [#13](https://github.com/sweetalert2/sweetalert2-themes/issues/13) [#13](https://github.com/sweetalert2/sweetalert2-themes/issues/13) [#13](https://github.com/sweetalert2/sweetalert2-themes/issues/13)
+
 ## [3.1.4](https://github.com/sweetalert2/sweetalert2-themes/compare/v3.1.3...v3.1.4) (2020-03-16)
 
 
