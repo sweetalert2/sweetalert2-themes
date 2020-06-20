@@ -1,0 +1,23 @@
+{
+  "name": "@sweetalert2/theme-bulma",
+  "version": "3.1.4",
+  "repository": "sweetalert2/sweetalert2-themes",
+  "homepage": "https://sweetalert2.github.io/",
+  "description": "Bulma theme for SweetAlert2",
+  "author": "",
+  "files": [
+    "*.css",
+    "*.scss"
+  ],
+  "main": "bulma.css",
+  "keywords": [
+    "sweetalert2",
+    "bulma",
+    "theme",
+    "themes",
+    "theming",
+    "sass"
+  ],
+  "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
+  "license": "MIT"
+}
