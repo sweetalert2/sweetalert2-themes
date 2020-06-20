@@ -4,70 +4,86 @@
 
 //
 // -- BULMA COPY VARIABLES
+
 // Colors
+$black: hsl(0, 0%, 4%);
+$black-bis: hsl(0, 0%, 7%);
+$black-ter: hsl(0, 0%, 14%);
 
-$black: hsl(0, 0%, 4%) !default;
-$black-bis: hsl(0, 0%, 7%) !default;
-$black-ter: hsl(0, 0%, 14%) !default;
+$grey-darker: hsl(0, 0%, 21%);
+$grey-dark: hsl(0, 0%, 29%);
+$grey: hsl(0, 0%, 48%);
+$grey-light: hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+$grey-lightest: hsl(0, 0%, 93%);
 
-$grey-darker: hsl(0, 0%, 21%) !default;
-$grey-dark: hsl(0, 0%, 29%) !default;
-$grey: hsl(0, 0%, 48%) !default;
-$grey-light: hsl(0, 0%, 71%) !default;
-$grey-lighter: hsl(0, 0%, 86%) !default;
-$grey-lightest: hsl(0, 0%, 93%) !default;
+$white-ter: hsl(0, 0%, 96%);
+$white-bis: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
 
-$white-ter: hsl(0, 0%, 96%) !default;
-$white-bis: hsl(0, 0%, 98%) !default;
-$white: hsl(0, 0%, 100%) !default;
+$orange: hsl(14, 100%, 53%);
+$yellow: hsl(48, 100%, 67%);
+$green: hsl(141, 53%, 53%);
+$turquoise: hsl(171, 100%, 41%);
+$cyan: hsl(204, 71%, 53%);
+$blue: hsl(217, 71%, 53%);
+$purple: hsl(271, 100%, 71%);
+$red: hsl(348, 86%, 61%);
 
-$orange: hsl(14, 100%, 53%) !default;
-$yellow: hsl(48, 100%, 67%) !default;
-$green: hsl(141, 53%, 53%) !default;
-$turquoise: hsl(171, 100%, 41%) !default;
-$cyan: hsl(204, 71%, 53%) !default;
-$blue: hsl(217, 71%, 53%) !default;
-$purple: hsl(271, 100%, 71%) !default;
-$red: hsl(348, 86%, 61%) !default;
+$text-strong: rgb(54, 54, 54);
 
-$size-1: 3rem !default;
-$size-2: 2.5rem !default;
-$size-3: 2rem !default;
-$size-4: 1.5rem !default;
-$size-5: 1.25rem !default;
-$size-6: 1rem !default;
-$size-7: 0.75rem !default;
+$content-heading-color: $text-strong;
 
-$radius: 4px !default;
+$primary: $turquoise;
 
-$text-strong: rgb(54, 54, 54) !default;
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+
+$light: $white-ter;
+$dark: $grey-darker;
+
+// sizes
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.75rem;
+
+//border
+$radius: 4px;
 
 // Typography
 $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto",
   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  "Helvetica", "Arial", sans-serif !default;
-$family-monospace: monospace !default;
-$render-mode: optimizeLegibility !default;
-
-$content-heading-color: $text-strong !default;
+  "Helvetica", "Arial", sans-serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
 
 $modal-background-background-color: rgba(10, 10, 10, 0.86);
 $family-primary: $family-sans-serif;
-$body-size: 16px !default;
-$radius-large: 6px !default;
-$body-font-size: 1em !default;
-$small-font-size: 0.875em !default;
+$body-size: 16px;
+$radius-large: 6px;
+$body-font-size: 1em;
+$small-font-size: 0.875em;
+
+$modal-close-dimensions: 40px;
+$modal-close-right: 20px;
+$modal-close-top: 20px;
 
 // -- BULMA COPY VARIABLES
 //
 
 // TITLE
 $swal2-title-color: $content-heading-color;
-$swal2-title-font-size: $size-3 !default;
+$swal2-title-font-size: $size-3;
 
 // BACKDROP
 $swal2-backdrop: $modal-background-background-color;
-$swal2-backdrop-transition: background-color 0.1s !default;
+$swal2-backdrop-transition: background-color 0.1s;
 
 // TYPOGRAPHY
 $swal2-font: $family-primary;
@@ -87,10 +103,13 @@ $swal2-cancel-button-background-color: $white;
 $swal2-cancel-button-color: $grey-darker;
 $swal2-cancel-button-font-size: $size-6;
 
-// BUTTONS
-// $swal2-button-darken-hover: rgba($material-ui-blue, 0.1);
-// $swal2-button-darken-active: rgba($material-ui-blue, 0.3);
-// $swal2-button-focus-outline: #fff;
+// CLOSE BUTTON
+$swal2-close-button-width: $modal-close-dimensions;
+$swal2-close-button-height: $modal-close-dimensions;
+$swal2-close-button-position: fixed;
+$swal2-close-button-font-size: $size-4;
+$swal2-close-button-color: $swal2-white;
+$swal2-close-button-gap: $modal-close-top;
 
 // CONTENT
 $swal2-content-font-size: $body-size;
@@ -101,6 +120,12 @@ $swal2-box-shadow: none;
 
 // ICONS
 $swal2-icon-animations: false;
+$swal2-success: $success;
+$swal2-success-border: rgba($success, 0.3);
+$swal2-error: $danger;
+$swal2-warning: $warning;
+$swal2-info: $info;
+$swal2-question: $dark;
 
 // INPUT
 $swal2-input-border-radius: 0;
@@ -112,16 +137,12 @@ $swal2-input-transition: initial;
 $swal2-show-animation: none;
 $swal2-hide-animation: none;
 
-// CLOSE BUTTON
-$swal2-close-button-transition: initial;
-
 // TOASTS
 $swal2-toast-show-animation: none;
 $swal2-toast-hide-animation: none;
 $swal2-toast-success-line-tip-animation: none;
 $swal2-toast-success-line-long-animation: none;
 $swal2-toast-border: 1px solid lighten($swal2-black, 85);
-$swal2-toast-box-shadow: none;
 
 @import "~sweetalert2/src/sweetalert2";
 
@@ -129,4 +150,8 @@ $swal2-toast-box-shadow: none;
   &.swal2-cancel {
     font-weight: 400;
   }
+}
+
+.swal2-validation-message::before {
+  background-color: $danger;
 }
