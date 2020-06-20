@@ -1,0 +1,218 @@
+@import "~sweetalert2/src/variables";
+
+// override SASS variables here
+
+//
+// -- BULMA COPY VARIABLES
+
+// Colors
+$black: hsl(0, 0%, 4%);
+$black-bis: hsl(0, 0%, 7%);
+$black-ter: hsl(0, 0%, 14%);
+
+$grey-darker: hsl(0, 0%, 21%);
+$grey-dark: hsl(0, 0%, 29%);
+$grey: hsl(0, 0%, 48%);
+$grey-light: hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+$grey-lightest: hsl(0, 0%, 93%);
+
+$white-ter: hsl(0, 0%, 96%);
+$white-bis: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+$orange: hsl(14, 100%, 53%);
+$yellow: hsl(48, 100%, 67%);
+$green: hsl(141, 53%, 53%);
+$turquoise: hsl(171, 100%, 41%);
+$cyan: hsl(204, 71%, 53%);
+$blue: hsl(217, 71%, 53%);
+$purple: hsl(271, 100%, 71%);
+$red: hsl(348, 86%, 61%);
+
+// Text colors
+$text: $grey-dark;
+$text-light: $grey;
+$text-strong: $grey-darker;
+
+$content-heading-color: $text-strong;
+
+$primary: $turquoise;
+
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+
+$light: $white-ter;
+$dark: $grey-darker;
+
+$link: $blue;
+
+$border: $grey-lighter;
+$border-hover: $grey-light;
+$border-light: $grey-lightest;
+$border-light-hover: $grey-light;
+
+$background: $white-ter;
+
+$input-arrow: $grey-light;
+$input-disabled-border-color: $white-ter;
+
+// sizes
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.75rem;
+$control-height: 2.25em;
+
+//border
+$radius: 4px;
+
+// Typography
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+$modal-background-background-color: rgba(10, 10, 10, 0.86);
+$family-primary: $family-sans-serif;
+$body-size: 16px;
+$radius-large: 6px;
+$body-font-size: 1em;
+$small-font-size: 0.875em;
+
+$modal-close-dimensions: 40px;
+$modal-close-right: 20px;
+$modal-close-top: 20px;
+
+$weight-normal: 400;
+
+//input
+$input-color: $text-strong;
+$input-border-color: $border;
+$input-height: $control-height;
+$input-shadow: inset 0 0.0625em 0.125em rgba($dark, 0.05);
+$input-placeholder-color: rgba($input-color, 0.3);
+
+$input-hover-color: $text-strong;
+$input-hover-border-color: $border-hover;
+
+$input-focus-color: $text-strong;
+$input-focus-border-color: $link;
+$input-focus-box-shadow-size: 0 0 0 0.125em;
+$input-focus-box-shadow-color: rgba($link, 0.25);
+
+$input-radius: $radius;
+
+// -- BULMA COPY VARIABLES
+//
+
+// TITLE
+$swal2-title-color: $content-heading-color;
+$swal2-title-font-size: $size-3;
+
+// BACKDROP
+$swal2-backdrop: $modal-background-background-color;
+$swal2-backdrop-transition: background-color 0.1s;
+
+// TYPOGRAPHY
+$swal2-font: $family-primary;
+$swal2-font-size: $body-size;
+
+// CONFIRM BUTTON
+$swal2-confirm-button-border: 0;
+$swal2-confirm-button-border-radius: $radius;
+$swal2-confirm-button-background-color: $turquoise;
+$swal2-confirm-button-color: $white;
+$swal2-confirm-button-font-size: $size-6;
+
+// CANCEL BUTTON
+$swal2-cancel-button-border: 1px solid $grey-lighter;
+$swal2-cancel-button-border-radius: $radius;
+$swal2-cancel-button-background-color: $white;
+$swal2-cancel-button-color: $grey-darker;
+$swal2-cancel-button-font-size: $size-6;
+
+// CLOSE BUTTON
+$swal2-close-button-width: $modal-close-dimensions;
+$swal2-close-button-height: $modal-close-dimensions;
+$swal2-close-button-position: fixed;
+$swal2-close-button-font-size: $size-4;
+$swal2-close-button-color: $swal2-white;
+$swal2-close-button-gap: $modal-close-top;
+
+// CONTENT
+$swal2-content-font-size: $body-size;
+
+// BOX MODEL
+$swal2-border-radius: $radius-large;
+$swal2-box-shadow: none;
+
+// ICONS
+$swal2-icon-animations: false;
+$swal2-success: $success;
+$swal2-success-border: rgba($success, 0.3);
+$swal2-error: $danger;
+$swal2-warning: $warning;
+$swal2-info: $info;
+$swal2-question: $dark;
+
+// INPUT
+$swal2-input-border-radius: $radius;
+$swal2-input-box-shadow: inset 0 0.0625em 0.125em rgba($dark, 0.05);
+$swal2-input-box-shadow-focus: inset 0 0 0 0.125em rgba($link, 0.25);
+$swal2-input-transition: initial;
+
+// ANIMATIONS
+$swal2-show-animation: none;
+$swal2-hide-animation: none;
+
+// TOASTS
+$swal2-toast-show-animation: none;
+$swal2-toast-hide-animation: none;
+$swal2-toast-success-line-tip-animation: none;
+$swal2-toast-success-line-long-animation: none;
+$swal2-toast-border: 1px solid lighten($swal2-black, 85);
+
+// PROGRESS STEPS
+$swal2-progress-step-background: $grey-lighter;
+$swal2-progress-step-color: $white;
+$swal2-active-step-background: $blue;
+$swal2-active-step-color: $white;
+
+@import "~sweetalert2/src/sweetalert2";
+
+.swal2-styled {
+  &.swal2-cancel {
+    font-weight: $weight-normal;
+  }
+}
+
+.swal2-validation-message::before {
+  background-color: $danger;
+}
+
+.swal2-input:focus,
+.swal2-file:focus,
+.swal2-textarea:focus {
+  border: 1px solid $input-focus-border-color;
+  box-shadow: $input-focus-box-shadow-size $input-focus-box-shadow-color;
+}
+
+.swal2-input[disabled] {
+  border-color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: none;
+  color: $grey-lighter;
+}
+
+.swal2-select {
+  border: 1px solid $grey-lighter;
+  border-radius: $radius;
+  color: $dark;
+}
