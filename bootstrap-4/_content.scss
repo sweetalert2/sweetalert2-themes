@@ -1,0 +1,492 @@
+.swal2-confirm,
+.swal2-cancel {
+  transition: $bootstrap-btn-transition;
+}
+
+.swal2-popup {
+  border: $bootstrap-input-border-width solid rgba(0, 0, 0, .2);
+
+  &.swal2-toast {
+    padding: .25rem .75rem;
+    font-size: .875rem;
+
+    .swal2-header {
+      padding: 0;
+      border-bottom: 0;
+    }
+
+    .swal2-title {
+      margin: 0;
+      color: $bootstrap-gray-600;
+    }
+
+    .swal2-content {
+      padding: 0 .5rem;
+    }
+
+    .swal2-actions {
+      flex-basis: 0 !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swal2-styled {
+      margin: 0;
+    }
+  }
+}
+
+.swal2-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.swal2-content {
+  padding: 1rem 1rem 0;
+}
+
+.swal2-actions {
+  border-radius: $bootstrap-input-border-radius;
+}
+
+.swal2-footer {
+  padding: 1rem;
+  border-top: $bootstrap-input-border-width solid $bootstrap-input-border-color;
+}
+
+.swal2-close {
+  height: auto;
+  padding: 1rem 1.2rem 1rem 1rem;
+  font-weight: 700;
+}
+
+.swal2-input,
+.swal2-textarea {
+  height: inherit;
+  padding: $swal2-input-padding;
+  transition: $bootstrap-custom-forms-transition;
+  line-height: $bootstrap-input-line-height;
+
+  &:focus {
+    border: $bootstrap-input-focus-border;
+    outline: 0;
+    box-shadow: $bootstrap-input-focus-box-shadow;
+    color: $bootstrap-input-color;
+  }
+
+  &.swal2-inputerror {
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: $bootstrap-danger;
+      box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-danger, .25) !important;
+    }
+  }
+}
+
+.swal2-styled {
+  &.swal2-confirm {
+    padding: $swal2-input-padding;
+    font-size: 1rem;
+
+    &:hover {
+      border-color: darken($bootstrap-primary, 10%);
+      background-color: darken($bootstrap-primary, 7.5%);
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: $bootstrap-input-focus-box-shadow;
+    }
+
+    &:active {
+      border-color: darken($bootstrap-primary, 12.5%);
+      background-color: darken($bootstrap-primary, 10%);
+
+      &:focus {
+        box-shadow: $bootstrap-input-focus-box-shadow;
+      }
+    }
+  }
+
+  &.swal2-cancel {
+    padding: $swal2-input-padding;
+    font-size: 1rem;
+
+    &:hover {
+      border-color: darken($bootstrap-secondary, 10%);
+      background-color: darken($bootstrap-secondary, 7.5%);
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: $bootstrap-btn-secondary-focus-box-shadow;
+    }
+
+    &:active {
+      border-color: darken($bootstrap-secondary, 12.5%);
+      background-color: darken($bootstrap-secondary, 10%);
+
+      &:focus {
+        box-shadow: $bootstrap-btn-secondary-focus-box-shadow;
+      }
+    }
+  }
+}
+
+.swal2-select {
+  display: inline-block;
+  width: 100%;
+  height: $bootstrap-input-height;
+  padding: .375rem 1.75rem .375rem .75rem;
+  transition: $bootstrap-custom-forms-transition;
+  border: $bootstrap-input-border-width solid $bootstrap-input-border-color;
+  border-radius: $bootstrap-input-border-radius;
+  background: $bootstrap-custom-select-background;
+  background-color: $bootstrap-input-bg;
+  color: $bootstrap-input-color;
+  vertical-align: middle;
+  // @include box-shadow($custom-select-box-shadow);
+  appearance: none;
+
+  &:focus {
+    border: $bootstrap-input-focus-border;
+    outline: 0;
+    box-shadow: $bootstrap-input-focus-box-shadow;
+    color: $bootstrap-input-color;
+
+    &::-ms-value {
+      background-color: $bootstrap-input-bg;
+      color: $bootstrap-input-color;
+    }
+  }
+
+  &[multiple],
+  &[size]:not([size='1']) {
+    height: auto;
+    padding-right: $bootstrap-input-padding-x;
+    background-image: none;
+  }
+
+  &:disabled {
+    background-color: $bootstrap-input-disabled-bg;
+    color: $bootstrap-input-disabled-color;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.swal2-radio {
+  label {
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-checked-border-color;
+        background: $bootstrap-custom-control-indicator-checked-bg;
+        color: $bootstrap-custom-control-indicator-checked-color;
+      }
+
+      &:focus ~ .swal2-label::before {
+        box-shadow: $bootstrap-custom-control-indicator-focus-box-shadow;
+      }
+
+      &:focus:not(:checked) ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-focus-border-color;
+      }
+
+      &:not(:disabled):active ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-active-border-color;
+        background-color: $bootstrap-custom-control-indicator-active-bg;
+        color: $bootstrap-custom-control-indicator-active-color;
+      }
+    }
+
+    input:checked ~ .swal2-label::after {
+      background-image: $bootstrap-custom-radio-indicator-icon-checked;
+    }
+
+    input:disabled:checked ~ .swal2-label::before {
+      background-color: $bootstrap-custom-control-indicator-checked-disabled-bg;
+    }
+  }
+
+  .swal2-label {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 6;
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
+      border-radius: $bootstrap-custom-radio-indicator-border-radius;
+      background-color: $bootstrap-custom-control-indicator-bg;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 6;
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: transparent solid $bootstrap-custom-control-indicator-border-width;
+      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
+    }
+  }
+}
+
+.swal2-checkbox {
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+
+  input {
+    z-index: -1;
+    opacity: 0;
+
+    &:checked ~ .swal2-label::before {
+      border-color: $bootstrap-custom-control-indicator-checked-border-color;
+      background: $bootstrap-custom-control-indicator-checked-bg;
+      color: $bootstrap-custom-control-indicator-checked-color;
+    }
+
+    &:focus ~ .swal2-label::before {
+      box-shadow: $bootstrap-custom-control-indicator-focus-box-shadow;
+    }
+
+    &:focus:not(:checked) ~ .swal2-label::before {
+      border-color: $bootstrap-custom-control-indicator-focus-border-color;
+    }
+
+    &:not(:disabled):active ~ .swal2-label::before {
+      border-color: $bootstrap-custom-control-indicator-active-border-color;
+      background-color: $bootstrap-custom-control-indicator-active-bg;
+      color: $bootstrap-custom-control-indicator-active-color;
+    }
+  }
+
+  input:checked ~ .swal2-label::after {
+    background-image: $bootstrap-custom-checkbox-indicator-icon-checked;
+  }
+
+  input:disabled:checked ~ .swal2-label::before {
+    background-color: $bootstrap-custom-control-indicator-checked-disabled-bg;
+  }
+
+  .swal2-label {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
+      background-color: $bootstrap-custom-control-indicator-bg;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: transparent solid $bootstrap-custom-control-indicator-border-width;
+      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
+    }
+  }
+}
+
+.swal2-range {
+  align-items: center;
+
+  input {
+    width: 100%;
+    height: calc(#{$bootstrap-custom-range-thumb-height} + #{$bootstrap-custom-range-thumb-focus-box-shadow-width * 3});
+    padding: 0;
+    background-color: transparent;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+
+      &::-webkit-slider-thumb {
+        box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+      }
+
+      &::-moz-range-thumb {
+        box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+      }
+
+      &::-ms-thumb {
+        box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+      }
+    }
+
+    &::-moz-focus-outer {
+      border: 0;
+    }
+
+    &::-webkit-slider-thumb {
+      width: $bootstrap-custom-range-thumb-width;
+      height: $bootstrap-custom-range-thumb-height;
+      margin-top: ($bootstrap-custom-range-track-height - $bootstrap-custom-range-thumb-height) / 2;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-range-thumb-border;
+      border-radius: $bootstrap-custom-range-thumb-border-radius;
+      background: $bootstrap-custom-range-thumb-bg;
+      box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+      appearance: none;
+
+      &:active {
+        background: $bootstrap-custom-range-thumb-active-bg;
+      }
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: $bootstrap-custom-range-track-width;
+      height: $bootstrap-custom-range-track-height;
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      border-color: transparent;
+      background-color: $bootstrap-custom-range-track-bg;
+      box-shadow: $bootstrap-custom-range-track-box-shadow;
+      color: transparent;
+      cursor: $bootstrap-custom-range-track-cursor;
+    }
+
+    &::-moz-range-thumb {
+      width: $bootstrap-custom-range-thumb-width;
+      height: $bootstrap-custom-range-thumb-height;
+      margin-top: 1rem;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-range-thumb-border;
+      border-radius: $bootstrap-custom-range-thumb-border-radius;
+      background: $bootstrap-custom-range-thumb-bg;
+      box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+      appearance: none;
+
+      &:active {
+        background: $bootstrap-custom-range-thumb-active-bg;
+      }
+    }
+
+    &::-moz-range-track {
+      width: $bootstrap-custom-range-track-width;
+      height: $bootstrap-custom-range-track-height;
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      border-color: transparent;
+      background-color: $bootstrap-custom-range-track-bg;
+      box-shadow: $bootstrap-custom-range-track-box-shadow;
+      color: transparent;
+      cursor: $bootstrap-custom-range-track-cursor;
+    }
+
+    &::-ms-thumb {
+      width: $bootstrap-custom-range-thumb-width;
+      height: $bootstrap-custom-range-thumb-height;
+      margin-top: 0;
+      margin-right: $bootstrap-custom-range-thumb-focus-box-shadow-width;
+      margin-left: $bootstrap-custom-range-thumb-focus-box-shadow-width;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-range-thumb-border;
+      border-radius: $bootstrap-custom-range-thumb-border-radius;
+      background: $bootstrap-custom-range-thumb-bg;
+      box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+      appearance: none;
+
+      &:active {
+        background: $bootstrap-custom-range-thumb-active-bg;
+      }
+    }
+
+    &::-ms-track {
+      width: $bootstrap-custom-range-track-width;
+      height: $bootstrap-custom-range-track-height;
+      border-width: $bootstrap-custom-range-thumb-height / 2;
+      border-color: transparent;
+      background-color: transparent;
+      box-shadow: $bootstrap-custom-range-track-box-shadow;
+      color: transparent;
+      cursor: $bootstrap-custom-range-track-cursor;
+    }
+
+    &::-ms-fill-lower {
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      background-color: $bootstrap-custom-range-track-bg;
+    }
+
+    &::-ms-fill-upper {
+      margin-right: 15px;
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      background-color: $bootstrap-custom-range-track-bg;
+    }
+
+    &:disabled {
+      &::-webkit-slider-thumb {
+        background-color: $bootstrap-custom-range-thumb-disabled-bg;
+      }
+
+      &::-webkit-slider-runnable-track {
+        cursor: default;
+      }
+
+      &::-moz-range-thumb {
+        background-color: $bootstrap-custom-range-thumb-disabled-bg;
+      }
+
+      &::-moz-range-track {
+        cursor: default;
+      }
+
+      &::-ms-thumb {
+        background-color: $bootstrap-custom-range-thumb-disabled-bg;
+      }
+    }
+  }
+}
+
+.swal2-validation-message {
+  position: relative;
+  margin-bottom: $bootstrap-alert-margin-bottom;
+  padding: $bootstrap-alert-padding-y $bootstrap-alert-padding-x;
+  border: $bootstrap-alert-border-width solid transparent;
+  border-radius: $bootstrap-alert-border-radius;
+  border-color: $bootstrap-alert-border-color;
+  background: $bootstrap-alert-background;
+  color: $bootstrap-alert-color;
+  font-size: $bootstrap-alert-font-size;
+
+  &::before {
+    background-color: lighten($bootstrap-danger, 10%);
+  }
+}
+
+.swal2-toast {
+  max-width: $bootstrap-toast-max-width;
+  border-radius: $bootstrap-toast-border-radius;
+  background-color: $bootstrap-toast-background-color;
+}
+
+//

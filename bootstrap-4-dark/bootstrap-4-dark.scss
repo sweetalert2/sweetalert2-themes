@@ -1,7 +1,8 @@
 @import '~sweetalert2/src/variables';
 @import '../bootstrap-4/function';
-@import './variables.scss';
+@import './variables-dark';
+@import '../bootstrap-4/variables';
 @import '~sweetalert2/src/sweetalert2';
-@import './content.scss';
+@import '../bootstrap-4/content.scss';
 
 //
