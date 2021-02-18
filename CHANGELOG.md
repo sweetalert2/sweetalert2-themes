@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/sweetalert2/sweetalert2-themes/compare/v4.0.2...v4.0.3) (2021-02-18)
+
+
+### Bug Fixes
+
+* bump sweetalert2 to latest ([2174654](https://github.com/sweetalert2/sweetalert2-themes/commit/217465453b67e826da10da16f943d2cfb054bc1e))
+
 ## [4.0.2](https://github.com/sweetalert2/sweetalert2-themes/compare/v4.0.1...v4.0.2) (2021-01-25)
 
 
