@@ -154,7 +154,6 @@ $swal2-border-radius: $radius-large;
 $swal2-box-shadow: none;
 
 // ICONS
-$swal2-icon-animations: false;
 $swal2-success: $success;
 $swal2-success-border: rgba($success, 0.3);
 $swal2-error: $danger;
@@ -169,14 +168,8 @@ $swal2-input-box-shadow-focus: inset 0 0 0 0.125em rgba($link, 0.25);
 $swal2-input-transition: initial;
 
 // ANIMATIONS
-$swal2-show-animation: none;
-$swal2-hide-animation: none;
 
 // TOASTS
-$swal2-toast-show-animation: none;
-$swal2-toast-hide-animation: none;
-$swal2-toast-success-line-tip-animation: none;
-$swal2-toast-success-line-long-animation: none;
 $swal2-toast-border: 1px solid lighten($swal2-black, 85);
 
 // PROGRESS STEPS
