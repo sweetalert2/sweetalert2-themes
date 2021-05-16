@@ -130,6 +130,13 @@ $swal2-confirm-button-border-radius: $radius;
 $swal2-confirm-button-background-color: $turquoise;
 $swal2-confirm-button-color: $white;
 $swal2-confirm-button-font-size: $size-6;
+$swal2-confirm-button-focus-box-shadow: 0 0 0 3px rgba($swal2-confirm-button-background-color, .5);
+
+// DENY BUTTON
+$swal2-deny-button-border-radius: $radius;
+$swal2-deny-button-background-color: $red;
+$swal2-deny-button-color: $white;
+$swal2-deny-button-font-size: $size-6;
 
 // CANCEL BUTTON
 $swal2-cancel-button-border: 1px solid $grey-lighter;
@@ -146,8 +153,8 @@ $swal2-close-button-font-size: $size-4;
 $swal2-close-button-color: $swal2-white;
 $swal2-close-button-gap: $modal-close-top;
 
-// CONTENT
-$swal2-content-font-size: $body-size;
+// HTML CONTAINER
+$swal2-html-container-font-size: $body-size;
 
 // BOX MODEL
 $swal2-border-radius: $radius-large;

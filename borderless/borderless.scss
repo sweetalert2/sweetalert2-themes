@@ -28,11 +28,11 @@ $swal2-backdrop: $borderless-theme-color;
 // TITLE
 $swal2-title-color: $swal2-white;
 
-// CONTENT
-$swal2-content-color: $swal2-white;
+// HTML CONTAINER
+$swal2-html-container-color: $swal2-white;
 
 // PROGRESS STEPS
-$swal2-progress-step-background: rgba($swal2-black, .2);
+$swal2-progress-step-background: lighten($borderless-theme-color, 30%);
 
 // VALIDATION MESSAGE
 $swal2-validation-message-background: transparent;
