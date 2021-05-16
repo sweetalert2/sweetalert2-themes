@@ -1,3 +1,13 @@
+# [5.0.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v4.0.5...v5.0.0) (2021-05-16)
+
+
+* BREAKING CHANGE: Upgrade to SweetAlert v11 ([c446447](https://github.com/sweetalert2/sweetalert2-themes/commit/c44644796174d470d9cd27196c9476229c569496))
+
+
+### BREAKING CHANGES
+
+* Upgrade to SweetAlert v11
+
 ## [4.0.5](https://github.com/sweetalert2/sweetalert2-themes/compare/v4.0.4...v4.0.5) (2021-04-19)
 
 
