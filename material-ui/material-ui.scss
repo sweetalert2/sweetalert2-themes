@@ -16,20 +16,30 @@ $swal2-confirm-button-border: 0;
 $swal2-confirm-button-border-radius: 0;
 $swal2-confirm-button-background-color: rgba(43, 21, 21, 0);
 $swal2-confirm-button-color: $material-ui-blue;
+$swal2-confirm-button-focus-box-shadow: none;
+
+// DENY BUTTON
+$swal2-deny-button-border: 0;
+$swal2-deny-button-border-radius: 0;
+$swal2-deny-button-background-color: rgba(43, 21, 21, 0);
+$swal2-deny-button-color: $material-ui-blue;
+$swal2-deny-button-focus-box-shadow: none;
 
 // CANCEL BUTTON
 $swal2-cancel-button-border: 0;
 $swal2-cancel-button-border-radius: 0;
 $swal2-cancel-button-background-color: rgba(255, 255, 255, 0);
 $swal2-cancel-button-color: $material-ui-blue;
+$swal2-cancel-button-focus-box-shadow: none;
 
 // BUTTONS
 $swal2-button-darken-hover: rgba($material-ui-blue, .1);
 $swal2-button-darken-active: rgba($material-ui-blue, .3);
-$swal2-button-focus-outline: #fff;
+$swal2-button-focus-box-shadow: none;
 
 // ACTIONS
 $swal2-actions-justify-content: flex-end;
+$swal2-actions-padding: 0 1em;
 
 // CLOSE BUTTON
 $swal2-close-button-border-radius: 50%;

@@ -30,7 +30,7 @@
     searchParams.set('toast', this.checked);
     window.location.search = searchParams.toString();
   })
-  
+
   if (toastOnly == 'true') {
     document.getElementById('toast-only').checked = true
     const swalMixin = Swal.mixin({ title: 'Settings updated.', toast: true, timer: 3000 })
@@ -60,14 +60,12 @@
   await Swal.fire(title, caption ? caption : 'question!', 'question')
 
   // Buttons
-  await swalMixin.fire({showCancelButton: true})
+  await swalMixin.fire({showCancelButton: true, showDenyButton: true})
   await swalMixin.fire({footer: 'footer' })
   await swalMixin.fire({ text: 'Check close Button',  showCloseButton: true })
 
   // Input types
   await swalMixin.fire({input: 'text', })
-  await swalMixin.fire({input: 'email' })
-  await swalMixin.fire({input: 'url' })
   await swalMixin.fire({input: 'password' })
   await swalMixin.fire({input: 'textarea' })
   await swalMixin.fire({
@@ -93,14 +91,11 @@
   await swalMixin.fire({input: 'file' })
   await swalMixin.fire({input: 'range' })
 
-  // Queue
-  Swal.mixin({
+  // Progress steps
+  Swal.fire({
     input: 'text',
-    progressSteps: ['1', '2', '3']
-  }).queue([
-    'Question 1',
-    'Question 2',
-    'Question 3'
-    ])
+    progressSteps: ['1', '2', '3'],
+    currentProgressStep: 0
+  })
 
 })()

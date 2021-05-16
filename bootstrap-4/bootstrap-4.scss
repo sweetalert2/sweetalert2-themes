@@ -213,7 +213,7 @@ $swal2-toast-border: $bootstrap-toast-border-color solid $bootstrap-toast-border
 $swal2-toast-box-shadow: $bootstrap-toast-box-shadow;
 $swal2-toast-padding: $bootstrap-toast-padding-x $bootstrap-toast-padding-y;
 $swal2-toast-title-font-size: $bootstrap-toast-font-size;
-$swal2-toast-content-font-size: $bootstrap-toast-font-size;
+$swal2-toast-html-container-font-size: $bootstrap-toast-font-size;
 $swal2-toast-input-font-size: $bootstrap-toast-font-size;
 $swal2-toast-validation-font-size: $bootstrap-toast-font-size;
 $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
@@ -221,6 +221,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
 @import '~sweetalert2/src/sweetalert2';
 
 .swal2-confirm,
+.swal2-deny,
 .swal2-cancel {
   transition: $bootstrap-btn-transition;
 }
@@ -232,18 +233,9 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
     padding: .25rem .75rem;
     font-size: .875rem;
 
-    .swal2-header {
-      padding: 0;
-      border-bottom: 0;
-    }
-
     .swal2-title {
       margin: 0;
       color: $bootstrap-gray-600;
-    }
-
-    .swal2-content {
-      padding: 0 .5rem;
     }
 
     .swal2-actions {
@@ -261,10 +253,6 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
 .swal2-title {
   margin: 0;
   font-size: 1.25rem;
-}
-
-.swal2-content {
-  padding: 1rem 1rem 0;
 }
 
 .swal2-actions {
@@ -331,6 +319,11 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
     }
   }
 
+  &.swal2-deny {
+    padding: $swal2-input-padding;
+    font-size: 1rem;
+  }
+
   &.swal2-cancel {
     padding: $swal2-input-padding;
     font-size: 1rem;
@@ -358,7 +351,6 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
 
 .swal2-select {
   display: inline-block;
-  width: 100%;
   height: $bootstrap-input-height;
   padding: .375rem 1.75rem .375rem .75rem;
   transition: $bootstrap-custom-forms-transition;
