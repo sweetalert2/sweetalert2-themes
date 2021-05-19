@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/theme-borderless.svg)](https://www.npmjs.com/package/@sweetalert2/theme-borderless)
 
+![](https://sweetalert2.github.io/images/themes-borderless.png)
+
 Installation
 ------------
 

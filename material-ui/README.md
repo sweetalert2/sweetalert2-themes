@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/theme-material-ui.svg)](https://www.npmjs.com/package/@sweetalert2/theme-material-ui)
 
+![](https://sweetalert2.github.io/images/themes-material-ui.png)
+
 Installation
 ------------
 
