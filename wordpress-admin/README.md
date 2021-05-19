@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/theme-wordpress-admin.svg)](https://www.npmjs.com/package/@sweetalert2/theme-wordpress-admin)
 
+![](https://sweetalert2.github.io/images/themes-wordpress-admin.png)
+
 Installation
 ------------
 
@@ -44,8 +46,7 @@ const notify = Swal.mixin({
   position: 'bottom-start',
   showConfirmButton: false,
   timer: 6000,
-  onBeforeOpen: (toast) => {
-    
+  willOpen: (toast) => {
     // Offset the toast message based on the admin menu size
     var dir = 'rtl' === document.dir ? 'right' : 'left'
     toast.parentElement.style[dir] = document.getElementById('adminmenu').offsetWidth + 'px'

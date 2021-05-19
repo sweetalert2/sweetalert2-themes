@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/theme-dark.svg)](https://www.npmjs.com/package/@sweetalert2/theme-dark)
 
+![](https://sweetalert2.github.io/images/themes-dark.png)
+
 Installation
 ------------
 

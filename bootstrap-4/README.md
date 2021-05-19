@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/theme-bootstrap-4.svg)](https://www.npmjs.com/package/@sweetalert2/theme-bootstrap-4)
 
+![](https://sweetalert2.github.io/images/themes-bootstrap-4.png)
+
 Installation
 ------------
 
