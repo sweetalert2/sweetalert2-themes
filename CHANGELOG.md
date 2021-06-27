@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.0...v5.0.1) (2021-06-27)
+
+
+### Bug Fixes
+
+* use math.div() ([a4a2e1d](https://github.com/sweetalert2/sweetalert2-themes/commit/a4a2e1d61514cbf7b70de4020af7d28ca9cbf8d8))
+
 # [5.0.0](https://github.com/sweetalert2/sweetalert2-themes/compare/v4.0.5...v5.0.0) (2021-05-16)
 
 
