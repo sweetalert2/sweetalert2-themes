@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import '~sweetalert2/src/variables';
 
 // Function
@@ -437,7 +438,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
       content: '';
       display: block;
       position: absolute;
-      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 6;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 6);
       left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
       width: $bootstrap-custom-control-indicator-size;
       height: $bootstrap-custom-control-indicator-size;
@@ -452,7 +453,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
       content: '';
       display: block;
       position: absolute;
-      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 6;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 6);
       left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
       width: $bootstrap-custom-control-indicator-size;
       height: $bootstrap-custom-control-indicator-size;
@@ -507,7 +508,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
       content: '';
       display: block;
       position: absolute;
-      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 2);
       left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
       width: $bootstrap-custom-control-indicator-size;
       height: $bootstrap-custom-control-indicator-size;
@@ -521,7 +522,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
       content: '';
       display: block;
       position: absolute;
-      top: ($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size) / 2;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 2);
       left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
       width: $bootstrap-custom-control-indicator-size;
       height: $bootstrap-custom-control-indicator-size;
@@ -565,7 +566,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
     &::-webkit-slider-thumb {
       width: $bootstrap-custom-range-thumb-width;
       height: $bootstrap-custom-range-thumb-height;
-      margin-top: ($bootstrap-custom-range-track-height - $bootstrap-custom-range-thumb-height) / 2;
+      margin-top: math.div($bootstrap-custom-range-track-height - $bootstrap-custom-range-thumb-height, 2);
       transition: $bootstrap-custom-forms-transition;
       border: $bootstrap-custom-range-thumb-border;
       border-radius: $bootstrap-custom-range-thumb-border-radius;
@@ -637,7 +638,7 @@ $swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
     &::-ms-track {
       width: $bootstrap-custom-range-track-width;
       height: $bootstrap-custom-range-track-height;
-      border-width: $bootstrap-custom-range-thumb-height / 2;
+      border-width: math.div($bootstrap-custom-range-thumb-height ,2);
       border-color: transparent;
       background-color: transparent;
       box-shadow: $bootstrap-custom-range-track-box-shadow;
