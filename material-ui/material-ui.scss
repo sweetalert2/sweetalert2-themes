@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @import '~sweetalert2/src/variables';
 
 // Theme variables
@@ -181,7 +183,7 @@ $checkbox-left-px: -2;
       }
 
       &::after {
-        transform: translate($checkbox-left-px *2px, ($checkbox-size-px/6) * 1px);
+        transform: translate($checkbox-left-px *2px, math.div($checkbox-size-px, 6) * 1px);
         border-left: 0;
         border-color: $material-ui-blue;
       }
@@ -237,7 +239,7 @@ $checkbox-left-px: -2;
       width: 10px;
       height: -$checkbox-left-px * 2px;
       float: left;
-      transform: translate(($checkbox-size-px/6) * 1px, -$checkbox-left-px *2px) rotate(-45deg);
+      transform: translate(math.div($checkbox-size-px, 6) * 1px, -$checkbox-left-px * 2px) rotate(-45deg); /* stylelint-disable-line */
       border: solid 2px transparent;
       border-top: 0;
       border-right: 0;
@@ -264,7 +266,7 @@ $checkbox-left-px: -2;
 @mixin slider-thumb {
   width: $material-ui-slider-thumb-size;
   height: $material-ui-slider-thumb-size;
-  margin-top: - 1 * ($material-ui-slider-thumb-size / 2) + 1;
+  margin-top: - 1 * math.div($material-ui-slider-thumb-size, 2) + 1; /* stylelint-disable-line */
   border: 0;
   border-radius: 50%;
   background: $material-ui-blue;
