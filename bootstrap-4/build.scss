@@ -1,0 +1,694 @@
+@use 'sass:math';
+
+@import '~sweetalert2/src/variables';
+
+// Theme Variables
+// Color
+$bootstrap-primary:    $primary !default;
+$bootstrap-success:    $success !default;
+$bootstrap-danger:     $danger !default;
+$bootstrap-warning:    $warning !default;
+$bootstrap-info:       $info !default;
+$bootstrap-secondary:  $secondary !default;
+
+$bootstrap-gray-100:     $gray-100 !default;
+$bootstrap-gray-200:     $gray-200 !default;
+$bootstrap-gray-300:     $gray-300 !default;
+$bootstrap-gray-400:     $gray-400 !default;
+$bootstrap-gray-500:     $gray-500 !default;
+$bootstrap-gray-600:     $gray-600 !default;
+$bootstrap-gray-700:     $gray-700 !default;
+$bootstrap-gray-800:     $gray-800 !default;
+$bootstrap-gray-900:     $gray-900 !default;
+
+$bootstrap-theme-color-interval: $theme-color-interval !default;
+
+// Alert
+$bootstrap-alert-border-level:    $alert-border-level !default;
+$bootstrap-alert-bg-level:        $alert-bg-level !default;
+$bootstrap-alert-color-level:     $alert-color-level !default;
+$bootstrap-alert-border-color:    mix($swal2-white, $secondary, abs($alert-border-level) * $theme-color-interval) !default;
+$bootstrap-alert-background:      mix($swal2-white, $secondary, abs($alert-bg-level) * $theme-color-interval) !default;
+$bootstrap-alert-color:           mix($swal2-black, $secondary, abs($alert-color-level) * $theme-color-interval) !default;
+$bootstrap-alert-padding-y:       $alert-padding-y !default;
+$bootstrap-alert-padding-x:       $alert-padding-x !default;
+$bootstrap-alert-margin-bottom:   $alert-margin-bottom !default;
+$bootstrap-alert-border-radius:   $alert-border-radius !default;
+$bootstrap-alert-border-width:    $alert-border-width !default;
+$bootstrap-alert-font-size:       $font-size-base !default;
+
+// Input
+$bootstrap-input-color:            $input-color !default;
+$bootstrap-input-bg:               $input-bg !default;
+$bootstrap-input-border-color:     $input-border-color !default;
+$bootstrap-input-border-radius:    $input-border-radius !default;
+$bootstrap-input-border-width:     $input-border-width !default;
+$bootstrap-input-padding-y:        $input-padding-y !default;
+$bootstrap-input-padding-x:        $input-padding-x !default;
+$bootstrap-input-line-height:      $input-line-height !default;
+$bootstrap-input-height-border:    $input-height-border !default;
+$bootstrap-input-height:           $input-height !default;
+
+$bootstrap-input-disabled-color:    $swal2-white !default;
+$bootstrap-input-disabled-bg:       $input-disabled-bg !default;
+
+$bootstrap-input-focus-width:       $input-focus-width !default;
+$bootstrap-input-focus-border:      $input-border-width solid $input-focus-border-color !default;
+$bootstrap-input-focus-box-shadow:  $input-focus-box-shadow !default;
+
+// Button
+$bootstrap-transition: $btn-transition !default;
+$bootstrap-secondary-focus-box-shadow: 0 0 0 $input-focus-width rgba($secondary, .25) !default;
+
+// Custom Shared Variables
+$bootstrap-custom-forms-transition: $custom-forms-transition !default;
+
+$bootstrap-custom-control-gutter:                           $custom-control-gutter !default;
+$bootstrap-custom-control-indicator-size:                   $custom-control-indicator-size !default;
+$bootstrap-custom-control-indicator-bg:                     $custom-control-indicator-bg !default;
+$bootstrap-custom-control-indicator-bg-size:                $custom-control-indicator-bg-size !default;
+$bootstrap-custom-control-indicator-border-color:           $custom-control-indicator-border-color !default;
+$bootstrap-custom-control-indicator-border-width:           $custom-control-indicator-border-width !default;
+$bootstrap-custom-control-indicator-checked-color:          $custom-control-indicator-checked-color !default;
+$bootstrap-custom-control-indicator-checked-bg:             $custom-control-indicator-checked-bg !default;
+$bootstrap-custom-control-indicator-checked-disabled-bg:    $custom-control-indicator-checked-disabled-bg !default;
+$bootstrap-custom-control-indicator-checked-border-color:   $custom-control-indicator-checked-border-color !default;
+
+$bootstrap-custom-control-indicator-active-color:           $custom-control-indicator-active-color !default;
+$bootstrap-custom-control-indicator-active-bg:              $custom-control-indicator-active-bg !default;
+$bootstrap-custom-control-indicator-active-box-shadow:      $custom-control-indicator-active-box-shadow !default;
+$bootstrap-custom-control-indicator-active-border-color:    $custom-control-indicator-active-border-color !default;
+
+$bootstrap-custom-control-indicator-focus-box-shadow:       $custom-control-indicator-focus-box-shadow !default;
+$bootstrap-custom-control-indicator-focus-border-color:     $custom-control-indicator-focus-border-color !default;
+
+// Custom Select
+$bootstrap-custom-select-bg-size:                 $custom-select-bg-size !default;
+$bootstrap-custom-select-indicator-color:         $custom-select-indicator-color !default;
+$bootstrap-custom-select-indicator:               $custom-select-indicator !default;
+$bootstrap-custom-select-background:              $custom-select-background !default;
+
+// Custom Radio
+$bootstrap-custom-radio-indicator-border-radius:      $custom-radio-indicator-border-radius !default;
+$bootstrap-custom-radio-indicator-icon-checked:       $custom-radio-indicator-icon-checked !default;
+
+// Custom Checkbox
+$bootstrap-custom-checkbox-indicator-icon-checked:    $custom-checkbox-indicator-icon-checked !default;
+
+// Custom Range
+$bootstrap-custom-range-track-width:                   $custom-range-track-width !default;
+$bootstrap-custom-range-track-height:                  $custom-range-track-height !default;
+$bootstrap-custom-range-track-cursor:                  $custom-range-track-cursor !default;
+$bootstrap-custom-range-track-bg:                      $custom-range-track-bg !default;
+$bootstrap-custom-range-track-border-radius:           $custom-range-track-border-radius !default;
+$bootstrap-custom-range-track-box-shadow:              $custom-range-track-box-shadow !default;
+
+$bootstrap-custom-range-thumb-width:                   $custom-range-thumb-width !default;
+$bootstrap-custom-range-thumb-height:                  $custom-range-thumb-height !default;
+$bootstrap-custom-range-thumb-bg:                      $custom-range-thumb-bg !default;
+$bootstrap-custom-range-thumb-border:                  $custom-range-thumb-border !default;
+$bootstrap-custom-range-thumb-border-radius:           $custom-range-thumb-border-radius !default;
+$bootstrap-custom-range-thumb-box-shadow:              $custom-range-thumb-box-shadow !default;
+$bootstrap-custom-range-thumb-focus-box-shadow:        $custom-range-thumb-focus-box-shadow !default;
+$bootstrap-custom-range-thumb-focus-box-shadow-width:  $custom-range-thumb-focus-box-shadow-width !default;
+$bootstrap-custom-range-thumb-active-bg:               $custom-range-thumb-active-bg !default;
+$bootstrap-custom-range-thumb-disabled-bg:             $custom-range-thumb-disabled-bg !default;
+
+// Toast
+$bootstrap-toast-max-width:                   $toast-max-width;
+$bootstrap-toast-padding-x:                   $toast-padding-x;
+$bootstrap-toast-padding-y:                   $toast-padding-y;
+$bootstrap-toast-font-size:                   $toast-font-size;
+$bootstrap-toast-background-color:            $toast-background-color;
+$bootstrap-toast-border-width:                $toast-border-width;
+$bootstrap-toast-border-color:                $toast-border-color;
+$bootstrap-toast-border-radius:               $toast-border-radius;
+$bootstrap-toast-box-shadow:                  $toast-box-shadow;
+
+// override SASS variables here
+
+// BOX MODEL
+$swal2-padding: 1rem;
+$swal2-border-radius: .3rem;
+
+// ANIMATIONS
+// animate.css/fading_entrances/fadeInDown.css
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+// animate.css/fading_exits/fadeOutUp.css
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+$swal2-show-animation: fadeInDown .5s;
+$swal2-hide-animation: fadeOutUp .5s;
+
+// BACKDROP
+$swal2-backdrop: rgba($swal2-black, .5);
+$swal2-backdrop-transition: background-color .5s;
+
+// ICONS
+$swal2-success: $bootstrap-success;
+$swal2-error: $bootstrap-danger;
+$swal2-warning: $bootstrap-warning;
+$swal2-info: $bootstrap-info;
+$swal2-question: $bootstrap-secondary;
+
+// INPUT
+$swal2-input-border: $bootstrap-input-border-width solid $bootstrap-input-border-color;
+$swal2-input-border-radius: $bootstrap-input-border-radius;
+$swal2-input-border-focus: none;
+$swal2-input-box-shadow-focus: none;
+$swal2-input-font-size: 1rem;
+$swal2-input-padding: $bootstrap-input-padding-y $bootstrap-input-padding-x;
+
+// CLOSE BUTTON
+$swal2-close-button-width: 2em;
+$swal2-close-button-height: 2em;
+$swal2-close-button-line-height: 1;
+$swal2-close-button-color: rgba($swal2-black, .5);
+$swal2-close-button-font-size: 1.5rem;
+
+// CLOSE BUTTON:HOVER
+$swal2-close-button-hover-color: $swal2-black;
+
+// CONFIRM BUTTON
+$swal2-confirm-button-background-color: $bootstrap-primary;
+
+// CANCEL BUTTON
+$swal2-cancel-button-background-color: $bootstrap-secondary;
+
+// COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
+$swal2-button-focus-outline: none;
+
+// TOASTS
+$swal2-toast-border: $bootstrap-toast-border-color solid $bootstrap-toast-border-width;
+$swal2-toast-box-shadow: $bootstrap-toast-box-shadow;
+$swal2-toast-padding: $bootstrap-toast-padding-x $bootstrap-toast-padding-y;
+$swal2-toast-title-font-size: $bootstrap-toast-font-size;
+$swal2-toast-html-container-font-size: $bootstrap-toast-font-size;
+$swal2-toast-input-font-size: $bootstrap-toast-font-size;
+$swal2-toast-validation-font-size: $bootstrap-toast-font-size;
+$swal2-toast-buttons-font-size: $bootstrap-toast-font-size;
+
+@import '~sweetalert2/src/sweetalert2';
+
+.swal2-confirm,
+.swal2-deny,
+.swal2-cancel {
+  transition: $bootstrap-btn-transition;
+}
+
+.swal2-popup {
+  border: $bootstrap-input-border-width solid rgba(0, 0, 0, .2);
+
+  &.swal2-toast {
+    padding: .25rem .75rem;
+    font-size: .875rem;
+
+    .swal2-title {
+      margin: 0;
+      color: $bootstrap-gray-600;
+    }
+
+    .swal2-actions {
+      flex-basis: 0 !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swal2-styled {
+      margin: 0;
+    }
+  }
+}
+
+.swal2-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.swal2-actions {
+  border-radius: $bootstrap-input-border-radius;
+}
+
+.swal2-footer {
+  padding: 1rem;
+  border-top: $bootstrap-input-border-width solid $bootstrap-input-border-color;
+}
+
+.swal2-close {
+  height: auto;
+  padding: 1rem 1.2rem 1rem 1rem;
+  font-weight: 700;
+}
+
+.swal2-input,
+.swal2-textarea {
+  height: inherit;
+  padding: $swal2-input-padding;
+  transition: $bootstrap-custom-forms-transition;
+  line-height: $bootstrap-input-line-height;
+
+  &:focus {
+    border: $bootstrap-input-focus-border;
+    outline: 0;
+    box-shadow: $bootstrap-input-focus-box-shadow;
+    color: $bootstrap-input-color;
+  }
+
+  &.swal2-inputerror {
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: $bootstrap-danger;
+      box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-danger, .25) !important;
+    }
+  }
+}
+
+.swal2-styled {
+  &.swal2-confirm {
+    padding: $swal2-input-padding;
+    font-size: 1rem;
+
+    &:hover {
+      border-color: darken($bootstrap-primary, 10%);
+      background-color: darken($bootstrap-primary, 7.5%);
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: $bootstrap-input-focus-box-shadow;
+    }
+
+    &:active {
+      border-color: darken($bootstrap-primary, 12.5%);
+      background-color: darken($bootstrap-primary, 10%);
+
+      &:focus {
+        box-shadow: $bootstrap-input-focus-box-shadow;
+      }
+    }
+  }
+
+  &.swal2-deny {
+    padding: $swal2-input-padding;
+    font-size: 1rem;
+  }
+
+  &.swal2-cancel {
+    padding: $swal2-input-padding;
+    font-size: 1rem;
+
+    &:hover {
+      border-color: darken($bootstrap-secondary, 10%);
+      background-color: darken($bootstrap-secondary, 7.5%);
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: $bootstrap-btn-secondary-focus-box-shadow;
+    }
+
+    &:active {
+      border-color: darken($bootstrap-secondary, 12.5%);
+      background-color: darken($bootstrap-secondary, 10%);
+
+      &:focus {
+        box-shadow: $bootstrap-btn-secondary-focus-box-shadow;
+      }
+    }
+  }
+}
+
+.swal2-select {
+  display: inline-block;
+  height: $bootstrap-input-height;
+  padding: .375rem 1.75rem .375rem .75rem;
+  transition: $bootstrap-custom-forms-transition;
+  border: $bootstrap-input-border-width solid $bootstrap-input-border-color;
+  border-radius: $bootstrap-input-border-radius;
+  background: $bootstrap-custom-select-background;
+  background-color: $bootstrap-input-bg;
+  color: $bootstrap-input-color;
+  vertical-align: middle;
+  // @include box-shadow($custom-select-box-shadow);
+  appearance: none;
+
+  &:focus {
+    border: $bootstrap-input-focus-border;
+    outline: 0;
+    box-shadow: $bootstrap-input-focus-box-shadow;
+
+    &::-ms-value {
+      background-color: $bootstrap-input-bg;
+      color: $bootstrap-input-color;
+    }
+  }
+
+  &[multiple],
+  &[size]:not([size='1']) {
+    height: auto;
+    padding-right: $bootstrap-input-padding-x;
+    background-image: none;
+  }
+
+  &:disabled {
+    background-color: $bootstrap-input-disabled-bg;
+    color: $bootstrap-input-disabled-color;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.swal2-radio {
+  label {
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-checked-border-color;
+        background: $bootstrap-custom-control-indicator-checked-bg;
+        color: $bootstrap-custom-control-indicator-checked-color;
+      }
+
+      &:focus ~ .swal2-label::before {
+        box-shadow: $bootstrap-custom-control-indicator-focus-box-shadow;
+      }
+
+      &:focus:not(:checked) ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-focus-border-color;
+      }
+
+      &:not(:disabled):active ~ .swal2-label::before {
+        border-color: $bootstrap-custom-control-indicator-active-border-color;
+        background-color: $bootstrap-custom-control-indicator-active-bg;
+        color: $bootstrap-custom-control-indicator-active-color;
+      }
+    }
+
+    input:checked ~ .swal2-label::after {
+      background-image: $bootstrap-custom-radio-indicator-icon-checked;
+    }
+
+    input:disabled:checked ~ .swal2-label::before {
+      background-color: $bootstrap-custom-control-indicator-checked-disabled-bg;
+    }
+  }
+
+  .swal2-label {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 6); /* stylelint-disable-line */
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
+      border-radius: $bootstrap-custom-radio-indicator-border-radius;
+      background-color: $bootstrap-custom-control-indicator-bg;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 6); /* stylelint-disable-line */
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: transparent solid $bootstrap-custom-control-indicator-border-width;
+      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
+    }
+  }
+}
+
+.swal2-checkbox {
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+
+  input {
+    z-index: -1;
+    opacity: 0;
+
+    &:checked ~ .swal2-label::before {
+      border-color: $bootstrap-custom-control-indicator-checked-border-color;
+      background: $bootstrap-custom-control-indicator-checked-bg;
+      color: $bootstrap-custom-control-indicator-checked-color;
+    }
+
+    &:focus ~ .swal2-label::before {
+      box-shadow: $bootstrap-custom-control-indicator-focus-box-shadow;
+    }
+
+    &:focus:not(:checked) ~ .swal2-label::before {
+      border-color: $bootstrap-custom-control-indicator-focus-border-color;
+    }
+
+    &:not(:disabled):active ~ .swal2-label::before {
+      border-color: $bootstrap-custom-control-indicator-active-border-color;
+      background-color: $bootstrap-custom-control-indicator-active-bg;
+      color: $bootstrap-custom-control-indicator-active-color;
+    }
+  }
+
+  input:checked ~ .swal2-label::after {
+    background-image: $bootstrap-custom-checkbox-indicator-icon-checked;
+  }
+
+  input:disabled:checked ~ .swal2-label::before {
+    background-color: $bootstrap-custom-control-indicator-checked-disabled-bg;
+  }
+
+  .swal2-label {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 2); /* stylelint-disable-line */
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-control-indicator-border-color solid $bootstrap-custom-control-indicator-border-width;
+      background-color: $bootstrap-custom-control-indicator-bg;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: math.div($swal2-input-font-size * $bootstrap-input-line-height - $bootstrap-custom-control-indicator-size, 2); /* stylelint-disable-line */
+      left: -($bootstrap-custom-control-gutter + $bootstrap-custom-control-indicator-size);
+      width: $bootstrap-custom-control-indicator-size;
+      height: $bootstrap-custom-control-indicator-size;
+      transition: $bootstrap-custom-forms-transition;
+      border: transparent solid $bootstrap-custom-control-indicator-border-width;
+      background: no-repeat 50% / #{$bootstrap-custom-control-indicator-bg-size};
+    }
+  }
+}
+
+.swal2-range {
+  align-items: center;
+
+  input {
+    width: 100%;
+    height: calc(#{$bootstrap-custom-range-thumb-height} + #{$bootstrap-custom-range-thumb-focus-box-shadow-width * 3});
+    padding: 0;
+    background-color: transparent;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+
+      &::-webkit-slider-thumb {
+        box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+      }
+
+      &::-moz-range-thumb {
+        box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+      }
+
+      &::-ms-thumb {
+        box-shadow: $bootstrap-custom-range-thumb-focus-box-shadow;
+      }
+    }
+
+    &::-moz-focus-outer {
+      border: 0;
+    }
+
+    &::-webkit-slider-thumb {
+      width: $bootstrap-custom-range-thumb-width;
+      height: $bootstrap-custom-range-thumb-height;
+      margin-top: math.div($bootstrap-custom-range-track-height - $bootstrap-custom-range-thumb-height, 2); /* stylelint-disable-line */
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-range-thumb-border;
+      border-radius: $bootstrap-custom-range-thumb-border-radius;
+      background: $bootstrap-custom-range-thumb-bg;
+      box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+      appearance: none;
+
+      &:active {
+        background: $bootstrap-custom-range-thumb-active-bg;
+      }
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: $bootstrap-custom-range-track-width;
+      height: $bootstrap-custom-range-track-height;
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      border-color: transparent;
+      background-color: $bootstrap-custom-range-track-bg;
+      box-shadow: $bootstrap-custom-range-track-box-shadow;
+      color: transparent;
+      cursor: $bootstrap-custom-range-track-cursor;
+    }
+
+    &::-moz-range-thumb {
+      width: $bootstrap-custom-range-thumb-width;
+      height: $bootstrap-custom-range-thumb-height;
+      margin-top: 1rem;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-range-thumb-border;
+      border-radius: $bootstrap-custom-range-thumb-border-radius;
+      background: $bootstrap-custom-range-thumb-bg;
+      box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+      appearance: none;
+
+      &:active {
+        background: $bootstrap-custom-range-thumb-active-bg;
+      }
+    }
+
+    &::-moz-range-track {
+      width: $bootstrap-custom-range-track-width;
+      height: $bootstrap-custom-range-track-height;
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      border-color: transparent;
+      background-color: $bootstrap-custom-range-track-bg;
+      box-shadow: $bootstrap-custom-range-track-box-shadow;
+      color: transparent;
+      cursor: $bootstrap-custom-range-track-cursor;
+    }
+
+    &::-ms-thumb {
+      width: $bootstrap-custom-range-thumb-width;
+      height: $bootstrap-custom-range-thumb-height;
+      margin-top: 0;
+      margin-right: $bootstrap-custom-range-thumb-focus-box-shadow-width;
+      margin-left: $bootstrap-custom-range-thumb-focus-box-shadow-width;
+      transition: $bootstrap-custom-forms-transition;
+      border: $bootstrap-custom-range-thumb-border;
+      border-radius: $bootstrap-custom-range-thumb-border-radius;
+      background: $bootstrap-custom-range-thumb-bg;
+      box-shadow: $bootstrap-custom-range-thumb-box-shadow;
+      appearance: none;
+
+      &:active {
+        background: $bootstrap-custom-range-thumb-active-bg;
+      }
+    }
+
+    &::-ms-track {
+      width: $bootstrap-custom-range-track-width;
+      height: $bootstrap-custom-range-track-height;
+      border-width: math.div($bootstrap-custom-range-thumb-height, 2); /* stylelint-disable-line */
+      border-color: transparent;
+      background-color: transparent;
+      box-shadow: $bootstrap-custom-range-track-box-shadow;
+      color: transparent;
+      cursor: $bootstrap-custom-range-track-cursor;
+    }
+
+    &::-ms-fill-lower {
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      background-color: $bootstrap-custom-range-track-bg;
+    }
+
+    &::-ms-fill-upper {
+      margin-right: 15px;
+      border-radius: $bootstrap-custom-range-track-border-radius;
+      background-color: $bootstrap-custom-range-track-bg;
+    }
+
+    &:disabled {
+      &::-webkit-slider-thumb {
+        background-color: $bootstrap-custom-range-thumb-disabled-bg;
+      }
+
+      &::-webkit-slider-runnable-track {
+        cursor: default;
+      }
+
+      &::-moz-range-thumb {
+        background-color: $bootstrap-custom-range-thumb-disabled-bg;
+      }
+
+      &::-moz-range-track {
+        cursor: default;
+      }
+
+      &::-ms-thumb {
+        background-color: $bootstrap-custom-range-thumb-disabled-bg;
+      }
+    }
+  }
+}
+
+.swal2-validation-message {
+  position: relative;
+  margin-bottom: $bootstrap-alert-margin-bottom;
+  padding: $bootstrap-alert-padding-y $bootstrap-alert-padding-x;
+  border: $bootstrap-alert-border-width solid transparent;
+  border-radius: $bootstrap-alert-border-radius;
+  border-color: $bootstrap-alert-border-color;
+  background: $bootstrap-alert-background;
+  color: $bootstrap-alert-color;
+  font-size: $bootstrap-alert-font-size;
+
+  &::before {
+    background-color: lighten($bootstrap-danger, 10%);
+  }
+}
+
+.swal2-toast {
+  max-width: $bootstrap-toast-max-width;
+  border-radius: $bootstrap-toast-border-radius;
+  background-color: $bootstrap-toast-background-color;
+}
