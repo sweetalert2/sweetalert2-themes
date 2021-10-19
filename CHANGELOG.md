@@ -1,3 +1,10 @@
+## [5.0.6](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.5...v5.0.6) (2021-10-19)
+
+
+### Bug Fixes
+
+* do not use tilde ~ ([#80](https://github.com/sweetalert2/sweetalert2-themes/issues/80)) ([3f76134](https://github.com/sweetalert2/sweetalert2-themes/commit/3f76134d9ae0c648aad89897a7d6468838003ca6))
+
 ## [5.0.5](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.4...v5.0.5) (2021-09-22)
 
 
