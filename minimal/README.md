@@ -32,5 +32,5 @@ import Swal from 'sweetalert2/src/sweetalert2.js'
 
 `your-app.scss`:
 ```scss
-@import '~@sweetalert2/theme-minimal/minimal.scss';
+@import 'node_modules/sweetalert2/theme-minimal/minimal.scss';
 ```

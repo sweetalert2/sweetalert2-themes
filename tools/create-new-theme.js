@@ -56,9 +56,9 @@ const sampleTheme = 'default'
   // Create ${themeName}.scss
   fs.writeFileSync(
     join(themeName, `${themeName}.scss`),
-    `@import '~sweetalert2/src/variables';\n\n` +
+    `@import 'node_modules/sweetalert2/src/variables';\n\n` +
     `// override SASS variables here\n\n` +
-    `@import '~sweetalert2/src/sweetalert2';\n`
+    `@import 'node_modules/sweetalert2/src/sweetalert2';\n`
   )
 
   await execute(`gulp watch --start-path ${themeName}`)
