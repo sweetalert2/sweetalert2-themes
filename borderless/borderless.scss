@@ -1,4 +1,4 @@
-@import 'node_modules/sweetalert2/src/variables';
+@import 'sweetalert2/src/variables';
 
 $borderless-theme-color: rgba(54, 70, 93, .99);
 $borderless-outline-color: lighten($borderless-theme-color, 30%);
@@ -58,4 +58,4 @@ $swal2-button-focus-box-shadow: 0 0 0 1px $borderless-theme-color, 0 0 0 3px $bo
 $swal2-toast-background: $borderless-theme-color;
 $swal2-toast-button-focus-box-shadow: 0 0 0 1px $borderless-theme-color, 0 0 0 3px $borderless-outline-color;
 
-@import 'node_modules/sweetalert2/src/sweetalert2';
+@import 'sweetalert2/src/sweetalert2';

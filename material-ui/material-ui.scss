@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@import 'node_modules/sweetalert2/src/variables';
+@import 'sweetalert2/src/variables';
 
 // Theme variables
 $material-ui-blue: #2196f3;
@@ -52,7 +52,7 @@ $swal2-close-button-hover-color: $swal2-close-button-color;
 $checkbox-size-px: 18;
 $checkbox-left-px: -2;
 
-@import 'node_modules/sweetalert2/src/sweetalert2';
+@import 'sweetalert2/src/sweetalert2';
 
 // Temporary / Permanent workarounds
 // Input validation error

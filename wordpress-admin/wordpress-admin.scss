@@ -1,4 +1,4 @@
-@import 'node_modules/sweetalert2/src/variables';
+@import 'sweetalert2/src/variables';
 @import './animations';
 
 $wordpress-blue: rgb(0, 124, 186);
@@ -116,7 +116,7 @@ $swal2-toast-footer-font-size: 13px;
 $swal2-timer-progress-bar-height: .25em;
 $swal2-timer-progress-bar-background: $wordpress-blue;
 
-@import 'node_modules/sweetalert2/src/sweetalert2';
+@import 'sweetalert2/src/sweetalert2';
 
 .swal2-success-ring {
   display: none;
