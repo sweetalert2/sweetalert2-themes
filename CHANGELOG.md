@@ -1,3 +1,10 @@
+## [5.0.7](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.6...v5.0.7) (2021-10-21)
+
+
+### Bug Fixes
+
+* remove node_modules from import path ([#82](https://github.com/sweetalert2/sweetalert2-themes/issues/82)) ([0e9792c](https://github.com/sweetalert2/sweetalert2-themes/commit/0e9792c62d628da68c93b3305e14c6e659c585c6))
+
 ## [5.0.6](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.5...v5.0.6) (2021-10-19)
 
 
