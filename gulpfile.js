@@ -3,8 +3,7 @@ const path = require('path')
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')
 const header = require('gulp-header')
-const sass = require('gulp-dart-sass')
-const tildeImporter = require('node-sass-tilde-importer')
+const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename')
 const autoprefix = require('gulp-autoprefixer')
 const stylelint = require('gulp-stylelint')
@@ -40,7 +39,7 @@ gulp.task('lint', () => {
 
 gulp.task('sass', gulp.series('lint', function compile () {
   return gulp.src(scssFiles, { base: '.' })
-    .pipe(sass({ importer: tildeImporter }))
+    .pipe(sass({ includePaths: './node_modules' }))
     .pipe(autoprefix())
     .pipe(header(banner))
     .pipe(gulp.dest('./'))
