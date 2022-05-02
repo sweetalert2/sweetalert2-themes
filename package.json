@@ -22,8 +22,8 @@
     "postcss-scss": "^4.0.3",
     "replace-in-file": "^6.0.0",
     "sass": "^1.49.11",
-    "stylelint": "^14.6.1",
-    "sweetalert2": "^11.4.8"
+    "stylelint": "^14.8.1",
+    "sweetalert2": "^11.4.10"
   },
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
