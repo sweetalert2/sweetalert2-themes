@@ -6,7 +6,6 @@ const header = require('gulp-header')
 const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename')
 const autoprefix = require('gulp-autoprefixer')
-const stylelint = require('gulp-stylelint')
 const browserSync = require('browser-sync').create()
 const packageJson = require('./package.json')
 const version = process.env.VERSION || packageJson.version
@@ -28,22 +27,13 @@ const themes = fs.readdirSync('.')
 const scssFiles = themes.map(theme => `${theme}/${theme}.scss`)
 const cssFiles = themes.map(theme => `${theme}/${theme}.css`)
 
-gulp.task('lint', () => {
-  return gulp.src(scssFiles)
-    .pipe(stylelint({
-      reporters: [
-        { formatter: 'string', console: true }
-      ]
-    }))
-})
-
-gulp.task('sass', gulp.series('lint', function compile () {
+gulp.task('sass', function compile () {
   return gulp.src(scssFiles, { base: '.' })
     .pipe(sass({ includePaths: './node_modules' }))
     .pipe(autoprefix())
     .pipe(header(banner))
     .pipe(gulp.dest('./'))
-}))
+})
 
 gulp.task('css.min', function minify () {
   return gulp.src(cssFiles, { base: '.' })
