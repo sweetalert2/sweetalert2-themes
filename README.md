@@ -57,7 +57,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
 `your-app.scss`:
 
 ```scss
-@import 'sweetalert2/themes/dark/dark.scss';
+@import '@sweetalert2/themes/dark/dark.scss';
 ```
 
 ## Contributing

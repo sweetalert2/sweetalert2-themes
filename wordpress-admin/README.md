@@ -32,7 +32,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 `your-app.scss`:
 ```scss
-@import 'sweetalert2/theme-wordpress-admin/wordpress-admin.scss';
+@import '@sweetalert2/theme-wordpress-admin/wordpress-admin.scss';
 ```
 
 Integration
