@@ -18,7 +18,7 @@ With CSS:
 
 ```html
 <!-- Include the Bulma theme -->
-<link rel="stylesheet" href="@sweetalert2/theme-bulma/bulma.css">
+<link rel="stylesheet" href="@sweetalert2/theme-bulma/bulma.min.css">
 
 <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 ```
@@ -27,10 +27,10 @@ With SASS:
 
 `your-app.js`:
 ```js
-import Swal from 'sweetalert2/dist/sweetalert2.js'
+import Swal from 'sweetalert2';
 ```
 
 `your-app.scss`:
 ```scss
-@import 'sweetalert2/theme-bulma/bulma.scss';
+@import '@sweetalert2/theme-bulma/bulma.scss';
 ```

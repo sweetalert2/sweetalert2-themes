@@ -18,7 +18,7 @@ With CSS:
 
 ```html
 <!-- Include the Wordpress-admin theme -->
-<link rel="stylesheet" href="@sweetalert2/theme-wordpress-admin/wordpress-admin.css">
+<link rel="stylesheet" href="@sweetalert2/theme-wordpress-admin/wordpress-admin.min.css">
 
 <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 ```
@@ -27,12 +27,12 @@ With SASS:
 
 `your-app.js`:
 ```js
-import Swal from 'sweetalert2/dist/sweetalert2.js'
+import Swal from 'sweetalert2';
 ```
 
 `your-app.scss`:
 ```scss
-@import 'sweetalert2/theme-wordpress-admin/wordpress-admin.scss';
+@import '@sweetalert2/theme-wordpress-admin/wordpress-admin.scss';
 ```
 
 Integration

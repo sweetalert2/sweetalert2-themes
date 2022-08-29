@@ -41,7 +41,7 @@ With CSS:
 
 ```html
 <!-- Include a required theme -->
-<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css" />
+<link rel="stylesheet" href="@sweetalert2/theme-dark/dark.min.css" />
 
 <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 ```
@@ -51,13 +51,13 @@ With SASS:
 `your-app.js`:
 
 ```js
-import Swal from 'sweetalert2/dist/sweetalert2.js';
+import Swal from 'sweetalert2';
 ```
 
 `your-app.scss`:
 
 ```scss
-@import 'sweetalert2/themes/dark/dark.scss';
+@import '@sweetalert2/theme-dark/dark.scss';
 ```
 
 ## Contributing
