@@ -18,11 +18,11 @@
     "gulp-header": "^2.0.9",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "postcss-scss": "^4.0.3",
+    "postcss-scss": "^4.0.5",
     "replace-in-file": "^6.3.5",
-    "sass": "^1.54.0",
-    "stylelint": "^14.9.1",
-    "sweetalert2": "^11.4.24"
+    "sass": "^1.54.9",
+    "stylelint": "^14.11.0",
+    "sweetalert2": "^11.4.33"
   },
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
