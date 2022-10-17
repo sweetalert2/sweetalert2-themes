@@ -20,9 +20,9 @@
     "gulp-sass": "^5.1.0",
     "postcss-scss": "^4.0.5",
     "replace-in-file": "^6.3.5",
-    "sass": "^1.54.9",
-    "stylelint": "^14.11.0",
-    "sweetalert2": "^11.4.33"
+    "sass": "^1.55.0",
+    "stylelint": "^14.14.0",
+    "sweetalert2": "^11.5.2"
   },
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
