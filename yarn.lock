@@ -3892,9 +3892,9 @@ svg-tags@^1.0.0:
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
 sweetalert2@^11.5.2:
-  version "11.6.1"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.6.1.tgz#1323a4f31b26433b4eb98e9b2256a0115ffef63e"
-  integrity sha512-38RU6l1PGvnrQ3ceGvnRO/b2RGAAcdFGE80kIqjHLNt61pBMzJU5DtVtOdCPMy8CpJf86jzV0uqIm12pMyd3lQ==
+  version "11.6.2"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.6.2.tgz#282e01bf0c4a70bda5c6dc00e384ee85c228e9c3"
+  integrity sha512-FAyAddpbcpEawDNFZDoO9XFFOc0ulECgQcadMJpsjMjrlqG7svar+ZGG3qddYYi8MZwUULrOxbtQj98EMIbH8w==
 
 symbol-observable@1.0.1:
   version "1.0.1"
