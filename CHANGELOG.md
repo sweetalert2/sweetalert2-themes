@@ -1,3 +1,10 @@
+## [5.0.14](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.13...v5.0.14) (2022-11-07)
+
+
+### Bug Fixes
+
+* upgrade deps ([0aa2c38](https://github.com/sweetalert2/sweetalert2-themes/commit/0aa2c38ef16b33709917cbea974393292dc28568))
+
 ## [5.0.13](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.12...v5.0.13) (2022-10-30)
 
 
