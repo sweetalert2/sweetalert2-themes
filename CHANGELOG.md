@@ -1,3 +1,10 @@
+## [5.0.15](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.14...v5.0.15) (2022-11-20)
+
+
+### Bug Fixes
+
+* use zx for tools/*.mjs scripts ([3a04200](https://github.com/sweetalert2/sweetalert2-themes/commit/3a04200f27ba11073d65e752c41cb8d665a63623))
+
 ## [5.0.14](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.13...v5.0.14) (2022-11-07)
 
 
