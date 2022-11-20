@@ -19,13 +19,13 @@
 You can install all themes at once:
 
 ```sh
-npm install --save sweetalert2 @sweetalert2/themes
+npm install --save @sweetalert2/themes
 ```
 
 Or just a single theme `@sweetalert2/theme-<theme_name>`, e.g.
 
 ```sh
-npm install --save sweetalert2 @sweetalert2/theme-dark
+npm install --save @sweetalert2/theme-dark
 ```
 
 Or grab them both from [jsdelivr CDN](https://cdn.jsdelivr.net/npm/@sweetalert2/themes), for example:
@@ -66,13 +66,11 @@ If you would like to contribute enhancements or fixes, please do the following:
 
 1. Fork the `sweetalert2-themes` repository and clone it locally.
 
-2. Make sure you have [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) installed.
+2. When in the `sweetalert2-themes` directory, run `yarn install` to install dependencies.
 
-3. When in the `sweetalert2-themes` directory, run `npm install` or `yarn install` to install dependencies.
+3. To begin active development, run `yarn start` and `yarn watch` simultaneously.
 
-4. To begin active development, run `npm start` or `yarn start`. If you want to start with a specific theme _preselected_, use: `npm run start -- --theme <theme-name>` or `yarn start --theme <theme-name>`
-
-5. Or, if you want to quickly start a new theme, run `npm run create-new-theme my-awesome-theme`. This will automatically start the server after creating the theme's default files. If you interrupt the server and want to restart it, use `npm run start -- --theme <theme-name>` or `yarn start --theme <theme-name>`
+4. Or, if you want to quickly start a new theme, run `yarn create-new-theme my-awesome-theme`. This will create the theme's default files.
 
 ## Donations
 
@@ -80,9 +78,5 @@ Has SweetAlert2 helped you create an amazing application? You can show your supp
 
 - [GitHub Sponsors :heart:](https://github.com/sponsors/limonte)
 - [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKTWHJGUWLR7E)
-- Bitcoin: `12BxefvPMtHePgfPRDL1SaZYSG4GwQmWoP`
-- Ether: `0x36e2b10666e2c0dc343901895ba3697b5d3214d1`
-- Bitcoin Cash: `qqxs402qszgwuue00gwxw996lzhpa8up2unqm0y46g`
-- Stellar: `GBRS5KGFJO4OBUGW3TRQBIVXTM5YDS53DOSHGA3LKVE2YXKVKNVDONBP`
 
 ### [Hall of Donators :trophy:](https://github.com/sweetalert2/sweetalert2/blob/main/DONATIONS.md)

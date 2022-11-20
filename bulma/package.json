@@ -1,6 +1,6 @@
 {
   "name": "@sweetalert2/theme-bulma",
-  "version": "4.0.5",
+  "version": "<managed_by_semantic_release>",
   "repository": "sweetalert2/sweetalert2-themes",
   "homepage": "https://sweetalert2.github.io/",
   "description": "Bulma theme for SweetAlert2",

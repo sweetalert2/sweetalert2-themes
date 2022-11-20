@@ -1,4 +1,4 @@
-@import "node_modules/sweetalert2/src/variables.scss";
+@import "sweetalert2/src/variables.scss";
 
 // override SASS variables here
 
@@ -192,7 +192,7 @@ $swal2-progress-step-color: $white;
 $swal2-active-step-background: $blue;
 $swal2-active-step-color: $white;
 
-@import "node_modules/sweetalert2/src/sweetalert2.scss";
+@import "sweetalert2/src/sweetalert2.scss";
 
 .swal2-styled {
   &.swal2-cancel {

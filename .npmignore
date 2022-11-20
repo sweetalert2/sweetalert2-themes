@@ -1,10 +1,9 @@
 .editorconfig
 .github
-gulpfile.js
 index.html
 release.config.js
 app.js
 .stylelintrc.json
 tools
-.travis.yml
 yarn.lock
+renovate.json

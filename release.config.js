@@ -13,7 +13,7 @@ module.exports = {
     },
     {
       path: '@semantic-release/exec',
-      cmd: 'VERSION=${nextRelease.version} node tools/publish-all-themes',
+      cmd: 'VERSION=${nextRelease.version} ./node_modules/.bin/zx tools/publish-all-themes.mjs',
     },
     '@semantic-release/changelog',
     '@semantic-release/npm',

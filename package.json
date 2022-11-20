@@ -8,20 +8,13 @@
     "sweetalert2": "^11.0.0"
   },
   "devDependencies": {
-    "@sweetalert2/execute": "^1.0.1",
     "@sweetalert2/stylelint-config": "^2.0.12",
-    "browser-sync": "^2.27.10",
-    "fancy-log": "^2.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-header": "^2.0.9",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
     "replace-in-file": "^6.3.5",
-    "sass": "^1.55.0",
+    "sass": "^1.56.1",
     "stylelint": "^14.14.0",
-    "sweetalert2": "^11.5.2"
+    "sweetalert2": "^11.5.2",
+    "vite": "^3.2.4",
+    "zx": "^7.1.1"
   },
   "author": "Limon Monte (https://limonte.github.io)",
   "contributors": [
@@ -38,10 +31,11 @@
     "sass"
   ],
   "scripts": {
-    "start": "gulp watch",
-    "build": "gulp build",
+    "start": "vite",
+    "build": "NODE_NO_WARNINGS=1 zx tools/build.mjs",
+    "watch": "NODE_NO_WARNINGS=1 zx tools/build.mjs --watch",
     "lint": "stylelint **/*.scss",
-    "create-new-theme": "node tools/create-new-theme.js"
+    "create-new-theme": "zx tools/create-new-theme.mjs"
   },
   "bugs": "https://github.com/sweetalert2/sweetalert2-themes/issues",
   "license": "MIT"
