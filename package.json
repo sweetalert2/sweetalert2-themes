@@ -13,7 +13,7 @@
     "sass": "^1.56.1",
     "stylelint": "^14.14.0",
     "sweetalert2": "^11.5.2",
-    "vite": "^3.2.4",
+    "vite": "^4.0.0",
     "zx": "^7.1.1"
   },
   "author": "Limon Monte (https://limonte.github.io)",
