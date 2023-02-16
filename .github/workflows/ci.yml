@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-    if: "!contains(github.event.commits[0].message, '[skip ci]')"
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +20,8 @@ jobs:
         run: yarn lint
 
       - name: Run automated release process with semantic-release
-        if: github.event_name == 'push'
-        uses: cycjimmy/semantic-release-action@v2
+        if: github.ref_name == 'main'
+        uses: cycjimmy/semantic-release-action@v3
         with:
           extra_plugins: |
             @semantic-release/changelog
