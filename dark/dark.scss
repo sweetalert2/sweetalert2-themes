@@ -1,7 +1,7 @@
 @import 'sweetalert2/src/variables';
 
-$swal2-dark-theme-black: #19191a;
-$swal2-dark-theme-white: #e1e1e1;
+$swal2-dark-theme-black: #19191a !default;
+$swal2-dark-theme-white: #e1e1e1 !default;
 $swal2-outline-color: lighten($swal2-outline-color, 10%);
 
 $swal2-background: $swal2-dark-theme-black;
