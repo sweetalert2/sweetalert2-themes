@@ -14,7 +14,7 @@
     "stylelint": "^16.0.0",
     "sweetalert2": "^11.5.2",
     "vite": "^5.0.0",
-    "zx": "^7.1.1"
+    "zx": "^8.0.0"
   },
   "author": "Limon Monte (https://limonte.github.io)",
   "contributors": [
