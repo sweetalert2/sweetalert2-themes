@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 import { fs, path } from 'zx'
-import replaceInFile from 'replace-in-file'
+import { replaceInFile } from 'replace-in-file'
 
 const themeName = argv['_'][0]
 
