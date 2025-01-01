@@ -10,7 +10,7 @@
   "devDependencies": {
     "@sweetalert2/stylelint-config": "^3.0.0",
     "replace-in-file": "^8.0.0",
-    "sass": "^1.56.1",
+    "sass": "~1.79.0",
     "stylelint": "^16.0.0",
     "sweetalert2": "^11.5.2",
     "vite": "^6.0.0",
