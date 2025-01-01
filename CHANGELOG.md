@@ -1,3 +1,10 @@
+## [5.0.21](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.20...v5.0.21) (2025-01-01)
+
+
+### Bug Fixes
+
+* stop using deprecated sass imports ([b7e890e](https://github.com/sweetalert2/sweetalert2-themes/commit/b7e890ea81a425e959ce1c704334eab279396b00))
+
 ## [5.0.20](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.19...v5.0.20) (2024-12-17)
 
 
