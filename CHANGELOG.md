@@ -1,3 +1,10 @@
+## [5.0.25](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.24...v5.0.25) (2025-01-02)
+
+
+### Bug Fixes
+
+* bump sweetalert2 ([83e5c37](https://github.com/sweetalert2/sweetalert2-themes/commit/83e5c37b2f8139387da32669a0a1444cbb4b3f2c))
+
 ## [5.0.24](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.23...v5.0.24) (2025-01-02)
 
 
