@@ -1,7 +1,7 @@
-@import 'sweetalert2/src/variables';
-
 $borderless-theme-color: rgba(54, 70, 93, .99);
 $borderless-outline-color: lighten($borderless-theme-color, 30%);
+
+$swal2-white: #fff !default;
 
 // BOX MODEL
 $swal2-box-shadow: none;

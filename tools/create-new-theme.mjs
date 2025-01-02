@@ -50,9 +50,8 @@ await replaceInFile({
 // Create ${themeName}.scss
 fs.writeFileSync(
   path.join(themeName, `${themeName}.scss`),
-  `@import 'sweetalert2/src/variables';\n\n` +
-  `// override SASS variables here\n\n` +
-  `@import 'sweetalert2/src/sweetalert2';\n`
+  `// override SCSS variables here\n\n` +
+  `@uimportse 'sweetalert2/src/sweetalert2';\n`
 )
 
 echo`OK!`

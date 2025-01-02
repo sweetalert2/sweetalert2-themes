@@ -1,7 +1,5 @@
 @use 'sass:math';
 
-@import 'sweetalert2/src/variables';
-
 // Theme variables
 $material-ui-blue: #2196f3;
 $material-ui-disabled: #808080;
@@ -46,7 +44,6 @@ $swal2-actions-padding: 0 1em;
 // CLOSE BUTTON
 $swal2-close-button-border-radius: 50%;
 $swal2-close-button-hover-background: rgb(242, 242, 242);
-$swal2-close-button-hover-color: $swal2-close-button-color;
 
 // CHECKBOX
 $checkbox-size-px: 18;

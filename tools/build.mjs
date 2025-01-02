@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 import { $, echo, fs } from 'zx'
 
-import packageJson from '../package.json' assert { type: 'json' }
+import packageJson from '../package.json' with { type: 'json' }
 const version = process.env.VERSION || packageJson.version
 
 const banner = `/*
