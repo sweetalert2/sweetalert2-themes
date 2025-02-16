@@ -1,3 +1,10 @@
+## [5.0.27](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.26...v5.0.27) (2025-02-16)
+
+
+### Bug Fixes
+
+* deprecate dark theme ([a73886e](https://github.com/sweetalert2/sweetalert2-themes/commit/a73886edb3df21db69e0678d85c520c142ba829f))
+
 ## [5.0.26](https://github.com/sweetalert2/sweetalert2-themes/compare/v5.0.25...v5.0.26) (2025-01-02)
 
 
