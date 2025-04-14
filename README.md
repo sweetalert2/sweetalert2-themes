@@ -9,7 +9,6 @@
 - [`Minimal`](https://github.com/sweetalert2/sweetalert2-themes/tree/main/minimal)
 - [`Bootstrap 4`](https://github.com/sweetalert2/sweetalert2-themes/tree/main/bootstrap-4)
 - [`Material UI`](https://github.com/sweetalert2/sweetalert2-themes/tree/main/material-ui)
-- [`Bulma`](https://github.com/sweetalert2/sweetalert2-themes/tree/main/bulma)
 
 ## Installation
 
