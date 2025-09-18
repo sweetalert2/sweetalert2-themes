@@ -1403,9 +1403,9 @@ svg-tags@^1.0.0:
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
 sweetalert2@^11.5.2:
-  version "11.18.0"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.18.0.tgz#9e98e0c38d01df641bb355ccf2a71a9469533837"
-  integrity sha512-6LD1KTFuPi+rQzx2fETFJAFjZEsBsvDU+ORIwRq5kS/qXcpCXFoJzHXP3RjgclkhEZmkVafCL/jfaLK7UlrBYQ==
+  version "11.23.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.23.0.tgz#ba8a051b1e94215c762af08692171b7b4611c4c1"
+  integrity sha512-cKzzbC3C1sIs7o9XAMw4E8F9kBtGXsBDUsd2JZ8JM/dqa+nzWwSGM+9LLYILZWzWHzX9W+HJNHyBlbHPVS/krw==
 
 table@^6.9.0:
   version "6.9.0"
