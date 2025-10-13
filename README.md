@@ -3,6 +3,11 @@
 [![npm version](https://img.shields.io/npm/v/@sweetalert2/themes.svg)](https://www.npmjs.com/package/@sweetalert2/themes)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/sweetalert2/sweetalert2-themes/blob/main/CHANGELOG.md)
 
+> [!CAUTION]
+> **THESE PACKAGES ARE DEPRECATED**. Themes are now built-in into the `sweetalert2` package itself.
+> 
+> See the official documentation at https://sweetalert2.github.io/#themes for more information on how to use the built-in themes.
+
 ## Available themes
 
 - [`Dark`](https://github.com/sweetalert2/sweetalert2-themes/tree/main/dark)
